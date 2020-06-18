@@ -89,7 +89,7 @@ text-align: left;
         top: 10%;
         width: 100%;
         text-align: center;
-        margin-top: 70px;
+        margin-top: 100px;
         margin-left: 50px;
     }
     .menu-text {
@@ -296,6 +296,8 @@ text-align: left;
 
 /*HOMEPAGE PHONE-----------------------------------------------------------------------------*/
 @media (max-width: 576px) {
+  .overlay {
+      border-radius: 0px 200px 0px 0px;}
 
 	.margin-fifty {
 		margin-left: 10px;
@@ -307,6 +309,19 @@ text-align: left;
 		margin-right: 10px;
 	}
   	/*azienda agricola*/
+    .number {
+    margin-left: 0%;
+    margin-top: -120%;
+}
+.number45 {
+    margin-left: -40%;
+    font-size: 6rem;
+    margin-top: -50%;
+}
+.carousel-phone-img{
+  height: 200px;
+  width: 100%;
+}
 .image-fluid{width: 100%;}
 .presentationDescr {
     font-family: "proxima-nova", sans-serif;
@@ -346,7 +361,7 @@ text-align: left;
   padding-top:10%;
   padding-bottom:20%;
 }
-.categoryDiv {
+.categoryDiv-colt {
     margin-top:  13rem;
 }
 .zero-padding-phone{padding-right: 0px;
@@ -385,7 +400,7 @@ text-align: left;
     font-size: 18px;
     }
 .contact-info-margin {
-    margin-top: 5%;
+    margin-top: 10%;
 }
 /*produzione*/
 
@@ -422,7 +437,6 @@ text-align: left;
 		padding-right: 10px;
 	}
 
-
 	/*cover video*/
 	.cover {
 		padding-top: 11rem;
@@ -436,7 +450,6 @@ text-align: left;
 	#main-subtitle {
 		font-size: 28px;
 	}
-
 
 	/*category*/
 	.section-title {
@@ -454,36 +467,13 @@ text-align: left;
 		font-weight: 400;
 		width: 100%;
 		height: 170px;
-		/*margin-top: 2rem;*/
 		line-height: 45px;
-		color: #fff;
-		border: none;
-		padding: 15px 15px 15px 15px;
-	}
-/*
-	.makeimg {
-		background-image:
-		linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0,0,0,0.7)100%),
-		url('../assets/images/categoria1.jpg');
+    padding: 30px 50px 30px 50px;
+		line-height: 100px;
+		color: #F39200;
+		border: 5px solid #F39200;
 	}
 
-	.leaveimg {
-		background-image:
-		linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0,0,0,0.7)100%),
-		url('../assets/images/categoria2-4.jpg');
-	}
-
-	.swimimg {
-		background-image:
-		linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0,0,0,0.7)100%),
-		url('../assets/images/categoria2.jpg');
-	}
-
-	.feelimg{
-		background-image:
-		linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0,0,0,0.7)100%),
-		url('../assets/images/category04small.jpg');
-	} */
   #section-contacts {
     height: 120vh;
 }
@@ -506,8 +496,6 @@ text-align: left;
 		display: none;
 
 	}
-
-
 	/*principles*/
 	.principle-text {
 		margin-top: 0rem;
@@ -522,14 +510,6 @@ text-align: left;
 	.single-principle {
 		margin-top: 3rem;
 	}
-
-
-	/*most loved tours*/
-	/* .activitiycard {
-		margin-bottom: 30px;
-	} */
-
-
 	/*footer*/
 	.about {
 		margin-bottom: 2rem;
@@ -550,27 +530,27 @@ text-align: left;
 
 }
 
-
-
 /*HOMEPAGE TABLET----------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 1024px){
-
+  #main-content {
+      margin-bottom: 360px;
+  }
+  .credits-website{text-align: left;}
 	.margin-hundred {
 		margin-left: 25px;
 		margin-right: 25px;
 	}
+  #section-contacts {height: 75vh;}
 
 	.margin-fifty {
 		margin-left: 25px;
 		margin-right: 25px;
 	}
 
-
 	/*barra navigazione*/
 	#set-jetters-logo {
 		width: 100px;
 	}
-
 
 	/*cover video*/
 	.cover {
@@ -586,27 +566,32 @@ text-align: left;
 		font-size: 45px;
 	}
 
-
 	/*category*/
 	#CategoryContainer {
 		padding-top: 130px;
 		padding-bottom: 150px;
 		height: auto;
 	}
-
-	.categoryBt {
+  .categoryBt {
 		font-size: 35px;
 		font-weight: 400;
 		width: 100%;
-		height: 250px;
-		/*margin-top: 2rem;*/
+		height: 170px;
 		line-height: 45px;
-		color: #fff;
-		border: none;
-		padding: 25px 25px 25px 25px;
+    padding: 30px 50px 30px 50px;
+		line-height: 100px;
+		color: #F39200;
+		border: 5px solid #F39200;
 	}
-
-	.makeimg {
+  .zero-padding-phone{
+  padding-right: 0px;
+  padding-left: 0px;}
+  .categoryBt-border {
+  text-align: center;
+  vertical-align: middle;
+  width: 320px;
+  }
+	/* .makeimg {
 		background-image:
 		linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0,0,0,0.7)100%),
 		url('../assets/images/categoria1.jpg');
@@ -628,29 +613,58 @@ text-align: left;
 		background-image:
 		linear-gradient(180deg, rgba(0, 0, 0, 0)0%, rgba(0,0,0,0.7)100%),
 		url('../assets/images/category04small.jpg');
-	}
+	} */
 
 	.categoryDiv{
 		margin-top: 2rem;
 		width: 100%;
 		position: relative;
 		color: #fff;
-		border: none;
+		/* border: none; */
 	}
+  .number {
+  margin-left: 25%;
+  margin-top: 200%;
+}
+.carousel-indicators {
+    bottom: -10%;
+}
 
 	.categoryDescr {
 		display: none;
 		width: 100%;
 		margin-top: 0rem;
-
 	}
 
-
-	/*most loved tours*/
-	.activitiycard {
-		margin-bottom: 30px;
-	}
-
+  .margin-top-cards2 {
+  margin-top: 10%;
+  }
+  .margincards {
+  margin-top: 10%;
+    /* margin-bottom: 10%; */
+}
+.margin-top-cards3 {
+  margin-top: 0%;
+      margin-bottom: 10%;
+}
+.margin-top-cards4 {
+  margin-top: 10%;
+}
+.box {
+max-height: 400px;
+}
+.title-description-produzione {
+margin-top: -80%;
+}
+.text-description-produzione {
+margin-top: -72%;
+}
+.menu-text {
+font-size: 50px;
+}
+.overlay-content {
+top: 25%;
+}
 
 	/*footer*/
 	#subscribe {
@@ -658,7 +672,6 @@ text-align: left;
 		margin-top: 0.5rem;
 	}
 }
-
 
 
 /*HOMEPAGE TABLET IPAD-----------------------------------------------*/
@@ -768,9 +781,9 @@ text-align: left;
 		font-size: 14px;
 	}
 
-	.margincards {
+	/* .margincards {
 		margin-bottom: 0px;
-	}
+	} */
 
 }
 
@@ -940,35 +953,25 @@ text-align: left;
         width: 12.5%;
         font-size: 20px;
     }
-
     .days li {
         width: 12.5%;
     }
-
 
     /*Add to cart btn*/
     .addcart-btn {
         margin-left: 46px;
     }
 
-
     /*Reviews*/
     .hideContent {
         height: 17.2em;   /* 20.4em*/ /* 18.9em*/
     }
 
-
     /*Carousel*/
-    .carousel {
-        margin-bottom: 50px;
-    }
-
     .freccia {
         margin-top: 120px;
     }
 }
-
-
 
 /*SINGLE TOUR PAGE TABLET IPAD-----------------------------------------------*/
 @media (min-width: 768px) and (max-width: 992px){

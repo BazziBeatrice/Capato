@@ -31,6 +31,8 @@
 		<link href="../css/main.css" rel="stylesheet" type="text/css"/>
 		<link href="../css/mediaqueries.css" rel="stylesheet" type="text/css"/>
 
+		<link rel="stylesheet" href="../css/odometer-theme.css" />
+
 		<!-- link to fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.typekit.net/obf1dor.css">
@@ -58,9 +60,9 @@
 		</div>
 		<!--Menu-->
 		<div id="myNav" class="overlay">
-			<div class="bar-menu-right offset-xl-10 offset-lg-10 offset-md-3 offset-sm-5 offset-3 col-xl-2 col-lg-2 col-md-7 col-sm-5 col-7 cartbtn">
+			<!-- <div class="bar-menu-right offset-xl-10 offset-lg-10 offset-md-3 offset-sm-5 offset-3 col-xl-2 col-lg-2 col-md-7 col-sm-5 col-7 cartbtn">
 				<a href="javascript:void(0)" class="textbar" onclick="closeNav()" style="padding-right: 0px;">&times ESCI</a>
-			</div>
+			</div> -->
 			<ul class="overlay-content">
 				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1245 offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
 					<a class="menu-text" href="../pages/aziendaagricola.html">L'azienda agricola</a>
@@ -188,7 +190,7 @@
                   </div>
 
                   <div class="offset-xl-1 offset-lg-1 offset-md-0 offset-sm-0 offset-0 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <img class="img-fluid" src="../assets/images/categoria3.jpg" alt="First slide">
+                    <img class="img-fluid carousel-phone-img" src="../assets/images/categoria3.jpg" alt="First slide">
                   </div>
                 </div>
               </div>
@@ -208,7 +210,7 @@
     </div>
 
     <div class="offset-xl-1 offset-lg-1 offset-md-0 offset-sm-0 offset-0 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-      <img class="img-fluid" src="../assets/images/categoria2-3.jpg" alt="Second slide">
+      <img class="img-fluid carousel-phone-img" src="../assets/images/categoria2-3.jpg" alt="Second slide">
     </div>
   </div>
 </div>
@@ -228,7 +230,7 @@
     </div>
 
     <div class="offset-xl-1 offset-lg-1 offset-md-0 offset-sm-0 offset-0 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-      <img class="img-fluid" src="../assets/images/categoria1.jpg" alt="Third slide">
+      <img class="img-fluid carousel-phone-img" src="../assets/images/categoria1.jpg" alt="Third slide">
     </div>
   </div>
 </div>
@@ -255,17 +257,31 @@
 </section>
 
 <!--numbers-->
-<section class="whiteBack container-fluid">
+<section class="whiteBack container-fluid padding50">
   <!--Principles-->
   <article class="principles2">
     <!--Categories buttons-->
     <div class="row">
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-        <div>
+      <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"> -->
+        <!-- <div>
           <img src="../assets/images/azagricola.jpg" alt="Set-jetters United logo" class="image-fluid"/>
-        </div>
-      </div>
-      <div class="padding-phone offset-xl-1 offset-lg-1 offset-md-0 offset-sm-0 offset-0 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+        </div> -->
+				<!-- <h1 id="odometer" class="odometer number60">0</h1>
+		<h1>/</h1>
+		<h1 id="odometer2" class="odometer number45">0</h1> -->
+
+					<div class="offset-xl-1 offset-lg-1 offset-md-0 offset-sm-0 offset-0 col-xl-2 col-lg-2 col-md-3 col-sm-12 col-12">
+		<h1 id="odometer" class="odometer number60">0</h1>
+		 </div>
+
+				<div class="offset-xl-0 offset-lg-0 offset-md-0 offset-sm-5 offset-5 col-xl-1 col-lg-1 col-md-1 col-sm-3 col-3">
+<h1 class="number">/</h1>
+  </div>
+				<div class="col-xl-1 col-lg-1 col-md-2 col-sm-4 col-4">
+<h1 id="odometer2" class="odometer number45">0</h1>
+  </div>
+      <!-- </div> -->
+      <div class="padding-phone offset-xl-2 offset-lg-2 offset-md-0 offset-sm-0 offset-0 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
         <div>
           <p class="presentationDescr">
         Le proprietà dell’Azienda Capato consistono in circa 60 ettari di terreno di cui 45 ettari completamente coperti da serre riscaldate.  Questi terreni permettono all’Azienda di assicurare il prodotto durante tutto l’anno anche per quanto concerne le lattughe che hanno bisogno nei mesi invernali di un microclima mite reso possibile dalle serre riscaldate. 
@@ -301,7 +317,7 @@
 					</div>
 
 					<!--Contact-->
-					<div class="footer-credits offset-xl-4 col-xl-4 col-lg-5 col-md-8 col-sm-12 col-12" style="text-align:right">
+					<div class="footer-credits credits-website offset-xl-4 col-xl-4 col-lg-5 col-md-8 col-sm-12 col-12" style="text-align:right">
 						<p class="about">
 							<strong>CREDITS</strong>
 							<span>
@@ -322,6 +338,8 @@
 	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/main.js"></script>
+	<script src="../js/odometer.js"></script>
+	<script src="../js/aziendaagricola.js"></script>
 
 	<!-- link to FontAwesome -->
 <script src="https://kit.fontawesome.com/fe7d3f2655.js" crossorigin="anonymous"></script>

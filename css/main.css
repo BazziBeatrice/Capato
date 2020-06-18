@@ -1593,6 +1593,28 @@ ul {
 }
 
 /*AZIENDA AGRICOLA PAGE ----------*/
+.number60{
+font-family: "Cormorant Garamond", serif;
+color:rgb(161, 199, 164);
+font-size: 10rem;
+}
+.number45{
+font-family: "Cormorant Garamond", serif;
+color:rgb(161, 199, 164);
+font-size: 5rem;
+margin-left: -10%;
+margin-top: 50%;
+}
+.number{
+font-family: "Cormorant Garamond", serif;
+color:rgb(161, 199, 164);
+font-size: 5rem;
+margin-left: 25%;
+margin-top: 50%;
+}
+.padding50{
+	padding-bottom:20%;
+}
 .css-text-mask {
     font-size: 41px;
     background-image: url('https://html-generator.com/uploads/images/2020/06/04/38173_FH7_4MUWSU.jpg');
@@ -1664,6 +1686,7 @@ ul {
     right: 0;
     bottom: -25%;
     left: 0;
+		z-index:1;
 	}
 
 .carousel-indicators li {
