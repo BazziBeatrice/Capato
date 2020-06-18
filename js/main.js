@@ -11,7 +11,7 @@ $(window).scroll(function(){
                         if (scroll < 400) {$('.full-img').css('visibility','visible');}
                         else {  $('.full-img').css('visibility','hidden');}
 
-                        if (scroll < 1000) {$('#main-footer-index').hide();}
+                        if (scroll < 1200) {$('#main-footer-index').hide();}
                         else {$('#main-footer-index').show();}
                   })
 
