@@ -247,7 +247,24 @@ text-align: left;
 
 /*MORALIST PAGE TABLET----------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 1024px){
-
+.image-tablet-100{
+  width:100%;
+  height:auto;
+}
+.presentationDescrTitle {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 0rem;
+    	}
+.presentationDescrTitle2 {
+    font-size: 24px;
+    line-height: 2.2rem;
+        	}
+          .presentationDescr2 {
+    font-size: 14px;
+    line-height: 1.7rem;
+    	}
 	.cartcontent {
 		padding-left: 20px;
 		padding-right: 20px;
@@ -977,9 +994,9 @@ top: 25%;
 @media (min-width: 768px) and (max-width: 992px){
 
 	/*Carousel*/
-     .freccia {
+     /* .freccia {
          margin-top: 430px;
-    }
+    } */
 
 
     /*Reviews*/
