@@ -2109,3 +2109,10 @@ background-color: black;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
+
+body:not(.en) :lang(en),
+body:not(.it) :lang(it),
+body:not(.es) :lang(es) {
+display: none;
+}
+#switch-it{display:none;}

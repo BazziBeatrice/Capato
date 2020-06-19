@@ -441,6 +441,27 @@ $(".show-more a").on("click", function() {
 
 });
 
+// function openNav() {
+//   document.getElementById("switch-en").style.width = "100%";
+//           $('#switch-en').hide();
+//           $('#switch-it').show();
+// }
+// function closeNav() {
+//   document.getElementById("switch-it").style.width = "0%";
+//   $('#switch-en').show();
+//   $('#switch-it').hide();
+// }
+
+$("#switch-en").on("click", function() {
+  $('#switch-en').css("display", "none");
+  $('#switch-it').css("display", "block");
+});
+
+$("#switch-it").on("click", function() {
+  $('#switch-en').css("display", "block");
+   $('#switch-it').css("display", "none");
+});
+
   // var windWidth = $(window).width();
 
 
@@ -479,6 +500,17 @@ function closeNav() {
         $('#menuButton').show();
         $('#exitButton').hide();
 }
+
+// function openNav() {
+//   document.getElementById("switch-en").style.width = "100%";
+//           $('#switch-en').hide();
+//           $('#switch-it').show();
+// }
+// function closeNav() {
+//   document.getElementById("switch-it").style.width = "0%";
+//   $('#switch-en').show();
+//   $('#switch-it').hide();
+// }
 
 //LOADER
 
