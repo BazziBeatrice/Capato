@@ -79,10 +79,10 @@ width: 270px;
     .credits-website{
 text-align: left;
     }
-    #main-content {
+    /* #main-content {
         margin-bottom: 400px;
         z-index: 2;
-    }
+    } */
 
     .overlay-content {
         position: relative;
