@@ -1797,6 +1797,7 @@ white-space: nowrap;
 
 /*menu---------------------------------------------------------------------------*/
 #exitButton{display: none;}
+
 .overlay {
   height: 100%;
   width: 0;
@@ -1805,7 +1806,6 @@ white-space: nowrap;
   top: 0;
   left: 0;
 	border-radius: 0px 300px 0px 0px;
-  /* background-color: #0B7745; */
 	background-color: #03522d;
   overflow-x: hidden;
   transition: 0.5s;
@@ -1817,7 +1817,6 @@ white-space: nowrap;
   width: 100%;
   text-align: center;
   margin-top: 30px;
-	/* transition: ease all; */
 }
 .overlay a {
   padding: 8px;
@@ -2110,9 +2109,11 @@ background-color: black;
 	transform: translate(-50%,-50%);
 }
 
-body:not(.en) :lang(en),
-body:not(.it) :lang(it),
-body:not(.es) :lang(es) {
-display: none;
+body.en :lang(it) {
+  display: none;
 }
+body.it :lang(en) {
+  display: none;
+}
+
 #switch-it{display:none;}

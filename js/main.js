@@ -20,7 +20,18 @@ $('.carousel').carousel({
   interval: 2000
 })
 
+var language;
+
 $(document).ready(function(){
+
+// CheckLanguage();
+// function CheckLanguage(){
+// };
+// $("").click(
+//   function(){
+//     localStorage.setItem(language, "true");
+//     CheckLanguage();
+//   }
 
         // category color change on hover and background image change
                 $(".whiteHover").hover(
@@ -193,16 +204,14 @@ $(document).ready(function(){
       }
     );
 
-
     //Audio
     $("#buttonAudio").click(function(){
         toggleMute();
     });
 
-
     //about--------------------------------------------
 
-        $("#makeyourpresence").hover(
+    $("#makeyourpresence").hover(
                       function(){ $(this).css("opacity", "0");
                             $("#makeyourpresence_hover").css("opacity", "1");
                             },
@@ -404,8 +413,38 @@ $(document).ready(function(){
                    $("#step7-text-box").css("display", "none");
                  }
                );
-});
 
+
+               CheckLanguage();
+               function CheckLanguage(){
+                 var it = true;
+                 if (localStorage.getItem('en') == "true"){
+                    it = false;
+                 };
+                 if (localStorage.getItem('it') == "true"){
+                    it = true;
+                 }
+               };
+
+// var body = document.body;
+               //Language//
+               $("#switch-en").on("click", function() {
+                 $('#switch-en').css("display", "none");
+                 $('#switch-it').css("display", "block");
+                 // localStorage.setItem("body", "en");
+                 // localStorage.setItem('en', language);
+                 CheckLanguage();
+               });
+
+               $("#switch-it").on("click", function() {
+               $('#switch-en').css("display", "block");
+               $('#switch-it').css("display", "none");
+                // localStorage.setItem('it', language);
+                // localStorage.setItem("body", "it");
+                CheckLanguage();
+               });
+
+});
 
 //Audio button//
 function toggleMute() {
@@ -419,7 +458,6 @@ function toggleMute() {
          }
     console.log("ok!");
 }
-
 
 //Reviews//
 $(".show-more a").on("click", function() {
@@ -441,28 +479,7 @@ $(".show-more a").on("click", function() {
 
 });
 
-// function openNav() {
-//   document.getElementById("switch-en").style.width = "100%";
-//           $('#switch-en').hide();
-//           $('#switch-it').show();
-// }
-// function closeNav() {
-//   document.getElementById("switch-it").style.width = "0%";
-//   $('#switch-en').show();
-//   $('#switch-it').hide();
-// }
 
-$("#switch-en").on("click", function() {
-  $('#switch-en').css("display", "none");
-  $('#switch-it').css("display", "block");
-});
-
-$("#switch-it").on("click", function() {
-  $('#switch-en').css("display", "block");
-   $('#switch-it').css("display", "none");
-});
-
-  // var windWidth = $(window).width();
 
 
 //Menu category//
@@ -486,7 +503,6 @@ function showFeel() {
     $("#leavebtn, #swimbtn, #makebtn").css("display", "none");
 };
 
-
 //menu
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
@@ -501,17 +517,6 @@ function closeNav() {
         $('#exitButton').hide();
 }
 
-// function openNav() {
-//   document.getElementById("switch-en").style.width = "100%";
-//           $('#switch-en').hide();
-//           $('#switch-it').show();
-// }
-// function closeNav() {
-//   document.getElementById("switch-it").style.width = "0%";
-//   $('#switch-en').show();
-//   $('#switch-it').hide();
-// }
-
 //LOADER
 
 var loader = document.getElementById("loader");
@@ -521,3 +526,5 @@ window.setTimeout(function(){
     loader.style.width="500px";
     loader.style.visibility ="hidden";
 }, 2000);
+
+// sessionStorage.setItem('body', 'Tom');

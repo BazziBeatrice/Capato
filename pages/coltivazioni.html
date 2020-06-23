@@ -47,7 +47,7 @@
         <link rel="shortcut icon" href="../assets/images/favicons/favicon32.png">
 	</head>
 
-	<body>
+	<body class="it">
 		<!--Loader-->
 		<div id="loader">
 			<img src="../assets/video/salad.gif" alt="loader-gif" width="10%"/>
@@ -55,27 +55,30 @@
 
 		<!--Menu-->
 		<div id="myNav" class="overlay">
-			<!-- <div class="bar-menu-right offset-xl-10 offset-lg-10 offset-md-3 offset-sm-5 offset-3 col-xl-2 col-lg-2 col-md-7 col-sm-5 col-7 cartbtn">
-				<a href="javascript:void(0)" class="textbar" onclick="closeNav()" style="padding-right: 0px;">&times ESCI</a>
-			</div> -->
 			<ul class="overlay-content">
 				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1245 offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
-					<a class="menu-text" href="../pages/aziendaagricola.html">L'azienda agricola</a>
+					<a class="menu-text" href="../pages/aziendaagricola.html" lang="it">L'azienda agricola</a>
+					<a class="menu-text" href="../pages/aziendaagricola.html" lang="en">The farm</a>
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
-					<a class="menu-text" href="../pages/coltivazioni.html">Le nostre coltivazioni</a>
+					<a class="menu-text" href="../pages/coltivazioni.html" lang="it">Le nostre coltivazioni</a>
+					<a class="menu-text" href="../pages/aziendaagricola.html" lang="en">Our crops</a>
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
-					<a class="menu-text" href="../pages/cicloproduzione.html">Dalla produzione al trasporto</a>
+					<a class="menu-text" href="../pages/cicloproduzione.html" lang="it">Dalla produzione al trasporto</a>
+					<a class="menu-text" href="../pages/cicloproduzione.html" lang="en">From production to transport</a>
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
-					<a class="menu-text" href="../pages/photogallery.html">Galleria foto</a>
+					<a class="menu-text" href="../pages/photogallery.html" lang="it">Galleria foto</a>
+					<a class="menu-text" href="../pages/photogallery.html" lang="en">Photo gallery</a>
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
-					<a class="menu-text" href="../pages/contacts.html">Contatti</a>
+					<a class="menu-text" href="../pages/contacts.html" lang="it">Contatti</a>
+					<a class="menu-text" href="../pages/contacts.html" lang="en">Contacts</a>
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
-					<a class="menu-text-switch" href="#">Switch to English 🇬🇧</a>
+					<a class="menu-text-switch" id="switch-en" href="#" onclick="document.body.className='en'">Switch to English 🇬🇧</a>
+					<a class="menu-text-switch" id="switch-it" href="#" onclick="document.body.className='it'">Traduci in Italiano 🇮🇹</a>
 				</li>
 			</ul>
 		</div>
@@ -116,12 +119,18 @@
 							<div class="sticky">
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 zero-padding-phone" id="LEAVE">
                 		<div class="categoryDiv-colt categoryBt-border">
-                			<p class="categoryBt-text whiteHover leaveimg" style="margin-top: 30px;">
+                			<p class="categoryBt-text whiteHover leaveimg" style="margin-top: 30px;" lang="it">
                 				LE NOSTRE<br>COLTIVAZIONI<br>
+                			</p>
+											<p class="categoryBt-text whiteHover leaveimg" style="margin-top: 30px;" lang="en">
+                			OUR<br>CROPS<br>
                 			</p>
                 		</div>
                   <div class="categoryDescr">
-                		<p class="dropdownTxt">Le coltivazioni comprendono: lattuga di tipo trocadero e gentile; cavolo cappuccio distinto in cuore di bue e tondo; bietola da costa; sedano verde ed infine Cicoria.</p>
+                		<p class="dropdownTxt" lang="it">Le coltivazioni comprendono: lattuga di tipo trocadero e gentile; cavolo cappuccio distinto in cuore di bue e tondo; bietola da costa; sedano verde ed infine Cicoria.
+										</p>
+										<p class="dropdownTxt" lang="en">Cultivations include: lettuce of the trocadero and gentile type; distinct cabbage in ox heart and round; chard from the coast; green celery and finally chicory.
+										</p>
                 	</div>
                 </div>
 							</div>
@@ -135,8 +144,12 @@
                 <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 activitiycard">
                   <div class="coltivation-card">
                     <div class="coltivation-card-text">
-                      <h5>Lattuga trocadero</h5>
-                      <p class="coltivation-card-description">
+                      <h5 lang="it">Lattuga trocadero</h5>
+											<h5 lang="en">Lattuga trocadero</h5>
+                      <p class="coltivation-card-description" lang="it">
+                        Ciclo estivo: 30/35 giorni <br>Ciclo invernale: 60/80 giorni <br>Il prodotto è disponibile tutto l’anno<br>
+                      </p>
+											<p class="coltivation-card-description" lang="en">
                         Ciclo estivo: 30/35 giorni <br>Ciclo invernale: 60/80 giorni <br>Il prodotto è disponibile tutto l’anno<br>
                       </p>
                     </div>
@@ -149,8 +162,12 @@
                 <div class="margin-top-cards2 col-xl-6 col-lg-12 col-md-12 col-sm-12 activitiycard">
                   <div class="coltivation-card">
                     <div class="coltivation-card-text">
-                      <h5>Lattuga gentile</h5>
-                      <p class="coltivation-card-description">
+                      <h5 lang="it">Lattuga gentile</h5>
+											<h5 lang="en">Lattuga gentile</h5>
+                      <p class="coltivation-card-description" lang="it">
+                        Ciclo estivo: 30/35 giorni <br>Ciclo invernale: 60/80 giorni <br>Il prodotto è disponibile tutto l’anno<br>
+                      </p>
+											<p class="coltivation-card-description" lang="en">
                         Ciclo estivo: 30/35 giorni <br>Ciclo invernale: 60/80 giorni <br>Il prodotto è disponibile tutto l’anno<br>
                       </p>
                     </div>
@@ -168,8 +185,12 @@
                 <div class="margin-top-cards3 col-xl-6 col-lg-12 col-md-12 col-sm-12 activitiycard">
                   <div class="coltivation-card">
                     <div class="coltivation-card-text">
-                      <h5>Cavolo cappuccio cuore di bue</h5>
-                      <p class="coltivation-card-description">
+                      <h5 lang="it">Cavolo cappuccio cuore di bue</h5>
+											<h5 lang="en">Cavolo cappuccio cuore di bue</h5>
+                      <p class="coltivation-card-description" lang="it">
+                        Ciclo estivo: 45/60 giorni<br>Ciclo invernale: 70/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
+                      </p>
+											<p class="coltivation-card-description" lang="en">
                         Ciclo estivo: 45/60 giorni<br>Ciclo invernale: 70/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
                       </p>
                     </div>
@@ -182,10 +203,14 @@
                 <div class=" col-xl-6 col-lg-12 col-md-12 col-sm-12 activitiycard">
                   <div class="coltivation-card">
                     <div class="coltivation-card-text">
-                      <h5>Cavolo cappuccio tondo</h5>
-                      <p class="coltivation-card-description">
+                      <h5 lang="it">Cavolo cappuccio tondo</h5>
+											<h5 lang="en">Cavolo cappuccio tondo</h5>
+                      <p class="coltivation-card-description" lang="it">
                         Ciclo estivo: 45/60 giorni<br>Ciclo invernale: 70/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
                       </p>
+											<p class="coltivation-card-description" lang="en">
+												Ciclo estivo: 45/60 giorni<br>Ciclo invernale: 70/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
+											</p>
                     </div>
                   </div>
                   <div class="image-coltivation-card">
@@ -202,8 +227,12 @@
                 <div class="margin-top-cards3 col-xl-6 col-lg-12 col-md-12 col-sm-12 activitiycard">
 								  <div class="coltivation-card">
 								    <div class="coltivation-card-text">
-								      <h5>Bietola da costa</h5>
-								      <p class="coltivation-card-description">
+								      <h5 lang="it">Bietola da costa</h5>
+											<h5 lang="en">Bietola da costa</h5>
+								      <p class="coltivation-card-description" lang="it">
+								        Ciclo estivo: 30/40 giorni<br>Ciclo invernale: 60/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
+								      </p>
+											<p class="coltivation-card-description" lang="en">
 								        Ciclo estivo: 30/40 giorni<br>Ciclo invernale: 60/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
 								      </p>
 								    </div>
@@ -216,10 +245,14 @@
                 <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 activitiycard">
 								  <div class="coltivation-card">
 								    <div class="coltivation-card-text">
-								      <h5>Sedano verde</h5>
-								      <p class="coltivation-card-description">
+								      <h5 lang="it">Sedano verde</h5>
+											<h5 lang="en">Sedano verde</h5>
+								      <p class="coltivation-card-description" lang="it">
 								        Ciclo estivo: 50/60 giorni<br>Ciclo invernale: 80/110 giorni<br>Il prodotto è disponibile tutto l’anno<br>
 								      </p>
+											<p class="coltivation-card-description" lang="en">
+											 Ciclo estivo: 50/60 giorni<br>Ciclo invernale: 80/110 giorni<br>Il prodotto è disponibile tutto l’anno<br>
+										 </p>
 								    </div>
 								  </div>
 								  <div class="image-coltivation-card">
@@ -230,8 +263,12 @@
 								<div class="margin-top-cards4 col-xl-6 col-lg-12 col-md-12 col-sm-12 activitiycard">
 									<div class="coltivation-card">
 										<div class="coltivation-card-text">
-											<h5>Cicoria</h5>
-											<p class="coltivation-card-description">
+											<h5 lang="it">Cicoria</h5>
+											<h5 lang="en">Cicoria</h5>
+											<p class="coltivation-card-description" lang="it">
+												Ciclo estivo: 40/50 giorni<br>Ciclo invernale: 70/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
+											</p>
+											<p class="coltivation-card-description" lang="en">
 												Ciclo estivo: 40/50 giorni<br>Ciclo invernale: 70/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
 											</p>
 										</div>
@@ -248,12 +285,6 @@
 		</section>
 
 		</main>
-
-				<!--start Footer Area-->
-				<!-- <footer id="footer">
-					<div class="container-fluid">
-					</div>
-				</footer> -->
 
 					<!--start Footer Area-->
 					<footer >

@@ -53,34 +53,37 @@
 
 	</head>
 
-	<body>
+	<body class="it">
 		<!--Loader-->
 		<div id="loader">
 			<img src="../assets/video/salad.gif" alt="loader-gif" width="10%"/>
 		</div>
 		<!--Menu-->
 		<div id="myNav" class="overlay">
-			<!-- <div class="bar-menu-right offset-xl-10 offset-lg-10 offset-md-3 offset-sm-5 offset-3 col-xl-2 col-lg-2 col-md-7 col-sm-5 col-7 cartbtn">
-				<a href="javascript:void(0)" class="textbar" onclick="closeNav()" style="padding-right: 0px;">&times ESCI</a>
-			</div> -->
 			<ul class="overlay-content">
 				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1245 offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
-					<a class="menu-text" href="../pages/aziendaagricola.html">L'azienda agricola</a>
+					<a class="menu-text" href="../pages/aziendaagricola.html" lang="it">L'azienda agricola</a>
+					<a class="menu-text" href="../pages/aziendaagricola.html" lang="en">The farm</a>
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
-					<a class="menu-text" href="../pages/coltivazioni.html">Le nostre coltivazioni</a>
+					<a class="menu-text" href="../pages/coltivazioni.html" lang="it">Le nostre coltivazioni</a>
+					<a class="menu-text" href="../pages/aziendaagricola.html" lang="en">Our crops</a>
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
-					<a class="menu-text" href="../pages/cicloproduzione.html">Dalla produzione al trasporto</a>
+					<a class="menu-text" href="../pages/cicloproduzione.html" lang="it">Dalla produzione al trasporto</a>
+					<a class="menu-text" href="../pages/cicloproduzione.html" lang="en">From production to transport</a>
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
-					<a class="menu-text" href="../pages/photogallery.html">Galleria foto</a>
+					<a class="menu-text" href="../pages/photogallery.html" lang="it">Galleria foto</a>
+					<a class="menu-text" href="../pages/photogallery.html" lang="en">Photo gallery</a>
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
-					<a class="menu-text" href="../pages/contacts.html">Contatti</a>
+					<a class="menu-text" href="../pages/contacts.html" lang="it">Contatti</a>
+					<a class="menu-text" href="../pages/contacts.html" lang="en">Contacts</a>
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
-					<a class="menu-text-switch" href="#">Switch to English 🇬🇧</a>
+					<a class="menu-text-switch" id="switch-en" href="#" onclick="document.body.className='en'">Switch to English 🇬🇧</a>
+					<a class="menu-text-switch" id="switch-it" href="#" onclick="document.body.className='it'">Traduci in Italiano 🇮🇹</a>
 				</li>
 			</ul>
 		</div>
@@ -97,9 +100,8 @@
 
 					<div class="bar-menu-right offset-xl-8 offset-lg-8 offset-md-3 offset-sm-5 offset-3 col-xl-2 col-lg-2 col-md-7 col-sm-5 col-7 cartbtn">
 					<a id="menuButton" class="textbar-black" href="#" onclick="openNav()" style="padding-right: 0px;">MENU</a>
-						<a id="exitButton" class="textbar-black" href="#" onclick="closeNav()" style="padding-right: 0px;">EXIT</a>
+					<a id="exitButton" class="textbar-black" href="#" onclick="closeNav()" style="padding-right: 0px;">EXIT</a>
 				</div>
-
 
 					</div>
 				</div>
@@ -116,7 +118,8 @@
 
 					<!--Main title and subtitle-->
 					<div class="row">
-						<p id="main-title" class="css-text-mask col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">L'AZIENDA<br>AGRICOLA</p>
+						<p id="main-title" class="css-text-mask col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" lang="it">L'AZIENDA<br>AGRICOLA</p>
+						<p id="main-title" class="css-text-mask col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" lang="en">THE<br>FARM</p>
 					</div>
 				</article>
 
@@ -137,14 +140,22 @@
 
       <div class="offset-xl-1 offset-lg-1 offset-md-0 offset-sm-0 offset-0 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
         <div>
-          <p class="presentationDescrTitle">
+          <p class="presentationDescrTitle" lang="it">
             L’Azienda Agricola Capato di
             Capato Angelino, Mario, Bruno e Figli S.S è un’azienda agricola a conduzione famigliare
           </p>
-          <p class="presentationDescr">
+					<p class="presentationDescrTitle" lang="en">
+						L’Azienda Agricola Capato di
+						Capato Angelino, Mario, Bruno e Figli S.S è un’azienda agricola a conduzione famigliare
+					</p>
+          <p class="presentationDescr" lang="it">
             L’azienda agricola opera nel settore agroalimentare garantendo ai propri clienti il massimo della qualità e sicurezza alimentare e opera dal 1961 in questo settore.
             L’esperienza accumulata negli anni e la sensibilità nell’adeguamento alle nuove tecnologie ha permesso un alto livello qualitativo delle produzioni, riducendo al minimo gli impatti sull’ambiente circostante.
           </p>
+					<p class="presentationDescr" lang="en">
+						L’azienda agricola opera nel settore agroalimentare garantendo ai propri clienti il massimo della qualità e sicurezza alimentare e opera dal 1961 in questo settore.
+						L’esperienza accumulata negli anni e la sensibilità nell’adeguamento alle nuove tecnologie ha permesso un alto livello qualitativo delle produzioni, riducendo al minimo gli impatti sull’ambiente circostante.
+					</p>
         </div>
       </div>
     </div>
@@ -179,10 +190,17 @@
                 <div class="row">
                   <div class="activitiycard col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div>
-                      <p class="presentationDescrTitle2">
+                      <p class="presentationDescrTitle2" lang="it">
                         La produzione di ortaggi è costante, garantendo freschezza dei prodotti durante tutto l’anno
                       </p>
-                      <p class="presentationDescr2">
+											<p class="presentationDescrTitle2" lang="en">
+												La produzione di ortaggi è costante, garantendo freschezza dei prodotti durante tutto l’anno
+											</p>
+                      <p class="presentationDescr2" lang="it">
+                        L’Azienda è specializzata nella produzione di ortaggi durante tutto il periodo dell’anno grazie all’impianto di serre riscaldate di nuova generazione entrato in funzione nell’anno 2006 e tutt’ora in fase di ampliamento e alla struttura
+                        antigrandine che permette di produrre anche in presenza di fenomeni meteorologici avversi.
+                      </p>
+											<p class="presentationDescr2" lang="en">
                         L’Azienda è specializzata nella produzione di ortaggi durante tutto il periodo dell’anno grazie all’impianto di serre riscaldate di nuova generazione entrato in funzione nell’anno 2006 e tutt’ora in fase di ampliamento e alla struttura
                         antigrandine che permette di produrre anche in presenza di fenomeni meteorologici avversi.
                       </p>
@@ -200,12 +218,18 @@
   <div class="row">
     <div class="activitiycard col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
       <div>
-        <p class="presentationDescrTitle2">
+        <p class="presentationDescrTitle2" lang="it">
           Lusia paese in provincia di Rovigo, terreno fertile grazie alla vicinanza dell’Adige
         </p>
-        <p class="presentationDescr2">
+				<p class="presentationDescrTitle2" lang="en">
+					Lusia paese in provincia di Rovigo, terreno fertile grazie alla vicinanza dell’Adige
+				</p>
+        <p class="presentationDescr2" lang="it">
     La struttura produttiva si trova a Lusia, un paese della pianura Polesana particolarmente favorevole all’attività orticola grazie alla fertilità del terreno resa tale dalla vicinanza del fiume Adige e dalle condizioni microclimatiche particolari.
 	 </p>
+	 <p class="presentationDescr2" lang="en">
+La struttura produttiva si trova a Lusia, un paese della pianura Polesana particolarmente favorevole all’attività orticola grazie alla fertilità del terreno resa tale dalla vicinanza del fiume Adige e dalle condizioni microclimatiche particolari.
+</p>
       </div>
     </div>
 
@@ -219,10 +243,17 @@
   <div class="row">
     <div class="activitiycard col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
       <div>
-        <p class="presentationDescrTitle2">
+        <p class="presentationDescrTitle2" lang="it">
           Disposizione della struttura produttiva principale
         </p>
-        <p class="presentationDescr2">
+				<p class="presentationDescrTitle2" lang="en">
+          Disposizione della struttura produttiva principale
+        </p>
+        <p class="presentationDescr2" lang="it">
+          L’Azienda è composta da una sede principale di circa 3000 mq. in cui sono ubicati gli uffici, le celle di stoccaggio, il magazzino di lavorazione e movimentazione dei prodotti con zona lavaggio, e un’area spedizione definita dalle rampe di
+          carico/scarico. 
+        </p>
+				<p class="presentationDescr2" lang="en">
           L’Azienda è composta da una sede principale di circa 3000 mq. in cui sono ubicati gli uffici, le celle di stoccaggio, il magazzino di lavorazione e movimentazione dei prodotti con zona lavaggio, e un’area spedizione definita dalle rampe di
           carico/scarico. 
         </p>
@@ -262,13 +293,6 @@
   <article class="principles2">
     <!--Categories buttons-->
     <div class="row">
-      <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12"> -->
-        <!-- <div>
-          <img src="../assets/images/azagricola.jpg" alt="Set-jetters United logo" class="image-fluid"/>
-        </div> -->
-				<!-- <h1 id="odometer" class="odometer number60">0</h1>
-		<h1>/</h1>
-		<h1 id="odometer2" class="odometer number45">0</h1> -->
 
 					<div class="offset-xl-1 offset-lg-1 offset-md-0 offset-sm-0 offset-0 col-xl-2 col-lg-2 col-md-3 col-sm-12 col-12">
 		<h1 id="odometer" class="odometer number60">0</h1>
@@ -283,9 +307,12 @@
       <!-- </div> -->
       <div class="padding-phone offset-xl-2 offset-lg-2 offset-md-0 offset-sm-0 offset-0 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
         <div>
-          <p class="presentationDescr">
+          <p class="presentationDescr" lang="it">
         Le proprietà dell’Azienda Capato consistono in circa 60 ettari di terreno di cui 45 ettari completamente coperti da serre riscaldate.  Questi terreni permettono all’Azienda di assicurare il prodotto durante tutto l’anno anche per quanto concerne le lattughe che hanno bisogno nei mesi invernali di un microclima mite reso possibile dalle serre riscaldate. 
 			</p>
+			<p class="presentationDescr" lang="en">
+		Le proprietà dell’Azienda Capato consistono in circa 60 ettari di terreno di cui 45 ettari completamente coperti da serre riscaldate.  Questi terreni permettono all’Azienda di assicurare il prodotto durante tutto l’anno anche per quanto concerne le lattughe che hanno bisogno nei mesi invernali di un microclima mite reso possibile dalle serre riscaldate. 
+	</p>
         </div>
       </div>
     </div>
