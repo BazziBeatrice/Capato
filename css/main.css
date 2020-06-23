@@ -2092,9 +2092,9 @@ background-color: black;
 }
 /*LOADER----------------------------------------------------------------------------*/
 #loader {
-	width: 2000px;
-	height: 2000px;
-	background: none repeat scroll 0 0 #000;
+	width: 4000px;
+	height: 4000px;
+	background: none repeat scroll 0 0 #FFF;
 	position: fixed;
 	top: 43%;
 	left: 50%;
