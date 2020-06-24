@@ -431,6 +431,7 @@ $(document).ready(function(){
                $("#switch-en").on("click", function() {
                  $('#switch-en').css("display", "none");
                  $('#switch-it').css("display", "block");
+                 closeNav();
                  // localStorage.setItem("body", "en");
                  // localStorage.setItem('en', language);
                  CheckLanguage();
@@ -439,6 +440,7 @@ $(document).ready(function(){
                $("#switch-it").on("click", function() {
                $('#switch-en').css("display", "block");
                $('#switch-it').css("display", "none");
+               closeNav();
                 // localStorage.setItem('it', language);
                 // localStorage.setItem("body", "it");
                 CheckLanguage();
@@ -525,6 +527,6 @@ window.setTimeout(function(){
     loader.style.height="500px";
     loader.style.width="500px";
     loader.style.visibility ="hidden";
-}, 2000);
+}, 2700);
 
 // sessionStorage.setItem('body', 'Tom');
