@@ -309,8 +309,103 @@ text-align: left;
 
 }
 
+/*HOMEPAGE PHONE landscape-----------------------------------------------------------------------------*/
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    .dropdownTxt {
+        font-size: 16px;}
+        .categoryBt-border {
+    margin-top: 60px;}
+    .cover {
+    padding-top: 5rem;
+    }
+    .margin-botton-audio {
+    margin-top: 0%;}
+    #CategoryContainer {
+    margin-top: 0px;
+    padding-top: 0rem;}
+    .margin-hundred {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.categoryBt-text {
+    font-size: 25px;
+    line-height: 30px;}
+  }
+.categoryBt-border {
+  height: 140px;}
+  #CategoryContainer {
+    height: 120vh;}
+    .map {
+    height: 90%;}
+    #section-contacts {
+    height: 120vh;
+}
+#main-content {
+    margin-bottom: 390px;}
+    .menu-text {
+    font-size: 28px;
+    line-height: 2.4rem;}
+    .overlay-content {
+    margin-top: 0px;}
+    .margin-botton-categories {
+    margin-top: 6%;
+}
+.sticky {
+    top: 0rem; */
+}
+.categoryDescr {
+    width: 350px;
+    height: 140px;}
+    .margin-top-cards2 {
+    margin-top: 10%;
+}
+.margin-top-cards3 {
+    margin-top: 10%;
+        margin-bottom: 10%;
+}
+.margincards {
+    margin-bottom: 0px;
+}
+.margin-top-cards4 {
+    margin-top: 10%;
+}
+.title-description-produzione {
+    margin-top: 0%;}
+    .text-description-produzione {
+    margin-top: 0%;}
+    #PhotoGallery{
+      height: 160vh;}
+      #coverpage-2 {
+    height: 200vh;
+}
+.text-contact-title {
+    font-size: 50px;
+    line-height: 4rem;}
+    .cover-2 {
+    padding-top: 4rem;
+}
+.contact-info-margin {
+    margin-top: -35%;
+}
+.menu-text-switch {
+    font-size: 18px;
+    line-height: 2rem;}
+}
+@media only screen and(max-width: 576px)and (orientation: landscape) {
+  .dropdownTxt {
+      font-size: 16px;}
+      .categoryBt-border {
+  margin-top: 60px;}
+  .cover {
+  padding-top: 4rem;
+  }
 
-
+}
 /*HOMEPAGE PHONE-----------------------------------------------------------------------------*/
 @media (max-width: 576px) {
   .overlay {
@@ -329,6 +424,11 @@ text-align: left;
     .number {
     margin-left: 0%;
     margin-top: -120%;
+}
+.section-title-sans-black-mail{display: block;
+color:#000;}
+#DescriptionAzienda{
+  padding-top:0px;
 }
 .number45 {
     margin-left: -40%;
