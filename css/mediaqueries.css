@@ -384,6 +384,9 @@ text-align: left;
       #coverpage-2 {
     height: 200vh;
 }
+.whiteBack {
+    margin-top: -1px;
+}
 .text-contact-title {
     font-size: 50px;
     line-height: 4rem;}
@@ -407,6 +410,170 @@ text-align: left;
   }
 
 }
+/*tablet landscape----------------------------------------------------------------------------*/
+@media onlyonly screen
+  and (min-width: 768px)
+  and (max-height: 1024px)
+  and (orientation: landscape){
+
+  /* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){ */
+#CategoryContainer {
+    padding-top: 6rem;
+}
+.whiteBack {
+    margin-top: -1px;
+}
+.presentationDescrTitle {
+    font-size: 24px;
+    line-height: 38px;
+}
+.presentationDescr {
+    font-size: 16px;
+    line-height: 1.7rem;
+    }
+    .contact-info-margin {
+    margin-top: -20%;
+}
+.overlay-content {
+    margin-top: 60px;
+}
+.margincards {
+    margin-bottom: 0px;
+}
+.margin-top-cards2 {
+    margin-top: 10%;
+}
+.margin-top-cards3 {
+    margin-top: 10%;
+  margin-bottom: 10%;
+}
+.margin-top-cards4 {
+    margin-top: 10%;
+}
+.margin-botton-categories {
+    margin-top: 17%;
+}
+}
+/* ----------- iPad Pro ----------- */
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+}
+
+/* Portrait */
+@media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    #CategoryContainer {
+        padding-top: 6rem;
+    }
+    .whiteBack {
+        margin-top: -1px;
+    }
+    .presentationDescrTitle {
+        font-size: 24px;
+        line-height: 38px;
+    }
+    .presentationDescr {
+        font-size: 16px;
+        line-height: 1.7rem;
+        }
+        .cover {
+    padding-top: 30rem;
+}
+.margin-botton-audio {
+    margin-top: 50%;
+}
+#SWIM{margin-top: 60px;
+    margin-left: 200px;
+}
+#CategoryContainer {
+    padding-top: 20rem;
+}
+.margin-botton-categories {
+    margin-top: 45%;}
+
+#section-contacts {
+    height: 60vh;
+}
+
+.number60 {
+    font-size: 8rem;
+}
+.number45 {
+    font-size: 3.8rem;
+}
+.margincards {
+    margin-bottom: 0px;
+}
+.margin-top-cards2 {
+    margin-top: 10%;
+}
+.margin-top-cards3 {
+    margin-top: 10%;
+  margin-bottom: 10%;
+}
+.margin-top-cards4 {
+    margin-top: 10%;
+}
+.title-description-produzione {
+    margin-top: -70%;
+}
+.text-description-produzione {
+    margin-top: -124%;
+}
+}
+
+/* Landscape */
+@media only screen
+  and (min-width: 1024px)
+  and (max-height: 1366px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    #CategoryContainer {
+        padding-top: 6rem;
+    }
+    .whiteBack {
+        margin-top: -1px;
+    }
+    .presentationDescrTitle {
+        font-size: 24px;
+        line-height: 38px;
+    }
+    .presentationDescr {
+        font-size: 16px;
+        line-height: 1.7rem;
+        }
+        .title-description-produzione {
+    margin-top: -18%;
+}
+.text-description-produzione {
+    margin-top: -28%;
+}
+#CategoryContainer {
+    padding-top: 20rem;
+}
+.cover {
+    padding-top: 20rem;
+}
+.margin-botton-audio {
+    margin-top: 22%;
+}
+.margin-botton-categories {
+    margin-top: 22%;
+}
+#section-contacts {
+    height: 80vh;
+}
+.overlay-content {
+    margin-top: 100px;
+}
+      }
+
 /*HOMEPAGE PHONE-----------------------------------------------------------------------------*/
 @media (max-width: 576px) {
   .overlay {
