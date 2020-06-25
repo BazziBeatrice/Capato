@@ -55,6 +55,7 @@ height: auto;
 .box:hover {
 width: 270px;
 }
+.box:hover { flex: 1 1 30%; }
 
 .whiteBack {
     margin-top: -2px;
