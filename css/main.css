@@ -1861,6 +1861,9 @@ white-space: nowrap;
 	display:none;
 	width:100%;
 }
+.img-azienda{
+	width:100%;
+}
 .title-description-produzione{
 		margin-top:-10%;
 		font-family: "Cormorant Garamond", serif;
