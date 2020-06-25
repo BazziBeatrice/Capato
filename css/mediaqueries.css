@@ -311,6 +311,7 @@ text-align: left;
 
 /*HOMEPAGE PHONE landscape-----------------------------------------------------------------------------*/
 /* Landscape */
+/* @media and (max-width: 576px) and (orientation: landscape)  { */
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 812px)
@@ -335,7 +336,7 @@ text-align: left;
 .categoryBt-text {
     font-size: 25px;
     line-height: 30px;}
-  }
+
 .categoryBt-border {
   height: 140px;}
   #CategoryContainer {

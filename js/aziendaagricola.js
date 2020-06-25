@@ -23,7 +23,7 @@ var timeoutHandle2 = window.setTimeout(function(){
 
 $(window).scroll(function(){
 var scroll = $(window).scrollTop();
-if (scroll > 1900) {
+if (scroll >= 1900) {
   setTimeout(timeoutHandle);
 setTimeout(timeoutHandle2);}
 if (scroll < 1900){
