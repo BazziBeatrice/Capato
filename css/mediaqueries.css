@@ -61,8 +61,12 @@ width: 270px;
     background-color: #FFFFFF;
 }
 
-.video-step-responsive{
+/* .video-step-responsive{
 	width:270px;
+} */
+.video-step-responsive {
+    width: 100%;
+    height: 350px;
 }
 .container {
     display: inline-block;
@@ -659,11 +663,18 @@ color:#000;}
 }
 	/*azienda agricola*/
 	/*produzione*/
-  .title-description-produzione {
+  /* .title-description-produzione {
     margin-top: -95%;
+} */
+/* .text-description-produzione {
+  margin-top: -60%;} */
+  .title-description-produzione {
+    margin-top: -75%;
 }
-	.text-description-produzione {
-    margin-top: -60%;}
+.text-description-produzione {
+    margin-top: -45%;
+}
+
 #coverpage-2{
   height: 180vh;
 }
