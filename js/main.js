@@ -42,7 +42,7 @@ $(document).ready(function(){
                 $("#MAKE").hover(
                         function(){
                                         $("#CategoryContainer").addClass("CategoryImgFadeIn");
-                                        $("#CategoryContainer").css("background-image", "url('assets/images/categoria1.jpg')")
+                                        $("#CategoryContainer").css("background-image", "url('assets/images/categorie/azienda2.jpg')")
                                   },
 
                         function(){     $("#CategoryContainer").removeClass("CategoryImgFadeIn");
@@ -53,7 +53,7 @@ $(document).ready(function(){
                  $("#LEAVE").hover(
                         function(){
                                         $("#CategoryContainer").addClass("CategoryImgFadeIn");
-                                        $("#CategoryContainer").css("background-image", "url('assets/images/categoria2-4.jpg')")
+                                        $("#CategoryContainer").css("background-image", "url('assets/images/categorie/coltivazioni.jpg')")
                                   },
 
                         function(){
@@ -61,11 +61,11 @@ $(document).ready(function(){
                                         $("#CategoryContainer").css("background-image", "none")
                                   }
                 );
-
+                // 2 categoria
                  $("#SWIM").hover(
                         function(){
                                         $("#CategoryContainer").addClass("CategoryImgFadeIn");
-                                        $("#CategoryContainer").css("background-image", "url('assets/images/categoria2.jpg')")
+                                        $("#CategoryContainer").css("background-image", "url('assets/images/categorie/produzione.jpg')")
                                   },
 
                         function(){
@@ -73,7 +73,7 @@ $(document).ready(function(){
                                         $("#CategoryContainer").css("background-image", "none")
                                   }
                 );
-
+                // 1 categoria
                  $("#FEEL").hover(
                         function(){
                                         $("#CategoryContainer").addClass("CategoryImgFadeIn");
@@ -480,8 +480,6 @@ $(".show-more a").on("click", function() {
     $this.text(linkText);
 
 });
-
-
 
 
 //Menu category//

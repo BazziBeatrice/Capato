@@ -1722,7 +1722,7 @@ margin-top: 50%;
 		font-size: 34px;
 		line-height: 3rem;
 		text-align: left;
-		margin-top:6rem;
+		margin-top:2.5rem;
 		color:black;
 		text-align: justify;
 		-webkit-hyphens: auto;
@@ -2242,6 +2242,10 @@ body.it :lang(en) {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-animation-name: hvr-icon-down;
+	animation-name: hvr-icon-down;
+	-webkit-animation-duration: 0.75s;
+	animation-duration: 0.75s;
 }
 .hvr-icon-down .hvr-icon {
   -webkit-transform: translateZ(0);
@@ -2264,9 +2268,6 @@ body.it :lang(en) {
 .icon-arrow-down {
 	color: white;
 	font-size: 30px;
-/* margin-top:3.3rem; */
-/* height:13%;
-width:auto; */
 display:block;
 margin-left:auto;
 margin-right:auto;
