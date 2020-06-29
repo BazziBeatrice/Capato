@@ -36,7 +36,7 @@
 
 /* CART PHONE-------------------------------------------------------------------------------*/
 @media (max-width: 767px) {
-  #CategoryContainer{margin-top:-100px;}   /* usciva nel telefono del nero */
+  #CategoryContainer{margin-top:-110px;}   /* usciva nel telefono del nero */
   .box {
     width: 100px;
     height: auto;
