@@ -31,6 +31,8 @@
 		<link href="../css/main.css" rel="stylesheet" type="text/css"/>
 		<link href="../css/mediaqueries.css" rel="stylesheet" type="text/css"/>
 
+		<link href="../css/mdb.min.css" rel="stylesheet" type="text/css"/>
+
 		<!-- link to fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.typekit.net/obf1dor.css">
@@ -135,37 +137,246 @@
 			</section>
 
 <!--azienda agricola presentazione-->
-<section class="whiteBack container-fluid" id="PhotoGallery">
+<section class="whiteBack container-fluid padding50" id="PhotoGallery">
   <!--Principles-->
   <article class="production">
 
     <div class="container">
              <div class="gallery">
                  <figure class="gallery__item gallery__item--1">
-                     <img src="../assets/images/produzione/lavaggio.jpg" alt="Gallery image 1" class="gallery__img">
+                     <img src="../assets/images/foto/serra7.jpg" alt="Gallery image 1" class="gallery__img" onclick="openModal();currentSlide(1)" class="hover-shadow">
                  </figure>
                  <figure class="gallery__item gallery__item--2">
-                     <img src="../assets/images/produzione/lavaggio.jpg" alt="Gallery image 2" class="gallery__img">
+                     <img src="../assets/images/foto/serra6.jpg" alt="Gallery image 2" class="gallery__img" onclick="openModal();currentSlide(1)" class="hover-shadow">
                  </figure>
                  <figure class="gallery__item gallery__item--3">
-                     <img src="../assets/images/produzione/lavaggio.jpg" alt="Gallery image 3" class="gallery__img">
+                     <img src="../assets/images/foto/principale.jpg" alt="Gallery image 3" class="gallery__img" onclick="openModal();currentSlide(1)" class="hover-shadow">
                  </figure>
                  <figure class="gallery__item gallery__item--4">
-                     <img src="../assets/images/produzione/lavaggio.jpg" alt="Gallery image 4" class="gallery__img">
+                     <img src="../assets/images/foto/trattore.jpg" alt="Gallery image 4" class="gallery__img" onclick="openModal();currentSlide(1)" class="hover-shadow">
                  </figure>
                  <figure class="gallery__item gallery__item--5">
-                     <img src="../assets/images/produzione/lavaggio.jpg" alt="Gallery image 5" class="gallery__img">
+                     <img src="../assets/images/foto/serra2.jpg" alt="Gallery image 5" class="gallery__img" onclick="openModal();currentSlide(1)" class="hover-shadow">
                  </figure>
                  <figure class="gallery__item gallery__item--6">
-                     <img src="../assets/images/produzione/lavaggio.jpg" alt="Gallery image 6" class="gallery__img">
+                     <img src="../assets/images/foto/serra3.jpg" alt="Gallery image 6" class="gallery__img" onclick="openModal();currentSlide(1)" class="hover-shadow">
                  </figure>
              </div>
          </div>
+				 <div class="container margin-top50">
+									<div class="gallery">
+											<figure class="gallery__item gallery__item--7">
+													<img src="../assets/images/foto/serre.jpg" alt="Gallery image 1" class="gallery__img" onclick="openModal();currentSlide(1)" class="hover-shadow">
+											</figure>
+											<figure class="gallery__item gallery__item--8">
+													<img src="../assets/images/foto/serra8.jpg" alt="Gallery image 2" class="gallery__img" onclick="openModal();currentSlide(1)" class="hover-shadow">
+											</figure>
+											<figure class="gallery__item gallery__item--9">
+													<img src="../assets/images/foto/serra8.jpg" alt="Gallery image 3" class="gallery__img" onclick="openModal();currentSlide(1)" class="hover-shadow">
+											</figure>
+											<figure class="gallery__item gallery__item--10">
+													<img src="../assets/images/foto/serra9.jpg" alt="Gallery image 4" class="gallery__img" onclick="openModal();currentSlide(1)" class="hover-shadow">
+											</figure>
+											<figure class="gallery__item gallery__item--11">
+													<img src="../assets/images/foto/serra4.jpg" alt="Gallery image 5" class="gallery__img" onclick="openModal();currentSlide(1)" class="hover-shadow">
+											</figure>
+											<!-- <figure class="gallery__item gallery__item--12">
+													<img src="../assets/images/foto/serra3.jpg" alt="Gallery image 6" class="gallery__img" onclick="openModal();currentSlide(1)" class="hover-shadow">
+											</figure> -->
+									</div>
+							</div>
 
+				 <!-- The Modal/Lightbox -->
+				 <div id="myModal" class="modal">
+				 	<span class="closemodal cursor" onclick="closeModal()">&times;</span>
+				 	<div class="modal-content">
+
+				 		<div class="mySlides">
+				 			<div class="numbertext">1 / 11</div>
+				 			<img src="../assets/images/foto/serra7.jpg" alt="Gallery image 1" style="width:100%">
+				 		</div>
+
+				 		<div class="mySlides">
+				 			<div class="numbertext">2 / 11</div>
+				 			<img src="../assets/images/foto/serra6.jpg" style="width:100%">
+				 		</div>
+
+				 		<div class="mySlides">
+				 			<div class="numbertext">3 / 11</div>
+				 			<img src="../assets/images/foto/principale.jpg" style="width:100%">
+				 		</div>
+
+				 		<div class="mySlides">
+				 			<div class="numbertext">4 / 11</div>
+				 			<img src="../assets/images/foto/trattore.jpg" style="width:100%">
+				 		</div>
+
+				 		<div class="mySlides">
+				 			<div class="numbertext">5 / 11</div>
+				 			<img src="../assets/images/foto/serra2.jpg" style="width:100%">
+				 		</div>
+
+				 		<div class="mySlides">
+				 			<div class="numbertext">6 / 11</div>
+				 			<img src="../assets/images/foto/serra3.jpg" style="width:100%">
+				 		</div>
+				 		<div class="mySlides">
+				 			<div class="numbertext">7 / 11</div>
+				 			<img src="../assets/images/foto/serre.jpg" alt="Gallery image 1" style="width:100%">
+				 		</div>
+
+				 		<div class="mySlides">
+				 			<div class="numbertext">8 / 11</div>
+				 			<img src="../assets/images/foto/serra8.jpg" style="width:100%">
+				 		</div>
+
+				 		<div class="mySlides">
+				 			<div class="numbertext">9 / 11</div>
+				 			<img src="../assets/images/foto/serra9.jpg" style="width:100%">
+				 		</div>
+
+				 		<div class="mySlides">
+				 			<div class="numbertext">10 / 11</div>
+				 			<img src="../assets/images/foto/serra4.jpg" style="width:100%">
+				 		</div>
+
+				 		<div class="mySlides">
+				 			<div class="numbertext">11 / 11</div>
+				 			<img src="../assets/images/foto/serra2.jpg" style="width:100%">
+				 		</div>
+
+				     <!-- Next/previous controls -->
+				     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				     <!-- Caption text -->
+				     <div class="caption-container">
+				       <p id="caption"></p>
+				     </div>
+
+				     <!-- Thumbnail image controls -->
+				     <!-- <div class="column">
+				       <img class="demo" src="../assets/images/foto/serre.jpg" onclick="currentSlide(1)" alt="Nature" style="width:100%">
+				     </div>
+
+				     <div class="column">
+				       <img class="demo" src="../assets/images/foto/foto1.jpg" onclick="currentSlide(2)" alt="Snow" style="width:100%">
+				     </div>
+
+				     <div class="column">
+				       <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains" style="width:100%">
+				     </div>
+
+				     <div class="column">
+				       <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights" style="width:100%">
+				     </div> -->
+				   </div>
+				 </div>
+				 <!-- Next/previous controls -->
+				 <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				 <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+				 <!-- Caption text -->
+				 <!-- <div class="caption-container">
+					 <p id="caption"></p>
+				 </div> -->
+
+				 <!-- Thumbnail image controls -->
+				 <!-- <div class="column">
+					 <img class="demo" src="../assets/images/foto/serre.jpg" onclick="currentSlide(1)" alt="Nature" style="width:100%">
+				 </div>
+
+				 <div class="column">
+					 <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow" style="width:100%">
+				 </div>
+
+				 <div class="column">
+					 <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains" style="width:100%">
+				 </div>
+
+				 <div class="column">
+					 <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights" style="width:100%">
+				 </div>
+		   </div>
+		 </div>  -->
 
   </article>
 </section>
 
+
+<!--azienda agricola presentazione-->
+<!-- <section class="whiteBack container-fluid" id="PhotoGallery"> -->
+<!-- Images used to open the lightbox -->
+<!-- <div class="row">
+  <div class="column">
+    <img src="../assets/images/foto/serre.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div> -->
+
+<!-- The Modal/Lightbox -->
+<!-- <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="../assets/images/foto/serre.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img2_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img3_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img4_wide.jpg" style="width:100%">
+    </div> -->
+
+    <!-- Next/previous controls -->
+    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+    <!-- Caption text -->
+    <!-- <div class="caption-container">
+      <p id="caption"></p>
+    </div> -->
+
+    <!-- Thumbnail image controls -->
+    <!-- <div class="column">
+      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div> -->
+
+<!-- </article> -->
+<!-- </section> -->
 
 	</main>
 
@@ -213,6 +424,8 @@
 	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/mdb.min.js"></script>
+
 
 	<!-- link to FontAwesome -->
 <script src="https://kit.fontawesome.com/fe7d3f2655.js" crossorigin="anonymous"></script>
