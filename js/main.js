@@ -42,7 +42,7 @@ $(document).ready(function(){
                 $("#MAKE").hover(
                         function(){
                                         $("#CategoryContainer").addClass("CategoryImgFadeIn");
-                                        $("#CategoryContainer").css("background-image", "url('assets/images/categorie/azienda2.jpg')")
+                                        $("#CategoryContainer").css("background-image", "url('assets/images/categorie/azienda3.jpg')")
                                   },
 
                         function(){     $("#CategoryContainer").removeClass("CategoryImgFadeIn");
@@ -65,7 +65,7 @@ $(document).ready(function(){
                  $("#SWIM").hover(
                         function(){
                                         $("#CategoryContainer").addClass("CategoryImgFadeIn");
-                                        $("#CategoryContainer").css("background-image", "url('assets/images/categorie/produzione.jpg')")
+                                        $("#CategoryContainer").css("background-image", "url('assets/images/categorie/trasporto.jpg')")
                                   },
 
                         function(){
