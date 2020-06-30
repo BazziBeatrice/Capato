@@ -37,6 +37,7 @@
 /* CART PHONE-------------------------------------------------------------------------------*/
 @media (max-width: 767px) {
   .telephonenumber{color:black;}
+    .telephonenumber:hover,.telephonenumber:active {color:black;}
   #CategoryContainer{margin-top:-120px;}   /* usciva nel telefono del nero */
   .box {
     width: 100px;
