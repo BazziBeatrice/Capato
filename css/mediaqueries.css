@@ -245,8 +245,8 @@
 /*MORALIST PAGE TABLET----------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 1024px) {
   .telephonenumber{color:black;}
-    .telephonenumber:hover,.telephonenumber:active {color:black;}
-    
+  .telephonenumber:hover,.telephonenumber:active {color:black;}
+
   .image-tablet-100 {
     width: 100%;
     height: auto;
