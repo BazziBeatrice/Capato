@@ -85,33 +85,20 @@ $(document).ready(function(){
                 //                   }
                 // );
 
-        //Calendar btn---------------------------------------------------------
-                $(".dropbtn-calendar").click(
-                        function() {
-                                     $(".dropdown-content-calendar").toggle();
-                                     $(this).toggleClass("noBottom");
-                        }
-                );
-                $(" .dropbtn-calendar-cart").click(
-                        function() {
-                                     $(this).siblings(".dropdown-content-calendar-cart").toggle();
-                                     $(this).toggleClass("noBottom");
-                        }
-                );
 
         //Quantity btn---------------------------------------------------------
-                $(".dropbtn").click(
-                        function() {
-                                        $(".dropdown-content").toggle();
-                                        $(this).toggleClass("noBottom");
-                        }
-                );
-                $(".dropbtn-cart").click(
-                        function() {
-                                        $(this).siblings(".dropdown-content-cart").toggle();
-                                        $(this).toggleClass("noBottom");
-                        }
-                );
+                // $(".dropbtn").click(
+                //         function() {
+                //                         $(".dropdown-content").toggle();
+                //                         $(this).toggleClass("noBottom");
+                //         }
+                // );
+                // $(".dropbtn-cart").click(
+                //         function() {
+                //                         $(this).siblings(".dropdown-content-cart").toggle();
+                //                         $(this).toggleClass("noBottom");
+                //         }
+                // );
 
         //about--------------------------------------------//
 

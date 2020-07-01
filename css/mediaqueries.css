@@ -8,44 +8,9 @@
   }
 }
 
-/*CART PROJECTOR-------------------------------------------------------------------------------*/
-@media (min-width: 1025px)and (max-width: 1280px) {
-  .address-cart {
-    font-size: smaller;
-  }
-
-  .dropdown-content-calendar-cart {
-    width: 110%;
-  }
-
-  a.purchasebtn {
-    margin-top: 30px;
-  }
-}
-
-/* CART IPAD PRO-------------------------------------------------------------------------------*/
-@media (min-width: 768px)and (max-width: 1024px) {
-  a.purchasebtn {
-    margin-top: 30px;
-  }
-
-  .dropdown-content-calendar-cart {
-    margin-left: 4.2%;
-  }
-}
 
 /* CART PHONE-------------------------------------------------------------------------------*/
 @media (max-width: 767px) {
-  /* .container {
-    display: flex;
-    width: 100%;
-    padding: 0% 0%;
-    box-sizing: border-box;
-    height: 60vh;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-  } */
   .container {
     padding: 0% 0%;
   }
@@ -115,7 +80,6 @@
 
   .bar-menu-right {
     margin-top: 0.5rem;
-    /* padding-right: 0.2rem; */
     font-size: 18px;
   }
 
@@ -213,27 +177,6 @@
     padding-left: 0px;
   }
 
-  .dropbtn-calendar-cart {
-    height: 100%
-  }
-
-  .dropbtn-cart {
-    height: fit-content;
-    width: fit-content;
-  }
-
-  .dropdown-content-cart {
-    width: 53%;
-    margin-bottom: 20px;
-  }
-
-  .dropdown-content-calendar-cart {
-    width: 121%;
-    margin-left: 6.4%;
-    margin-bottom: 20px;
-    font-size: initial;
-  }
-
   .quantity-label {
     margin-left: 7px;
   }
@@ -262,10 +205,6 @@
   .cartcontent {
     padding-left: 30px;
     padding-right: 30px;
-  }
-
-  .sidemoral h4 {
-    font-size: 20px;
   }
 
   /*The X btn*/
@@ -1003,9 +942,6 @@
 
 /*HOMEPAGE TABLET----------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* .container {
-    height: 54vh;
-  } */
   #main-content {
     margin-bottom: 360px;
   }
@@ -1321,15 +1257,6 @@
     margin-left: 0px;
   }
 
-  /*Calendar*/
-  .dropbtn-calendar {
-    width: 155px;
-  }
-
-  .dropdown-content-calendar {
-    width: 330px;
-  }
-
   .weekdays li {
     width: 12.5%;
     font-size: 20px;
@@ -1346,11 +1273,6 @@
 
   .dropdown-content {
     width: 60px;
-  }
-
-  /*Images*/
-  .tour-cards {
-    margin-top: 3rem;
   }
 
   .margincards-singletour {
@@ -1408,11 +1330,6 @@
 
 /*SINGLE TOUR PAGE TABLET-----------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 1024px) {
-
-  /*Calendar*/
-  .dropdown-content-calendar {
-    width: 330px;
-  }
 
   .weekdays li {
     width: 12.5%;
@@ -1486,17 +1403,6 @@
     position: relative;
   }
 
-  .about-margin-top {
-    margin-top: 2.5rem;
-  }
-
-  .titleabout {
-    margin-top: 0rem;
-    font-size: 20px;
-    line-height: 23px;
-    font-weight: 600;
-  }
-
   .textabout {
     margin-top: 0rem;
     font-size: 15px;
@@ -1508,12 +1414,6 @@
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 50px;
-  }
-
-  .row-arrow-about {
-    position: absolute;
-    top: 86.7%;
-    left: 80.8%;
   }
 
   .centeredtextabout {
@@ -1557,13 +1457,6 @@
     font-weight: 700;
     text-align: right;
   }
-
-  #image-about {
-    height: auto;
-    opacity: 1;
-    padding-bottom: 8%;
-  }
-
   .descriptionabout {
     font-size: 14px;
     line-height: 20px;
@@ -1599,73 +1492,17 @@
 @media (max-width: 576px) {
 
   /*general*/
-  .mobile-padding {
+  /* .mobile-padding {
     padding-left: 0.3rem;
     padding-right: 0.3rem;
     padding-top: 3rem;
-  }
-
-  /*Footer Area*/
-  .logo-images {
-    padding-left: 0.3rem;
-    margin-right: 0.3rem;
-    margin-left: 0.3rem;
-    margin-bottom: 1rem;
-  }
-
-  #logodensity {
-    /* width: 70px; */
-    margin-left: 0.3rem;
-    margin-right: 3.1rem;
-    margin-top: 0rem;
-  }
-
-  #logopoli {
-    /* width: 170px; */
-    margin-top: 0rem;
-  }
-
-  .lists {
-    margin-bottom: 3rem;
-    /* margin-right:  0.2rem;
-        margin-left:  0.2rem; */
-  }
-
-  .list-students {
-    margin-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 0rem;
-    /* margin-right:  0.2rem; */
-    /* margin-left:  0.3rem; */
-  }
-
-  .list-faculty {
-    margin-bottom: 1rem;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
-    /* margin-right:  0.2rem;
-        margin-left:  0.2rem; */
-  }
-
-  .list-assistants {
-    margin-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    /* margin-right:  0.3rem; */
-    /* margin-left:  0.2rem; */
-  }
+  } */
 
   ul {
     list-style: none;
     font-size: 15px;
-    /* margin-right:  0.2rem;
-        margin-left:  0.2rem;
-        margin-bottom: 1rem; */
   }
 
-  .ul-b {
-    font-weight: 800;
-  }
 }
 
 /*ABOUT TABLET-----------------------------------------------------------------------------*/
@@ -1684,17 +1521,6 @@
     position: relative;
   }
 
-  .about-margin-top {
-    margin-top: 2.5rem;
-  }
-
-  .titleabout {
-    margin-top: 0rem;
-    font-size: 26px;
-    line-height: 36px;
-    font-weight: 600;
-  }
-
   .textabout {
     margin-top: 0rem;
     font-size: 15px;
@@ -1708,11 +1534,6 @@
     margin-top: 50px;
   }
 
-  .row-arrow-about {
-    position: absolute;
-    top: 92.5%;
-    left: 85.5%;
-  }
 
   .centeredtextabout {
     position: absolute;
@@ -1750,10 +1571,6 @@
     margin-left: 0rem;
   }
 
-  .ul-b {
-    font-weight: 800;
-  }
-
   #image-about {
     /* width: 500px; */
     height: 375px;
@@ -1761,24 +1578,11 @@
     opacity: 1;
     padding-bottom: 10%;
   }
-
-  .about-distance-protocol {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
   .descriptionabout {
     font-size: 20px;
     line-height: 20px;
     font-weight: 300;
     /* text-align: right; */
-  }
-
-  .textabout-margin-subtitle {
-    margin-top: 50px;
   }
 }
 
@@ -1789,21 +1593,6 @@
     margin-right: 0px;
     margin-top: 50px;
   }
-
-  .row-arrow-about {
-    position: absolute;
-    top: 92.5%;
-    left: 91.5%;
-  }
-
-  #image-about {
-    /* width: 500px; */
-    height: auto;
-    /* margin-right: 1.25rem; */
-    opacity: 1;
-    padding-bottom: 10%;
-  }
-
   .centeredtextabout2 {
     position: absolute;
     top: 80%;
@@ -1816,38 +1605,6 @@
     top: 80%;
     left: 30%;
     transform: translate(-50%, -50%);
-  }
-}
-
-/*ABOUT PROIETTORE-----------------------------------------------*/
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .row-arrow-about {
-    position: absolute;
-    top: 92.5%;
-    left: 82.4%;
-  }
-
-  .margin-bottom-about {
-    margin-left: 0px;
-    margin-right: 60px;
-    margin-top: 50px;
-    margin-bottom: 114px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-
-/*CALENDAR MEGA SCHERMO--------------------------*/
-@media (min-width: 3500px) {
-  div.dropdown>span {
-    margin-left: 70px;
-    font-size: 50px !important;
-  }
-
-  .addcart-btn {
-    border: 4px solid;
-    font-size: 50px;
-    width: 28%;
   }
 }
 
@@ -1897,32 +1654,9 @@
     border: 4px solid;
   }
 
-  .dropbtn-calendar, .dropbtn-calendar-cart {
-    font-size: 50px;
-    height: 85px;
-    width: 110%;
-    border: 4px solid;
-  }
-
   .Qty {
     font-size: 50px !important;
     margin-left: 60px;
-  }
-
-  .dropdown-content-calendar {
-    height: 800%;
-    width: 290%;
-    margin-left: 0.1%;
-    font-size: 50px !important;
-    border: 4px solid;
-  }
-
-  .dropdown-content-calendar-cart {
-    height: 800%;
-    width: 110%;
-    margin-left: 1.7%;
-    font-size: 50px !important;
-    border: 4px solid;
   }
 
   .weekdays {
@@ -1958,50 +1692,6 @@
   div.title-cart-el+div {
     font-size: 40px;
     margin-top: 15px;
-  }
-}
-
-/* MORALIST PAGE MEGASCHERMO--------------------------------------------------------------------------------*/
-@media (min-width: 3500px) {
-  .margintop-moralist-info {
-    margin-top: 5rem;
-  }
-
-  .sidemoral .closebtn {
-    font-size: 140px;
-    padding-left: 100px;
-  }
-
-  .cartcontent-moral {
-    padding-right: 100px;
-    padding-left: 100px;
-  }
-
-  .moraltext h4 {
-    font-size: 60px;
-  }
-
-  .moraltext h6 {
-    font-size: 50px;
-  }
-
-  .moraltext p {
-    font-size: 40px;
-  }
-
-  a.link-article {
-    line-height: 1;
-    font-size: 40px;
-    margin-bottom: 70px;
-  }
-
-  #moralbtn-div a {
-    font-size: 70px;
-  }
-
-  a.moralbtn {
-    margin-right: 27%;
-    margin-left: 27%;
   }
 }
 
@@ -2274,15 +1964,6 @@
     margin-top: 18rem;
   }
 
-  .tour-info p {
-    font-size: 40px;
-  }
-
-  .tour-info i {
-    font-size: 40px;
-    line-height: 60px;
-  }
-
   .text-description {
     font-size: 40px;
     line-height: 60px;
@@ -2295,15 +1976,6 @@
     margin-top: 3rem;
     margin-bottom: 1rem;
   }
-
-  .tour-title {
-    font-weight: 800;
-    font-size: 150px;
-    line-height: 11rem;
-    margin-bottom: 20px;
-    margin-top: 30px;
-  }
-
   .btn-detail {
     margin-top: 50px;
   }
@@ -2416,10 +2088,6 @@
     font-size: 80px;
   }
 
-  /*about text*/
-  .about-margin-top {
-    margin-top: 30rem;
-  }
 
   .about-top-distance {
     margin-top: 150px;
@@ -2441,33 +2109,6 @@
     margin-top: 100px;
   }
 
-  .titleabout {
-    font-size: 3rem;
-    line-height: 60px;
-    padding-top: 18px;
-    font-weight: 600;
-  }
-
-  .textabout {
-    font-size: 45px;
-    line-height: 70px;
-  }
-
-  .textabout2 {
-    font-size: 70px;
-    line-height: 80px;
-  }
-
-  .textabout3 {
-    font-size: 45px;
-    line-height: 60px;
-    font-weight: 700;
-  }
-
-  .centeredtextabout3 {
-    top: 90%;
-    left: 30%;
-  }
 
   .descriptionabout {
     font-size: 30px;
@@ -2479,9 +2120,9 @@
   }
 
   /*carousel*/
-  .carousel-image-about {
+  /* .carousel-image-about {
     border: 6px solid #F39200;
-  }
+  } */
 
   .rect-caption-about {
     padding: 5px 10px;
@@ -2496,39 +2137,6 @@
 
   .about-rect-slideshow {
     padding-top: 40px;
-  }
-
-  .row-arrow-about {
-    position: absolute;
-    top: 93%;
-    left: 84.8%;
-  }
-
-  .rect-arrow-about {
-    padding-top: 1px;
-    width: 80px;
-    height: 80px;
-    border: 6px solid #F39200;
-  }
-
-  /*about footer*/
-  .logo-images {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-  }
-
-  #logodensity {
-    margin-right: 8rem;
-    width: 280px;
-  }
-
-  #logopoli {
-    width: 320px;
-  }
-
-  .lists {
-    margin-top: 6rem;
-    margin-bottom: 4rem;
   }
 
   ul {
