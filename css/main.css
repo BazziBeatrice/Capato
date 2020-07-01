@@ -1904,6 +1904,19 @@ ul {
   -webkit-text-fill-color: transparent;
   -webkit-animation: animatedBackground 20s linear infinite normal;
 }
+.css-text-mask3 {
+  background-image: url('../assets/images/foto/serra6.jpg');
+  background-position: -37px 2px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 4rem;
+  text-align: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: animatedBackground 20s linear infinite normal;
+}
 
 .text-contact-title {
   font-family: "Cormorant Garamond", serif;
