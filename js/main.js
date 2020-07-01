@@ -34,9 +34,8 @@ $(document).ready(function(){
 //   }
 
         // category color change on hover and background image change
-                $(".whiteHover").hover(
-
-        );
+        //         $(".whiteHover").hover(
+        // );
 
         //this function makes the category image appear on hover
                 $("#MAKE").hover(
@@ -74,17 +73,17 @@ $(document).ready(function(){
                                   }
                 );
                 // 1 categoria
-                 $("#FEEL").hover(
-                        function(){
-                                        $("#CategoryContainer").addClass("CategoryImgFadeIn");
-                                        $("#CategoryContainer").css("background-image", "url('assets/images/category04.jpg')")
-                                  },
-
-                        function(){
-                                        $("#CategoryContainer").removeClass("CategoryImgFadeIn");
-                                        $("#CategoryContainer").css("background-image", "none")
-                                  }
-                );
+                //  $("#FEEL").hover(
+                //         function(){
+                //                         $("#CategoryContainer").addClass("CategoryImgFadeIn");
+                //                         $("#CategoryContainer").css("background-image", "url('assets/images/category04.jpg')")
+                //                   },
+                //
+                //         function(){
+                //                         $("#CategoryContainer").removeClass("CategoryImgFadeIn");
+                //                         $("#CategoryContainer").css("background-image", "none")
+                //                   }
+                // );
 
         //Calendar btn---------------------------------------------------------
                 $(".dropbtn-calendar").click(
