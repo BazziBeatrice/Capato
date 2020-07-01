@@ -36,7 +36,7 @@
 
 /* CART PHONE-------------------------------------------------------------------------------*/
 @media (max-width: 767px) {
-  .container {
+  /* .container {
     display: flex;
     width: 100%;
     padding: 0% 0%;
@@ -45,6 +45,9 @@
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+  } */
+  .container {
+    padding: 0% 0%;
   }
 
   .gallery {
@@ -55,7 +58,7 @@
   }
 
   .margin-top50 {
-    margin-top: -110px;
+      margin-top: -360px;
   }
 
   .modal-content {
@@ -833,8 +836,13 @@
   }
 
   .map-contact {
-    height: 300px;
+      height: 300px;
+      border-radius: 0px 0px;
   }
+
+    .map{
+        border-radius: 0px 0px;
+    }
 
   .text-contact-title {
     font-family: "Cormorant Garamond", serif;

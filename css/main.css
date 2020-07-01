@@ -943,6 +943,9 @@ div:hover a.categoryLinks {
   border: 2px solid #a1c7a4;
   border-radius: 20px 0px;
 }
+.map-contact {
+border: 2px solid #a1c7a4;border-radius: 20px 0px; width:100%;
+}
 
 .categoryBt-text {
   margin-top: 10px;
@@ -2630,4 +2633,12 @@ figure {
 }
 .icon-down-home{
   margin-top: -30px;
+}
+.buttonAudio{
+  z-index: 10!important;
+    pointer-events: all;
+}
+.buttonScroll{
+  z-index: 9;
+  pointer-events: inherit;
 }
