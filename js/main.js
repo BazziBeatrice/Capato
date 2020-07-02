@@ -64,7 +64,8 @@ $(document).ready(function(){
                  $("#SWIM").hover(
                         function(){
                                         $("#CategoryContainer").addClass("CategoryImgFadeIn");
-                                        $("#CategoryContainer").css("background-image", "url('assets/images/categorie/cat3-black.jpg')")
+                                        // $("#CategoryContainer").css("background-image", "url('assets/images/categorie/cat3-black.jpg')")
+                                        $("#CategoryContainer").css("background-image", "url('assets/images/categorie/cat4-black.jpg')")
                                   },
 
                         function(){

@@ -160,57 +160,6 @@ a.purchasebtn:hover {
   margin-top: -50px;
 }
 
-.moraltext h4 {
-  color: black;
-  font-weight: 600;
-  margin-bottom: 5%;
-}
-
-.moraltext p {
-  color: black;
-  font-weight: 400;
-}
-
-a.moralbtn {
-  background-color: black;
-  color: #F39200;
-  border: solid 2px #F39200;
-  margin-top: 15px;
-  margin-right: 25%;
-  margin-left: 25%;
-  padding: 3px;
-  font-weight: 600;
-  text-align: center;
-  align-items: center;
-}
-
-a.moralbtn:hover {
-  background-color: #F39200;
-  border: solid 2px black;
-  color: #000;
-  font-weight: 600;
-  text-align: center;
-  padding: 3px;
-  margin-left: 25%;
-  margin-right: 25%;
-  align-items: center;
-  margin-top: 15px;
-}
-
-#moralbtn-div {
-  margin-top: 4rem;
-  margin-bottom: 15%;
-}
-
-#moralbtn-div a {
-  margin-top: 0px;
-}
-
-#moralbtn-div p {
-  text-align: center;
-  margin-bottom: 1.5%;
-}
-
 #margintop-par {
   margin-top: 2rem;
 }
@@ -590,7 +539,6 @@ p.orangep {
   color: #F39200;
 }
 
-/*Category section*/
 /*Category ttion*/
 .categoryDiv {
   margin-top: 2rem;
@@ -980,13 +928,6 @@ p:hover .extra {
   margin-bottom: 0.3rem;
 }
 
-#tot-price {
-  display: inline;
-  float: right;
-  font-size: 20px;
-  font-weight: 600;
-}
-
 .btn-detail {
   display: flex;
   flex-wrap: wrap;
@@ -995,79 +936,6 @@ p:hover .extra {
 
 .noBottom {
   border-bottom-style: none !important;
-}
-
-.month {
-  padding: 20px 20px;
-  width: 100%;
-  text-align: center;
-}
-
-.month ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.month ul li {
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.month .prev {
-  float: left;
-}
-
-.month .next {
-  float: right;
-}
-
-.weekdays {
-  width: 100%;
-  margin: 0;
-  padding: 10px 10px;
-  border-top: 2px solid #FFFFFF;
-  border-bottom: 2px solid #FFFFFF;
-}
-
-.weekdays li {
-  display: inline-block;
-  width: 12.8%;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.days {
-  width: 100%;
-  padding: 15px 10px 5px 10px;
-  margin: 0;
-}
-
-.days li {
-  display: inline-block;
-  width: 12.8%;
-  text-align: center;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.selectedday {
-  background-color: #FFFFFF;
-  color: #000000;
-  padding: 5px 10px;
-  font-weight: 400;
-}
-
-/*Fake form*/
-#quantity-label {
-  margin-left: 20px;
-}
-
-.quantity-label {
-  margin-left: 20px;
 }
 
 .dropdown {
@@ -1109,36 +977,12 @@ p:hover .extra {
   list-style-type: none;
 }
 
-/*Add to cart*/
-.addcart-btn {
-  margin-left: 53px;
-  background-color: #000000;
-  color: #F39200;
-  border: 2px solid #F39200;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.addcart-btn:hover {
-  background-color: #F39200;
-  color: #000000;
-  transition: color 0.2s ease-in-out;
-}
-
 /*Images' tags*/
 .tag-title {
   text-align: right;
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 0.4rem;
-}
-
-.bordertop-film {
-  border-top: 5px solid #F39200;
-  border-right: none;
-  border-bottom: none;
-  border-left: none;
-  border-radius: 0;
 }
 
 .bordertop {
@@ -2253,4 +2097,11 @@ figure {
 .buttonScroll{
   z-index: 9;
   pointer-events: inherit;
+}
+.telephonenumber {
+  color: black;
+}
+
+.telephonenumber:hover, .telephonenumber:active {
+  color: black;
 }
