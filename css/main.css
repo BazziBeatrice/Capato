@@ -1282,6 +1282,7 @@ ul {
   font-family: "Cormorant Garamond", serif;
   color: rgb(161, 199, 164);
   font-size: 10rem;
+  z-index:2;
 }
 
 .number45 {
@@ -1290,14 +1291,17 @@ ul {
   font-size: 5rem;
   margin-left: -10%;
   margin-top: 50%;
+  z-index:2;
 }
 
 .number {
   font-family: "Cormorant Garamond", serif;
   color: rgb(161, 199, 164);
   font-size: 5rem;
-  margin-left: 25%;
+  /* margin-left: 25%; */
   margin-top: 50%;
+  z-index:2;
+  margin-left: 5%;
 }
 
 .padding50 {
@@ -2104,4 +2108,22 @@ figure {
 
 .telephonenumber:hover, .telephonenumber:active {
   color: black;
+}
+.illustration-numbers{
+  position:absolute;
+    left: -10%;
+    z-index: 1;
+}
+/* .illustration-numbers2{
+  position:absolute;
+    left: -10%;
+    z-index: 1;
+left: -10%;
+top: 23%;
+} */
+.illustration-numbers2 {
+    position: absolute;
+    z-index: 1;
+    left: 86%;
+    top: -185px;
 }
