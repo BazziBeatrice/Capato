@@ -65,7 +65,7 @@ $(document).ready(function(){
                         function(){
                                         $("#CategoryContainer").addClass("CategoryImgFadeIn");
                                         // $("#CategoryContainer").css("background-image", "url('assets/images/categorie/cat3-black.jpg')")
-                                        $("#CategoryContainer").css("background-image", "url('assets/images/categorie/cat4-black.jpg')")
+                                        $("#CategoryContainer").css("background-image", "url('assets/images/categorie/cat5-black.jpg')")
                                   },
 
                         function(){
