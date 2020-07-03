@@ -584,7 +584,7 @@
     font-size: 30px;
     line-height: 2.8rem;
     text-align: left;
-    margin-top: 6rem;
+    margin-top: 2rem;
     color: black;
   }
 
@@ -1189,11 +1189,20 @@
         margin-bottom: 70px;
     } */
   .carousel-margin-phone {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     margin-right: 30px;
     margin-left: 30px;
   }
-
+  .principles {
+    padding-top: 50px;
+}
+.padding50 {
+    padding-bottom: 40%;
+}
+.closemodal {
+    top: 17%;
+    left: 86%;
+}
   .hide-text-cards p, .hide-text-cards i {
     display: none !important;
   }
@@ -1214,21 +1223,10 @@
 
 /*SINGLE TOUR PAGE TABLET-----------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 1024px) {
-
-  .weekdays li {
-    width: 12.5%;
-    font-size: 20px;
+  .closemodal {
+      left: 75%;
+      top: 10.3%;
   }
-
-  .days li {
-    width: 12.5%;
-  }
-
-  /*Add to cart btn*/
-  .addcart-btn {
-    margin-left: 46px;
-  }
-
   /*Reviews*/
   .hideContent {
     height: 17.2em;
