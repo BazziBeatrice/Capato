@@ -24,6 +24,10 @@ var language;
 
 $(document).ready(function(){
 
+  if ($(window).width() < 768) {
+    document.getElementById("step6-video").src = "../assets/images/produzione/stoccaggio.mp4";
+document.getElementById("step6-video").load();
+}
 // CheckLanguage();
 // function CheckLanguage(){
 // };
@@ -589,10 +593,7 @@ function showSlides(n) {
   // captionText.innerHTML = dots[slideIndex-1].alt;
 }
 //VIDEO RESPONSIVE--------------------------------------------------//
-var mainVideo = $('#step6-video');
-
-if ($(window).width() < 812 && medQualVersion) {
-  mainVideo.append("<source type='video/mp4' src='../assets/images/produzione/stoccaggio.mp4' />");
-}
-
-mainVideo.mediaelementplayer();
+//     if ($(window).width() < 768) {
+//       document.getElementById("step6-video").src = "assets/images/produzione/stoccaggio.mp4";
+// document.getElementById("step6-video").load();
+// }
