@@ -516,58 +516,35 @@ window.setTimeout(function(){
 
 //hover modal coltivazioni----------------------------
 // Get the modal
-// var modal = document.getElementById("myModal");
+// var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-// var img = document.getElementById("img-colt");
-// var modalImg = document.getElementById("img01");
+// var img = $('img-colt');
+// var modalImg = $("#img01");
 // var captionText = document.getElementById("caption");
-// img.onclick = function(){
-//   modal.style.display = "block";
-//   modalImg.src = this.src;
-//   captionText.innerHTML = this.alt;
-// }
-
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = $('img-colt');
-var modalImg = $("#img01");
-var captionText = document.getElementById("caption");
-$('img-colt').click(function(){
-    modal.style.display = "block";
-    var newSrc = this.src;
-    modalImg.attr('src', newSrc);
-    captionText.innerHTML = this.alt;
-});
+// $('img-colt').click(function(){
+//     modal.style.display = "block";
+//     var newSrc = this.src;
+//     modalImg.attr('src', newSrc);
+//     captionText.innerHTML = this.alt;
+// });
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// var modal2 = document.getElementById("myModal2");
-// var img2 = document.getElementById("img-colt2");
-// var modalImg2 = document.getElementById("img02");
-// var captionText2 = document.getElementById("caption2");
-// img2.onclick = function(){
-//   modal2.style.display = "block";
-//   modalImg2.src = this.src;
-//   captionText2.innerHTML = this.alt;
+// span.onclick = function() {
+//   modal.style.display = "none";
 // }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-//hover modal coltivazioni----------------------------
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+//hover modal coltivazioni-----------------------------------------------------------------------------//
 
 // sessionStorage.setItem('body', 'Tom');
 
@@ -611,3 +588,11 @@ function showSlides(n) {
   // dots[slideIndex-1].className += " active";
   // captionText.innerHTML = dots[slideIndex-1].alt;
 }
+//VIDEO RESPONSIVE--------------------------------------------------//
+var mainVideo = $('#step6-video');
+
+if ($(window).width() < 812 && medQualVersion) {
+  mainVideo.append("<source type='video/mp4' src='../assets/images/produzione/stoccaggio.mp4' />");
+}
+
+mainVideo.mediaelementplayer();
