@@ -52,10 +52,6 @@ $(document).ready(function(){
 //     CheckLanguage();
 //   }
 
-        // category color change on hover and background image change
-        //         $(".whiteHover").hover(
-        // );
-
         //this function makes the category image appear on hover
                 $("#MAKE").hover(
                         function(){
@@ -92,36 +88,8 @@ $(document).ready(function(){
                                         $("#CategoryContainer").css("background-image", "none")
                                   }
                 );
-                // 1 categoria
-                //  $("#FEEL").hover(
-                //         function(){
-                //                         $("#CategoryContainer").addClass("CategoryImgFadeIn");
-                //                         $("#CategoryContainer").css("background-image", "url('assets/images/category04.jpg')")
-                //                   },
-                //
-                //         function(){
-                //                         $("#CategoryContainer").removeClass("CategoryImgFadeIn");
-                //                         $("#CategoryContainer").css("background-image", "none")
-                //                   }
-                // );
-
-
-        //Quantity btn---------------------------------------------------------
-                // $(".dropbtn").click(
-                //         function() {
-                //                         $(".dropdown-content").toggle();
-                //                         $(this).toggleClass("noBottom");
-                //         }
-                // );
-                // $(".dropbtn-cart").click(
-                //         function() {
-                //                         $(this).siblings(".dropdown-content-cart").toggle();
-                //                         $(this).toggleClass("noBottom");
-                //         }
-                // );
 
         //about--------------------------------------------//
-
                 $("#makeyourpresence").hover(
                       function(){ $(this).css("opacity", "0");
                             $("#makeyourpresence_hover").css("opacity", "1");
@@ -130,7 +98,6 @@ $(document).ready(function(){
                             $("#makeyourpresence_hover").css("opacity", "0");
                             }
                 );
-
         // ----------------------
                 $(" #feeltheadrenalina").hover(
                       function(){ $(this).css("opacity", "0");
@@ -140,7 +107,6 @@ $(document).ready(function(){
                             $("#feeltheadrenalina_hover").css("opacity", "0");
                             }
                 );
-
         // ----------------------
                 $(" #swimagainst").hover(
                       function(){ $(this).css("opacity", "0");
@@ -150,7 +116,6 @@ $(document).ready(function(){
                             $("#swimagainst_hover").css("opacity", "0");
                             }
                 );
-
         // ----------------------
                 $(" #leaveyourmark").hover(
                       function(){ $(this).css("opacity", "0");
@@ -160,7 +125,6 @@ $(document).ready(function(){
                             $("#leaveyourmark_hover").css("opacity", "0");
                             }
                 );
-
         //svg mobile--------------------------------------------
 
     $("#makeyourpresence-mobile").hover(
@@ -420,7 +384,6 @@ $(document).ready(function(){
                  }
                );
 
-
                CheckLanguage();
                function CheckLanguage(){
                  var it = true;
@@ -607,8 +570,3 @@ function showSlides(n) {
   // dots[slideIndex-1].className += " active";
   // captionText.innerHTML = dots[slideIndex-1].alt;
 }
-//VIDEO RESPONSIVE--------------------------------------------------//
-//     if ($(window).width() < 768) {
-//       document.getElementById("step6-video").src = "assets/images/produzione/stoccaggio.mp4";
-// document.getElementById("step6-video").load();
-// }
