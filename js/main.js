@@ -43,14 +43,69 @@ $(document).ready(function(){
     document.getElementById("step6-video").load();
 }
 
-// CheckLanguage();
-// function CheckLanguage(){
-// };
-// $("").click(
+var langIT;
+var langEN;
+var languages;
+
+CheckLanguage();
+CheckLanguage2();
+
+//Language//
+$("#switch-en").on("click", function() {
+  $('#switch-en').css("display", "none");
+  $('#switch-it').css("display", "block");
+  closeNav();
+  // langEN = (document.body.className='en');
+  localStorage.setItem(document.body.className, "en");
+  CheckLanguage();
+});
+
+$("#switch-it").on("click", function() {
+$('#switch-en').css("display", "block");
+$('#switch-it').css("display", "none");
+closeNav();
+// langIT = (document.body.className='it');
+localStorage.setItem(document.body.className, "it");
+CheckLanguage2();
+});
+
+// $("#switch-en").click(
 //   function(){
-//     localStorage.setItem(language, "true");
+//     localStorage.setItem(document.body.className, "en");
 //     CheckLanguage();
-//   }
+//   })
+//   $("#switch-in").click(
+//     function(){
+//       localStorage.setItem(document.body.className, "it");
+//       CheckLanguage2();
+//     })
+
+function CheckLanguage(){
+    // if (localStorage.getItem(document.body.className) == "it"){
+    //    langEN == false;
+    //    langIT == true;
+    // };
+    // if (localStorage.getItem(document.body.className) == "en"){
+    //    langEN == true;
+    //    langIT == false;
+    // }
+      langEN = (document.body.className='en');
+      langEN == true;
+    localStorage.getItem(document.body.className) == "en"
+  };
+
+  function CheckLanguage2(){
+      // if (localStorage.getItem(document.body.className) == "en"){
+      //    langIT ==  false;
+      //    langEN ==  true;
+      // };
+      // if (localStorage.getItem(document.body.className) == "it"){
+      //    langIT ==  true;
+      // }
+      langIT = (document.body.className='it');
+      langIT == true;
+    localStorage.getItem(document.body.className) == "it"
+    };
 
         //this function makes the category image appear on hover
                 $("#MAKE").hover(
@@ -384,36 +439,18 @@ $(document).ready(function(){
                  }
                );
 
-               CheckLanguage();
-               function CheckLanguage(){
-                 var it = true;
-                 if (localStorage.getItem('en') == "true"){
-                    it = false;
-                 };
-                 if (localStorage.getItem('it') == "true"){
-                    it = true;
-                 }
-               };
+               // CheckLanguage();
+               // function CheckLanguage(){
+               //   var it = true;
+               //   if (localStorage.getItem('en') == "true"){
+               //      it = false;
+               //   };
+               //   if (localStorage.getItem('it') == "true"){
+               //      it = true;
+               //   }
+               // };
 
-// var body = document.body;
-               //Language//
-               $("#switch-en").on("click", function() {
-                 $('#switch-en').css("display", "none");
-                 $('#switch-it').css("display", "block");
-                 closeNav();
-                 // localStorage.setItem("body", "en");
-                 // localStorage.setItem('en', language);
-                 CheckLanguage();
-               });
 
-               $("#switch-it").on("click", function() {
-               $('#switch-en').css("display", "block");
-               $('#switch-it').css("display", "none");
-               closeNav();
-                // localStorage.setItem('it', language);
-                // localStorage.setItem("body", "it");
-                CheckLanguage();
-               });
 
 });
 
