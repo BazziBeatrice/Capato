@@ -1,4 +1,5 @@
 // JavaScript Document
+
 // navbar background color change on scroll
 $(window).scroll(function(){
                         var scroll = $(window).scrollTop();
@@ -15,97 +16,60 @@ $(window).scroll(function(){
                         else {$('#main-footer-index').show();}
                   })
 
-
 $('.carousel').carousel({
-  interval: 3000
-})
+  interval: 3000})
 
 var language;
 
-$(document).ready(function(){
+$(document).ready(function() {
 
-  if ($(window).width() < 768) {
-    document.getElementById("step1-video").src = "../assets/images/produzione/baulaturaterreno.mp4";
-    document.getElementById("step1-video").load();
-    document.getElementById("step2-video").src = "../assets/images/produzione/trapianto-mobile.mp4";
-    document.getElementById("step2-video").load();
-    document.getElementById("step3-video").src = "../assets/images/produzione/sarchiatura.mp4";
-    document.getElementById("step3-video").load();
-    document.getElementById("step4-video").src = "../assets/images/produzione/raccolta.mp4";
-    document.getElementById("step4-video").load();
-    document.getElementById("step5-video").src = "../assets/images/produzione/lavaggio.mp4";
-    document.getElementById("step5-video").load();
-    document.getElementById("step6-video").src = "../assets/images/produzione/stoccaggio.mp4";
-    document.getElementById("step6-video").load();
-    document.getElementById("step7-video").src = "../assets/images/produzione/trasporto2.mp4";
-    document.getElementById("step7-video").load();
-    document.getElementById("step6-video").src = "../assets/images/produzione/stoccaggio.mp4";
-    document.getElementById("step6-video").load();
-}
+      if ($(window).width() < 768) {
+        document.getElementById("step1-video").src = "../assets/images/produzione/baulaturaterreno.mp4";
+        document.getElementById("step1-video").load();
+        document.getElementById("step2-video").src = "../assets/images/produzione/trapianto-mobile.mp4";
+        document.getElementById("step2-video").load();
+        document.getElementById("step3-video").src = "../assets/images/produzione/sarchiatura.mp4";
+        document.getElementById("step3-video").load();
+        document.getElementById("step4-video").src = "../assets/images/produzione/raccolta.mp4";
+        document.getElementById("step4-video").load();
+        document.getElementById("step5-video").src = "../assets/images/produzione/lavaggio.mp4";
+        document.getElementById("step5-video").load();
+        document.getElementById("step6-video").src = "../assets/images/produzione/stoccaggio.mp4";
+        document.getElementById("step6-video").load();
+        document.getElementById("step7-video").src = "../assets/images/produzione/trasporto2.mp4";
+        document.getElementById("step7-video").load();
+        document.getElementById("step6-video").src = "../assets/images/produzione/stoccaggio.mp4";
+        document.getElementById("step6-video").load();
+      }
 
-var langIT;
-var langEN;
-var languages;
+      var langIT;
+      var langEN;
+      var languages;
+      document.body.className = "it";
+      //
+      CheckLanguage();
+      CheckLanguage2();
 
-CheckLanguage();
-CheckLanguage2();
+      //Language//
+      $("#switch-en").on("click", function() {
+        closeNav();
+        localStorage.setItem("language", "en");
+        CheckLanguage();
+      });
 
-//Language//
-$("#switch-en").on("click", function() {
-  $('#switch-en').css("display", "none");
-  $('#switch-it').css("display", "block");
-  closeNav();
-  // langEN = (document.body.className='en');
-  localStorage.setItem(document.body.className, "en");
-  CheckLanguage();
-});
+      $("#switch-it").on("click", function() {
+        closeNav();
+        localStorage.setItem("language", "it");
+        CheckLanguage2();
+      });
 
-$("#switch-it").on("click", function() {
-$('#switch-en').css("display", "block");
-$('#switch-it').css("display", "none");
-closeNav();
-// langIT = (document.body.className='it');
-localStorage.setItem(document.body.className, "it");
-CheckLanguage2();
-});
+      function CheckLanguage() {
+        document.body.className = localStorage.getItem("language");
+      };
 
-// $("#switch-en").click(
-//   function(){
-//     localStorage.setItem(document.body.className, "en");
-//     CheckLanguage();
-//   })
-//   $("#switch-in").click(
-//     function(){
-//       localStorage.setItem(document.body.className, "it");
-//       CheckLanguage2();
-//     })
-
-function CheckLanguage(){
-    // if (localStorage.getItem(document.body.className) == "it"){
-    //    langEN == false;
-    //    langIT == true;
-    // };
-    // if (localStorage.getItem(document.body.className) == "en"){
-    //    langEN == true;
-    //    langIT == false;
-    // }
-      langEN = (document.body.className='en');
-      langEN == true;
-    localStorage.getItem(document.body.className) == "en"
-  };
-
-  function CheckLanguage2(){
-      // if (localStorage.getItem(document.body.className) == "en"){
-      //    langIT ==  false;
-      //    langEN ==  true;
-      // };
-      // if (localStorage.getItem(document.body.className) == "it"){
-      //    langIT ==  true;
-      // }
-      langIT = (document.body.className='it');
-      langIT == true;
-    localStorage.getItem(document.body.className) == "it"
-    };
+      function CheckLanguage2() {
+        document.body.className = localStorage.getItem("language");
+      };
 
         //this function makes the category image appear on hover
                 $("#MAKE").hover(

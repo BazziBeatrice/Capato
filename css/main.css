@@ -1880,9 +1880,9 @@ body.it :lang(en) {
   display: none;
 }
 
-#switch-it {
+/* #switch-it {
   display: none;
-}
+} */
 
 /* Icon Down */
 @-webkit-keyframes hvr-icon-down {

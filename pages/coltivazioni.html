@@ -62,7 +62,7 @@
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
 					<a class="menu-text" href="../pages/coltivazioni.html" lang="it">Le nostre coltivazioni</a>
-					<a class="menu-text" href="../pages/aziendaagricola.html" lang="en">Our crops</a>
+					<a class="menu-text" href="../pages/coltivazioni.html" lang="en">Our crops</a>
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
 					<a class="menu-text" href="../pages/cicloproduzione.html" lang="it">Dalla produzione al trasporto</a>
@@ -77,8 +77,11 @@
 					<a class="menu-text" href="../pages/contacts.html" lang="en">Contacts</a>
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
-					<a class="menu-text-switch" id="switch-en" href="#" onclick="document.body.className='en'">Switch to English &#127468;&#127463;</a>
-					<a class="menu-text-switch" id="switch-it" href="#" onclick="document.body.className='it'">Traduci in Italiano &#127470;&#127481;</a>
+					<!-- <a class="menu-text-switch" id="switch-en" href="#" onclick="document.body.className='en'">Switch to English &#127468;&#127463;</a>
+					<a class="menu-text-switch" id="switch-it" href="#" onclick="document.body.className='it'">Traduci in Italiano &#127470;&#127481;</a> -->
+
+					<a class="menu-text-switch" id="switch-en" href="#" onclick="CheckLanguage()" lang="it">Switch to English &#127468;&#127463;</a>
+					<a class="menu-text-switch" id="switch-it" href="#" onclick="CheckLanguage2()" lang="en">Traduci in Italiano &#127470;&#127481;</a>
 				</li>
 			</ul>
 		</div>
@@ -145,12 +148,12 @@
                   <div class="coltivation-card">
                     <div class="coltivation-card-text">
                       <h5 lang="it">Lattuga trocadero</h5>
-											<h5 lang="en">Lattuga trocadero</h5>
+											<h5 lang="en">Trocadero Lettuce</h5>
                       <p class="coltivation-card-description" lang="it">
                         Ciclo estivo: 30/35 giorni <br>Ciclo invernale: 60/80 giorni <br>Il prodotto è disponibile tutto l’anno<br>
                       </p>
 											<p class="coltivation-card-description" lang="en">
-                        Ciclo estivo: 30/35 giorni <br>Ciclo invernale: 60/80 giorni <br>Il prodotto è disponibile tutto l’anno<br>
+                        Summer cycle: 30/35 giorni <br>Winter cycle: 60/80 giorni <br>The product is available all year round<br>
                       </p>
                     </div>
                   </div>
@@ -163,12 +166,12 @@
                   <div class="coltivation-card">
                     <div class="coltivation-card-text">
                       <h5 lang="it">Lattuga gentile</h5>
-											<h5 lang="en">Lattuga gentile</h5>
+											<h5 lang="en">Gentile type Lettuce</h5>
                       <p class="coltivation-card-description" lang="it">
                         Ciclo estivo: 30/35 giorni <br>Ciclo invernale: 60/80 giorni <br>Il prodotto è disponibile tutto l’anno<br>
                       </p>
 											<p class="coltivation-card-description" lang="en">
-                        Ciclo estivo: 30/35 giorni <br>Ciclo invernale: 60/80 giorni <br>Il prodotto è disponibile tutto l’anno<br>
+                        Summer cycle: 30/35 giorni <br>Winter cycle: 60/80 giorni <br>The product is available all year round<br>
                       </p>
                     </div>
                   </div>
@@ -186,12 +189,12 @@
                   <div class="coltivation-card">
                     <div class="coltivation-card-text">
                       <h5 lang="it">Cavolo cappuccio cuore di bue</h5>
-											<h5 lang="en">Cavolo cappuccio cuore di bue</h5>
+											<h5 lang="en">Ox heart Cabbage</h5>
                       <p class="coltivation-card-description" lang="it">
                         Ciclo estivo: 45/60 giorni<br>Ciclo invernale: 70/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
                       </p>
 											<p class="coltivation-card-description" lang="en">
-                        Ciclo estivo: 45/60 giorni<br>Ciclo invernale: 70/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
+                        Summer cycle: 45/60 giorni<br>Winter cycle: 70/90 giorni <br>The product is available all year round<br>
                       </p>
                     </div>
                   </div>
@@ -204,12 +207,12 @@
                   <div class="coltivation-card">
                     <div class="coltivation-card-text">
                       <h5 lang="it">Cavolo cappuccio tondo</h5>
-											<h5 lang="en">Cavolo cappuccio tondo</h5>
+											<h5 lang="en">Round Cabbage</h5>
                       <p class="coltivation-card-description" lang="it">
                         Ciclo estivo: 45/60 giorni<br>Ciclo invernale: 70/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
                       </p>
 											<p class="coltivation-card-description" lang="en">
-												Ciclo estivo: 45/60 giorni<br>Ciclo invernale: 70/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
+												Summer cycle: 45/60 giorni<br>Winter cycle: 70/90 giorni <br>The product is available all year round<br>
 											</p>
                     </div>
                   </div>
@@ -228,12 +231,12 @@
 								  <div class="coltivation-card">
 								    <div class="coltivation-card-text">
 								      <h5 lang="it">Bietola da costa</h5>
-											<h5 lang="en">Bietola da costa</h5>
+											<h5 lang="en">Chard from the coast</h5>
 								      <p class="coltivation-card-description" lang="it">
 								        Ciclo estivo: 30/40 giorni<br>Ciclo invernale: 60/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
 								      </p>
 											<p class="coltivation-card-description" lang="en">
-								        Ciclo estivo: 30/40 giorni<br>Ciclo invernale: 60/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
+								        Summer cycle: 30/40 giorni<br>Winter cycle: 60/90 giorni <br>The product is available all year round<br>
 								      </p>
 								    </div>
 								  </div>
@@ -246,12 +249,12 @@
 								  <div class="coltivation-card">
 								    <div class="coltivation-card-text">
 								      <h5 lang="it">Sedano verde</h5>
-											<h5 lang="en">Sedano verde</h5>
+											<h5 lang="en">Green Celery</h5>
 								      <p class="coltivation-card-description" lang="it">
 								        Ciclo estivo: 50/60 giorni<br>Ciclo invernale: 80/110 giorni<br>Il prodotto è disponibile tutto l’anno<br>
 								      </p>
 											<p class="coltivation-card-description" lang="en">
-											 Ciclo estivo: 50/60 giorni<br>Ciclo invernale: 80/110 giorni<br>Il prodotto è disponibile tutto l’anno<br>
+											 Summer cycle: 50/60 giorni<br>Winter cycle: 80/110 giorni<br>The product is available all year round<br>
 										 </p>
 								    </div>
 								  </div>
@@ -264,12 +267,12 @@
 									<div class="coltivation-card">
 										<div class="coltivation-card-text">
 											<h5 lang="it">Cicoria</h5>
-											<h5 lang="en">Cicoria</h5>
+											<h5 lang="en">Chicory</h5>
 											<p class="coltivation-card-description" lang="it">
 												Ciclo estivo: 40/50 giorni<br>Ciclo invernale: 70/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
 											</p>
 											<p class="coltivation-card-description" lang="en">
-												Ciclo estivo: 40/50 giorni<br>Ciclo invernale: 70/90 giorni <br>Il prodotto è disponibile tutto l’anno<br>
+												Summer cycle: 40/50 giorni<br>Winter cycle: 70/90 giorni <br>The product is available all year round<br>
 											</p>
 										</div>
 									</div>

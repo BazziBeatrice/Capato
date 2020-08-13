@@ -51,7 +51,7 @@
 
 	</head>
 
-	<body class="it">
+	<body id="languagesw">
 		<!--Loader-->
 		<div id="loader">
 			<img src="assets/video/loader-salad.gif" alt="loader-gif" width="10%" />
@@ -65,7 +65,7 @@
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
 					<a class="menu-text" href="pages/coltivazioni.html" lang="it">Le nostre coltivazioni</a>
-					<a class="menu-text" href="pages/aziendaagricola.html" lang="en">Our crops</a>
+					<a class="menu-text" href="pages/coltivazioni.html" lang="en">Our crops</a>
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
 					<a class="menu-text" href="pages/cicloproduzione.html" lang="it">Dalla produzione al trasporto</a>
@@ -80,9 +80,12 @@
 					<a class="menu-text" href="pages/contacts.html" lang="en">Contacts</a>
 				</li>
 				<li class="offset-xl-2 offset-lg-2 offset-md-1 offset-sm-0 offset-0 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12">
-					<a class="menu-text-switch" id="switch-en" href="#" onclick="document.body.className='en'">Switch to English &#127468;&#127463;</a>
-					<a class="menu-text-switch" id="switch-it" href="#" onclick="document.body.className='it'">Traduci in Italiano &#127470;&#127481;</a>
-				</li>
+					<!-- <a class="menu-text-switch" id="switch-en" href="#" onclick="document.body.className='en'">Switch to English &#127468;&#127463;</a>
+					<a class="menu-text-switch" id="switch-it" href="#" onclick="document.body.className='it'">Traduci in Italiano &#127470;&#127481;</a> -->
+
+					<a class="menu-text-switch" id="switch-en" href="#" onclick="CheckLanguage()" lang="it">Switch to English &#127468;&#127463;</a>
+					<a class="menu-text-switch" id="switch-it" href="#" onclick="CheckLanguage2()" lang="en">Traduci in Italiano &#127470;&#127481;</a>
+			</li>
 			</ul>
 		</div>
 		<!--start Header Area-->
@@ -225,8 +228,8 @@
 					</div>
 					<!--Section title-->
 					<div class="row">
-						<p class="section-title-sans col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" lang="it">Dal lunedì al sabato dalle ore 7.00 alle ore 18.00<br>Per qualsiasi informazione chiamare Stefano Capato al <a class="telephonenumber" href="tel: +39 3476476681">+39 3476476681</a></p>
-						<p class="section-title-sans col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" lang="en">From monday to saturday from 7.00 till 18.00<br>For every ulterior information you can call Stefano Capato at <a class="telephonenumber" href="tel: +39 3476476681">+39 3476476681</a></p>
+						<p class="section-title-sans col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" lang="it">Siamo aperti dal lunedì al sabato dalle ore 7.00 alle ore 18.00<br>Per qualsiasi informazione è possibile Stefano Capato al <a class="telephonenumber" href="tel: +39 3476476681">+39 3476476681</a></p>
+						<p class="section-title-sans col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" lang="en">We are open from Monday to Saturday from 7.00 a.m. to 6.00 p.m.<br>For any information you can contact Stefano Capato at <a class="telephonenumber" href="tel: +39 3476476681">+39 3476476681</a></p>
 					</div>
 				</article>
 			</section>
