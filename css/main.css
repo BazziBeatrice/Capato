@@ -1836,7 +1836,24 @@ input[type=submit]:hover {
   grid-row-start: 1;
   grid-row-end: 6;
 }
-
+.gallery__item--13{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.gallery__item--14{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.gallery__item--15 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
 .scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
