@@ -46,12 +46,15 @@ $(document).ready(function() {
       var langEN;
       var languages;
       document.body.className = "it";
+      $("#switch-it").css("display","none");
       //
       CheckLanguage();
       CheckLanguage2();
 
       //Language//
       $("#switch-en").on("click", function() {
+        $("#switch-it").css("display","block");
+        $("#switch-en").css("display","none");
         closeNav();
         localStorage.setItem("language", "en");
         CheckLanguage();
@@ -59,6 +62,8 @@ $(document).ready(function() {
 
       $("#switch-it").on("click", function() {
         closeNav();
+        $("#switch-en").css("display","block");
+        $("#switch-it").css("display","none");
         localStorage.setItem("language", "it");
         CheckLanguage2();
       });
