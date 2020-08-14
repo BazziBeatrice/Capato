@@ -28,9 +28,11 @@ $(document).ready(function() {
       // var languages = document.body.className;
       // languages == "it";
       // document.body.className == "it";
-      $("#switch-it").css("display","none");
+      // $("#switch-it").css("display","none");
+
       // CheckLanguage();
-      // CheckLanguage2();
+      CheckLanguage2();
+
 
       //Language//
       $("#switch-en").on("click", function() {
