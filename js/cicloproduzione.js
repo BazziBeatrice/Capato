@@ -20,4 +20,4 @@ $(document).ready(function() {
         document.getElementById("step6-video").load();
       }
 
-  }
+  });
