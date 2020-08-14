@@ -1200,7 +1200,6 @@
     padding-bottom: 40%;
 }
 .closemodal {
-    /* top: 17%; */
     left: 86%;
 }
   .hide-text-cards p, .hide-text-cards i {
@@ -1225,13 +1224,10 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .closemodal {
       left: 76%;
-      /* top: 10.3%; */
   }
   /*Reviews*/
   .hideContent {
     height: 17.2em;
-    /* 20.4em*/
-    /* 18.9em*/
   }
 
   /*Carousel*/
