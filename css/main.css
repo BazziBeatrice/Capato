@@ -2140,14 +2140,15 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .closemodal{
+  cursor:pointer;
     float: right;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
-    line-height: 1;
+    /* line-height: 1; */
     color: rgb(255, 255, 255);
     opacity: 1;
     position: absolute;
-    left: 78%;
+    left: 77%;
     z-index: 100!important;
 }
 figure {
