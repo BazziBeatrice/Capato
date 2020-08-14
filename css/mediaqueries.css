@@ -1200,7 +1200,7 @@
     padding-bottom: 40%;
 }
 .closemodal {
-    top: 17%;
+    /* top: 17%; */
     left: 86%;
 }
   .hide-text-cards p, .hide-text-cards i {
@@ -1224,8 +1224,8 @@
 /*SINGLE TOUR PAGE TABLET-----------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 1024px) {
   .closemodal {
-      left: 75%;
-      top: 10.3%;
+      left: 76%;
+      /* top: 10.3%; */
   }
   /*Reviews*/
   .hideContent {
