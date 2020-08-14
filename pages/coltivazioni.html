@@ -158,8 +158,9 @@
                     </div>
                   </div>
                   <div>
-                  <img class="img-fluid img-colt" id="img-colt" src="../assets/images/coltivazioni/lattugatrocadero.jpg" alt="Image not supported">
-                  </div>
+                  <!-- <img class="img-fluid img-colt" id="img-colt" src="../assets/images/coltivazioni/lattugatrocadero.jpg" alt="Image not supported"> -->
+									<img src="../assets/images/coltivazioni/lattugatrocadero.jpg" alt="Gallery image 1" id="img-colt" class="img-fluid img-colt" onclick="openModal();currentSlide(1)" class="hover-shadow">
+									</div>
                 </div>
 
                 <div class="margin-top-cards2 col-xl-6 col-lg-12 col-md-12 col-sm-12 activitiycard">
@@ -176,8 +177,9 @@
                     </div>
                   </div>
                   <div class="image-coltivation-card">
-                  <img class="img-fluid img-colt" id="img-colt1" src="../assets/images/coltivazioni/lattugagentile.jpg" alt="Image not supported">
-                  </div>
+                  <!-- <img class="img-fluid img-colt" id="img-colt1" src="../assets/images/coltivazioni/lattugagentile.jpg" alt="Image not supported"> -->
+	<img src="../assets/images/coltivazioni/lattugagentile.jpg" alt="Gallery image 1" class="img-fluid img-colt" id="img-colt1" onclick="openModal();currentSlide(2)" class="hover-shadow">
+									</div>
                 </div>
 
 
@@ -199,8 +201,9 @@
                     </div>
                   </div>
                   <div>
-                  <img class="img-fluid img-colt" id="img-colt2" src="../assets/images/coltivazioni/cavolocappuccio-cuoredibue.jpg" alt="Image not supported">
-                  </div>
+                  <!-- <img class="img-fluid img-colt" id="img-colt2" src="../assets/images/coltivazioni/cavolocappuccio-cuoredibue.jpg" alt="Image not supported"> -->
+									<img src="../assets/images/coltivazioni/cavolocappuccio-cuoredibue.jpg" alt="Gallery image 1" class="img-fluid img-colt" id="img-colt2" onclick="openModal();currentSlide(3)" class="hover-shadow">
+								  </div>
                 </div>
 
                 <div class=" col-xl-6 col-lg-12 col-md-12 col-sm-12 activitiycard">
@@ -217,10 +220,10 @@
                     </div>
                   </div>
                   <div class="image-coltivation-card">
-                  <img class="img-fluid img-colt" id="img-colt3" src="../assets/images/coltivazioni/cavolocappuccio-tondo.jpg" alt="Image not supported">
+                  <!-- <img class="img-fluid img-colt" id="img-colt3" src="../assets/images/coltivazioni/cavolocappuccio-tondo.jpg" alt="Image not supported"> -->
+										<img src="../assets/images/coltivazioni/cavolocappuccio-tondo.jpg" alt="Gallery image 1" class="img-fluid img-colt" id="img-colt3" onclick="openModal();currentSlide(4)" class="hover-shadow">
                   </div>
                 </div>
-
 
 							</div>
 
@@ -241,7 +244,8 @@
 								    </div>
 								  </div>
 								  <div>
-								  <img class="img-fluid img-colt" id="img-colt4" src="../assets/images/coltivazioni/bietoladacosta.jpg" alt="Image not supported">
+								  <!-- <img class="img-fluid img-colt" id="img-colt4" src="../assets/images/coltivazioni/bietoladacosta.jpg" alt="Image not supported"> -->
+	<img src="../assets/images/coltivazioni/bietoladacosta.jpg" alt="Gallery image 1" class="img-fluid img-colt" id="img-colt4" onclick="openModal();currentSlide(5)" class="hover-shadow">
 								  </div>
 								</div>
 
@@ -259,7 +263,8 @@
 								    </div>
 								  </div>
 								  <div class="image-coltivation-card">
-								  <img class="img-fluid img-colt" id="img-colt5" src="../assets/images/coltivazioni/sedanoverde.jpg" alt="Image not supported">
+								  <!-- <img class="img-fluid img-colt" id="img-colt5" src="../assets/images/coltivazioni/sedanoverde.jpg" alt="Image not supported"> -->
+									<img src="../assets/images/coltivazioni/sedanoverde.jpg" alt="Gallery image 1" class="img-fluid img-colt" id="img-colt5" onclick="openModal();currentSlide(6)" class="hover-shadow">
 								  </div>
 								</div>
 
@@ -277,7 +282,8 @@
 										</div>
 									</div>
 									<div class="image-coltivation-card">
-									<img class="img-fluid img-colt" id="img-colt6" src="../assets/images/coltivazioni/cicoria.jpg" alt="Image not supported">
+									<!-- <img class="img-fluid img-colt" id="img-colt6" src="../assets/images/coltivazioni/cicoria.jpg" alt="Image not supported"> -->
+										<img src="../assets/images/coltivazioni/cicoria.jpg" alt="Gallery image 1" class="img-fluid img-colt" id="img-colt6" onclick="openModal();currentSlide(7)" class="hover-shadow">
 									</div>
 								</div>
 
@@ -286,15 +292,46 @@
 					</div>
 				</div>
 
-				<!-- The Modal -->
-		<div id="myModal" class="modal">
-		<!-- The Close Button -->
-		<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-		<!-- Modal Content (The Image) -->
-		<img class="modal-content" id="img01">
-		<!-- Modal Caption (Image Text) -->
-		<div id="caption"></div>
-		</div>
+				<!-- The Modal/Lightbox -->
+ 			 <div id="myModal" class="modal">
+ 				<span class="closemodal cursor" onclick="closeModal()">&times;</span>
+ 				<div class="modal-content">
+
+ 					<div class="mySlides">
+ 						<div class="numbertext">1 / 19</div>
+ 						<img src="../assets/images/coltivazioni/lattugatrocadero.jpg" alt="Lattuga Trocadero" style="width:100%">
+ 					</div>
+ 					<div class="mySlides">
+ 						<div class="numbertext">2 / 19</div>
+ 						<img src="../assets/images/coltivazioni/lattugagentile.jpg" alt="Lattuga Gentile" style="width:100%">
+ 					</div>
+ 					<div class="mySlides">
+ 						<div class="numbertext">3 / 19</div>
+ 						<img src="../assets/images/coltivazioni/cavolocappuccio-cuoredibue.jpg" alt="Cavolo cappuccio cuore di bue" style="width:100%">
+ 					</div>
+ 					<div class="mySlides">
+ 						<div class="numbertext">4 / 19</div>
+ 						<img src="../assets/images/coltivazioni/cavolocappuccio-tondo.jpg" alt="Cavolo Cappuccio tondo" style="width:100%">
+ 					</div>
+ 					<div class="mySlides">
+ 						<div class="numbertext">5 / 19</div>
+ 						<img src="../assets/images/coltivazioni/bietoladacosta.jpg" alt="Bietola da costa" style="width:100%">
+ 					</div>
+ 					<div class="mySlides">
+ 						<div class="numbertext">6 / 19</div>
+ 						<img src="../assets/images/coltivazioni/sedanoverde.jpg" alt="Sedano Verde" style="width:100%">
+ 					</div>
+ 					<div class="mySlides">
+ 						<div class="numbertext">7 / 19</div>
+ 						<img src="../assets/images/coltivazioni/cicoria.jpg" alt="Cicoria" style="width:100%">
+ 					</div>
+
+ 					 <!-- Next/previous controls -->
+ 					 <a class="prev" style="color:white;" onclick="plusSlides(-1)">&#10094;</a>
+ 					 <a class="next" style="color:white;" onclick="plusSlides(1)">&#10095;</a>
+
+ 				 </div>
+ 			 </div>
 
 
 
