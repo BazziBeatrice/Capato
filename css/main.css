@@ -1469,6 +1469,16 @@ ul {
   overflow-y: hidden;
   white-space: nowrap;
 }
+.container-cicloproduzione {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
 
 .container-photo{
   display: flex;
