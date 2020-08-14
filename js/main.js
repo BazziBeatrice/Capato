@@ -19,37 +19,18 @@ $(window).scroll(function(){
 $('.carousel').carousel({
   interval: 3000})
 
-var language;
+// var language;
 
 $(document).ready(function() {
 
-      if ($(window).width() < 768) {
-        document.getElementById("step1-video").src = "../assets/images/produzione/baulaturaterreno.mp4";
-        document.getElementById("step1-video").load();
-        document.getElementById("step2-video").src = "../assets/images/produzione/trapianto-mobile.mp4";
-        document.getElementById("step2-video").load();
-        document.getElementById("step3-video").src = "../assets/images/produzione/sarchiatura.mp4";
-        document.getElementById("step3-video").load();
-        document.getElementById("step4-video").src = "../assets/images/produzione/raccolta.mp4";
-        document.getElementById("step4-video").load();
-        document.getElementById("step5-video").src = "../assets/images/produzione/lavaggio.mp4";
-        document.getElementById("step5-video").load();
-        document.getElementById("step6-video").src = "../assets/images/produzione/stoccaggio.mp4";
-        document.getElementById("step6-video").load();
-        document.getElementById("step7-video").src = "../assets/images/produzione/trasporto2.mp4";
-        document.getElementById("step7-video").load();
-        document.getElementById("step6-video").src = "../assets/images/produzione/stoccaggio.mp4";
-        document.getElementById("step6-video").load();
-      }
-
-      var langIT;
-      var langEN;
-      var languages;
-      document.body.className = "it";
+      // var langIT;
+      // var langEN;
+      // var languages = document.body.className;
+      // languages == "it";
+      // document.body.className == "it";
       $("#switch-it").css("display","none");
-      //
-      CheckLanguage();
-      CheckLanguage2();
+      // CheckLanguage();
+      // CheckLanguage2();
 
       //Language//
       $("#switch-en").on("click", function() {
@@ -572,7 +553,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
+  // slides[slideIndex-1].style.display = "block";
   // dots[slideIndex-1].className += " active";
   // captionText.innerHTML = dots[slideIndex-1].alt;
 }
