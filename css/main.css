@@ -1310,7 +1310,8 @@ ul {
 
 .css-text-mask {
   font-size: 41px;
-  background-image: url('https://html-generator.com/uploads/images/2020/06/04/38173_FH7_4MUWSU.jpg');
+  background-image: url('../assets/images/categoria2-3.jpg');
+  /* url('https://html-generator.com/uploads/images/2020/06/04/38173_FH7_4MUWSU.jpg'); */
   background-position: -37px 2px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
