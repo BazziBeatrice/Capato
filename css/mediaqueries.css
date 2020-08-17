@@ -1932,3 +1932,17 @@
     font-size: 40px;
   }
 }
+/*21,5 once iMac-----------------------------------------------*/
+@media (min-width: 1920px) and (max-width: 1940px) {
+  .illustration-numbers {
+      position: absolute;
+      left: -20%;
+      z-index: 1;
+      top: -20%;
+  }
+  .illustration-numbers2 {
+    position: absolute;
+    z-index: 1;
+    left: 76%;
+  }
+}
