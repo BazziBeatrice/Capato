@@ -29,8 +29,8 @@ $(document).ready(function() {
       // languages == "it";
       // document.body.className == "it";
       // $("#switch-it").css("display","none");
-
-      // CheckLanguage();
+        localStorage.setItem("language", "it");
+      CheckLanguage();
       CheckLanguage2();
 
 
