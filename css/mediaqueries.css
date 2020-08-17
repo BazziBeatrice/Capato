@@ -343,7 +343,6 @@
 
   .sticky {
     top: 0rem;
-    */
   }
 
   .categoryDescr {
@@ -430,9 +429,6 @@
   #CategoryContainer {
     padding-top: 6rem;
   }
-  /* .categoryDiv-ipad{
-    margin-top: 14rem;
-  } */
   .whiteBack {
     margin-top: -1px;
   }
@@ -528,7 +524,7 @@
 @media (max-width: 576px) {
   .icon-down-home {
     margin-top: -28px;
-}
+  }
   .overlay {
     border-radius: 0px 200px 0px 0px;
   }
@@ -554,10 +550,10 @@
   }
   .icon-small {
     font-size: 35px;
-}
+  }
 .icon-small2 {
     font-size: 40px;
-}
+  }
   .section-title-sans{
     font-weight: 400;
     font-size: 15px;
@@ -641,13 +637,6 @@
     left: 0;
   }
 
-  /*azienda agricola*/
-  /*produzione*/
-  /* .title-description-produzione {
-    margin-top: -95%;
-    } */
-  /* .text-description-produzione {
-  margin-top: -60%;} */
   .title-description-produzione {
     margin-top: -75%;
   }
@@ -717,11 +706,6 @@
     margin-top: 10%;
   }
 
-  /*le nostre coltivazioni*/
-  /*
-	.textbar {
-		display: none;
-	} */
   #icon-backpack {
     padding-right: 10px;
   }
