@@ -1521,7 +1521,7 @@ ul {
 }
 
 .box:hover {
-  flex: 1 1 50%;
+  flex: 1 1 38%;
 }
 
 .box:hover>img {
