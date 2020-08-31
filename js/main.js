@@ -23,6 +23,11 @@ $('.carousel').carousel({
 
 $(document).ready(function() {
 
+  if ($(window).width() < 768) {
+    document.getElementById("coverVideo").src = "../assets/images/produzione/baulaturaterreno.mp4";
+    document.getElementById("step1-video").load();
+  }
+
       // var langIT;
       // var langEN;
       // var languages = document.body.className;
