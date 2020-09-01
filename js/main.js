@@ -24,7 +24,7 @@ $('.carousel').carousel({
 $(document).ready(function() {
 
   if ($(window).width() < 768) {
-    document.getElementById("coverVideo").src = "assets/video/video-home_cell2.mp4";
+    document.getElementById("coverVideo").src = "assets/video/video-home_cell.mp4";
     document.getElementById("coverVideo").load();
     document.getElementById("coverVideo").play();
   }
