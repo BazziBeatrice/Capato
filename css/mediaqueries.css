@@ -256,6 +256,11 @@
 /* Landscape */
 /* @media and (max-width: 576px) and (orientation: landscape)  { */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+
+  #coverVideo {
+    max-width: 100%;
+}
+
   .dropdownTxt {
     font-size: 16px;
   }
