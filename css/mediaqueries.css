@@ -10,9 +10,9 @@
 
 /* CART PHONE-------------------------------------------------------------------------------*/
 @media (max-width: 767px) {
-  #coverVideo {
+  /* #coverVideo {
     max-height: 100%;
-}
+} */
 
   .illustration-numbers {
     position: absolute;
