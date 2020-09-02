@@ -13,7 +13,9 @@
   /* #coverVideo {
     max-height: 100%;
 } */
-
+.flag-icon {
+    width: 10%;
+}
   .illustration-numbers {
     position: absolute;
     left: 5%;
@@ -1954,4 +1956,13 @@
     z-index: 1;
     left: 76%;
   }
+  .flag-icon {
+    width: 2%;
+}
+.box {
+    max-height: 750px;
+}
+.box:hover {
+  flex: 1 1 36%;
+}
 }
