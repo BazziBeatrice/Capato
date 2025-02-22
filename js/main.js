@@ -1,494 +1,524 @@
 // JavaScript Document
 
 // navbar background color change on scroll
-$(window).scroll(function(){
-                        var scroll = $(window).scrollTop();
-                        if (scroll < 1000) {$('.nav-bar-transition').css('background','none');}
-                        else {  $('.nav-bar-transition').css('background','#a1c7a4');}
+$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+  if (scroll < 1000) {
+    $(".nav-bar-transition").css("background", "none");
+  } else {
+    $(".nav-bar-transition").css("background", "#a1c7a4");
+  }
 
-                        if (scroll < 800) {$('.nav-bar-transition-colt').css('background','none');}
-                        else {  $('.nav-bar-transition-colt').css('background','black');}
+  if (scroll < 800) {
+    $(".nav-bar-transition-colt").css("background", "none");
+  } else {
+    $(".nav-bar-transition-colt").css("background", "black");
+  }
 
-                        if (scroll < 400) {$('.full-img').css('visibility','visible');}
-                        else {  $('.full-img').css('visibility','hidden');}
+  if (scroll < 400) {
+    $(".full-img").css("visibility", "visible");
+  } else {
+    $(".full-img").css("visibility", "hidden");
+  }
 
-                        if (scroll < 1200) {$('#main-footer-index').hide();}
-                        else {$('#main-footer-index').show();}
-                  })
+  if (scroll < 1200) {
+    $("#main-footer-index").hide();
+  } else {
+    $("#main-footer-index").show();
+  }
+});
 
-$('.carousel').carousel({
-  interval: 3000})
+$(".carousel").carousel({
+  interval: 3000,
+});
 
 // var language;
 
-$(document).ready(function() {
-
-  if ($(window).width() < 768) {
-    document.getElementById("coverVideo").src = "assets/video/video-home_cell.mp4";
+$(document).ready(function () {
+  if ($(window).width() < 768 && document.getElementById("coverVideo")) {
+    document.getElementById("coverVideo").src =
+      "assets/video/video-home_cell.mp4";
     document.getElementById("coverVideo").load();
     document.getElementById("coverVideo").play();
   }
 
-      // var langIT;
-      // var langEN;
-      // var languages = document.body.className;
-      // languages == "it";
-      // document.body.className == "it";
-      // $("#switch-it").css("display","none");
-        localStorage.setItem("language", "it");
-      CheckLanguage();
-      CheckLanguage2();
+  // var langIT;
+  // var langEN;
+  // var languages = document.body.className;
+  // languages == "it";
+  // document.body.className == "it";
+  // $("#switch-it").css("display","none");
+  localStorage.setItem("language", "it");
+  CheckLanguage();
+  CheckLanguage2();
 
+  //Language//
+  $("#switch-en").on("click", function () {
+    $("#switch-it").css("display", "block");
+    $("#switch-en").css("display", "none");
+    closeNav();
+    localStorage.setItem("language", "en");
+    CheckLanguage();
+  });
 
-      //Language//
-      $("#switch-en").on("click", function() {
-        $("#switch-it").css("display","block");
-        $("#switch-en").css("display","none");
-        closeNav();
-        localStorage.setItem("language", "en");
-        CheckLanguage();
-      });
+  $("#switch-it").on("click", function () {
+    closeNav();
+    $("#switch-en").css("display", "block");
+    $("#switch-it").css("display", "none");
+    localStorage.setItem("language", "it");
+    CheckLanguage2();
+  });
 
-      $("#switch-it").on("click", function() {
-        closeNav();
-        $("#switch-en").css("display","block");
-        $("#switch-it").css("display","none");
-        localStorage.setItem("language", "it");
-        CheckLanguage2();
-      });
+  function CheckLanguage() {
+    document.body.className = localStorage.getItem("language");
+  }
 
-      function CheckLanguage() {
-        document.body.className = localStorage.getItem("language");
-      };
+  function CheckLanguage2() {
+    document.body.className = localStorage.getItem("language");
+  }
 
-      function CheckLanguage2() {
-        document.body.className = localStorage.getItem("language");
-      };
+  //this function makes the category image appear on hover
+  $("#MAKE").hover(
+    function () {
+      $("#CategoryContainer").addClass("CategoryImgFadeIn");
+      $("#CategoryContainer").css(
+        "background-image",
+        "url('assets/images/categorie/cat1-black.jpg')"
+      );
+    },
 
-        //this function makes the category image appear on hover
-                $("#MAKE").hover(
-                        function(){
-                                        $("#CategoryContainer").addClass("CategoryImgFadeIn");
-                                        $("#CategoryContainer").css("background-image", "url('assets/images/categorie/cat1-black.jpg')")
-                                  },
+    function () {
+      $("#CategoryContainer").removeClass("CategoryImgFadeIn");
+      $("#CategoryContainer").css("background-image", "none");
+    }
+  );
 
-                        function(){     $("#CategoryContainer").removeClass("CategoryImgFadeIn");
-                                        $("#CategoryContainer").css("background-image", "none")
-                                  }
-                );
+  $("#LEAVE").hover(
+    function () {
+      $("#CategoryContainer").addClass("CategoryImgFadeIn");
+      $("#CategoryContainer").css(
+        "background-image",
+        "url('assets/images/categorie/cat2-black.jpg')"
+      );
+    },
 
-                 $("#LEAVE").hover(
-                        function(){
-                                        $("#CategoryContainer").addClass("CategoryImgFadeIn");
-                                        $("#CategoryContainer").css("background-image", "url('assets/images/categorie/cat2-black.jpg')")
-                                  },
+    function () {
+      $("#CategoryContainer").removeClass("CategoryImgFadeIn");
+      $("#CategoryContainer").css("background-image", "none");
+    }
+  );
+  // 2 categoria
+  $("#SWIM").hover(
+    function () {
+      $("#CategoryContainer").addClass("CategoryImgFadeIn");
+      // $("#CategoryContainer").css("background-image", "url('assets/images/categorie/cat3-black.jpg')")
+      $("#CategoryContainer").css(
+        "background-image",
+        "url('assets/images/categorie/cat5-black.jpg')"
+      );
+    },
 
-                        function(){
-                                $("#CategoryContainer").removeClass("CategoryImgFadeIn");
-                                        $("#CategoryContainer").css("background-image", "none")
-                                  }
-                );
-                // 2 categoria
-                 $("#SWIM").hover(
-                        function(){
-                                        $("#CategoryContainer").addClass("CategoryImgFadeIn");
-                                        // $("#CategoryContainer").css("background-image", "url('assets/images/categorie/cat3-black.jpg')")
-                                        $("#CategoryContainer").css("background-image", "url('assets/images/categorie/cat5-black.jpg')")
-                                  },
+    function () {
+      $("#CategoryContainer").removeClass("CategoryImgFadeIn");
+      $("#CategoryContainer").css("background-image", "none");
+    }
+  );
 
-                        function(){
-                                        $("#CategoryContainer").removeClass("CategoryImgFadeIn");
-                                        $("#CategoryContainer").css("background-image", "none")
-                                  }
-                );
+  //about--------------------------------------------//
+  $("#makeyourpresence").hover(
+    function () {
+      $(this).css("opacity", "0");
+      $("#makeyourpresence_hover").css("opacity", "1");
+    },
+    function () {
+      $(this).css("opacity", "1");
+      $("#makeyourpresence_hover").css("opacity", "0");
+    }
+  );
+  // ----------------------
+  $(" #feeltheadrenalina").hover(
+    function () {
+      $(this).css("opacity", "0");
+      $("#feeltheadrenalina_hover").css("opacity", "1");
+    },
+    function () {
+      $(this).css("opacity", "1");
+      $("#feeltheadrenalina_hover").css("opacity", "0");
+    }
+  );
+  // ----------------------
+  $(" #swimagainst").hover(
+    function () {
+      $(this).css("opacity", "0");
+      $("#swimagainst_hover").css("opacity", "1");
+    },
+    function () {
+      $(this).css("opacity", "1");
+      $("#swimagainst_hover").css("opacity", "0");
+    }
+  );
+  // ----------------------
+  $(" #leaveyourmark").hover(
+    function () {
+      $(this).css("opacity", "0");
+      $("#leaveyourmark_hover").css("opacity", "1");
+    },
+    function () {
+      $(this).css("opacity", "1");
+      $("#leaveyourmark_hover").css("opacity", "0");
+    }
+  );
+  //svg mobile--------------------------------------------
 
-        //about--------------------------------------------//
-                $("#makeyourpresence").hover(
-                      function(){ $(this).css("opacity", "0");
-                            $("#makeyourpresence_hover").css("opacity", "1");
-                            },
-                      function(){ $(this).css("opacity", "1");
-                            $("#makeyourpresence_hover").css("opacity", "0");
-                            }
-                );
-        // ----------------------
-                $(" #feeltheadrenalina").hover(
-                      function(){ $(this).css("opacity", "0");
-                            $("#feeltheadrenalina_hover").css("opacity", "1");
-                            },
-                      function(){ $(this).css("opacity", "1");
-                            $("#feeltheadrenalina_hover").css("opacity", "0");
-                            }
-                );
-        // ----------------------
-                $(" #swimagainst").hover(
-                      function(){ $(this).css("opacity", "0");
-                            $("#swimagainst_hover").css("opacity", "1");
-                            },
-                      function(){ $(this).css("opacity", "1");
-                            $("#swimagainst_hover").css("opacity", "0");
-                            }
-                );
-        // ----------------------
-                $(" #leaveyourmark").hover(
-                      function(){ $(this).css("opacity", "0");
-                            $("#leaveyourmark_hover").css("opacity", "1");
-                            },
-                      function(){ $(this).css("opacity", "1");
-                            $("#leaveyourmark_hover").css("opacity", "0");
-                            }
-                );
-        //svg mobile--------------------------------------------
+  $("#makeyourpresence-mobile").hover(
+    function () {
+      $(this).css("opacity", "0");
+      $("#makeyourpresence_hover-mobile").css("opacity", "1");
+    },
+    function () {
+      $(this).css("opacity", "1");
+      $("#makeyourpresence_hover-mobile").css("opacity", "0");
+    }
+  );
 
-    $("#makeyourpresence-mobile").hover(
-      function() {
-        $(this).css("opacity", "0");
-        $("#makeyourpresence_hover-mobile").css("opacity", "1");
-      },
-      function() {
-        $(this).css("opacity", "1");
-        $("#makeyourpresence_hover-mobile").css("opacity", "0");
-      }
-    );
+  // ----------------------
+  $(" #feeltheadrenalina-mobile").hover(
+    function () {
+      $(this).css("opacity", "0");
+      $("#feeltheadrenalina_hover-mobile").css("opacity", "1");
+    },
+    function () {
+      $(this).css("opacity", "1");
+      $("#feeltheadrenalina_hover-mobile").css("opacity", "0");
+    }
+  );
 
-    // ----------------------
-    $(" #feeltheadrenalina-mobile").hover(
-      function() {
-        $(this).css("opacity", "0");
-        $("#feeltheadrenalina_hover-mobile").css("opacity", "1");
-      },
-      function() {
-        $(this).css("opacity", "1");
-        $("#feeltheadrenalina_hover-mobile").css("opacity", "0");
-      }
-    );
+  // ----------------------
+  $(" #swimagainst-mobile").hover(
+    function () {
+      $(this).css("opacity", "0");
+      $("#swimagainst_hover-mobile").css("opacity", "1");
+    },
+    function () {
+      $(this).css("opacity", "1");
+      $("#swimagainst_hover-mobile").css("opacity", "0");
+    }
+  );
 
-    // ----------------------
-    $(" #swimagainst-mobile").hover(
-      function() {
-        $(this).css("opacity", "0");
-        $("#swimagainst_hover-mobile").css("opacity", "1");
-      },
-      function() {
-        $(this).css("opacity", "1");
-        $("#swimagainst_hover-mobile").css("opacity", "0");
-      }
-    );
+  // ----------------------
+  $(" #leaveyourmark-mobile").hover(
+    function () {
+      $(this).css("opacity", "0");
+      $("#leaveyourmark_hover-mobile").css("opacity", "1");
+    },
+    function () {
+      $(this).css("opacity", "1");
+      $("#leaveyourmark_hover-mobile").css("opacity", "0");
+    }
+  );
 
-    // ----------------------
-    $(" #leaveyourmark-mobile").hover(
-      function() {
-        $(this).css("opacity", "0");
-        $("#leaveyourmark_hover-mobile").css("opacity", "1");
-      },
-      function() {
-        $(this).css("opacity", "1");
-        $("#leaveyourmark_hover-mobile").css("opacity", "0");
-      }
-    );
+  //Audio
+  $("#buttonAudio").click(function () {
+    toggleMute();
+  });
 
-    //Audio
-    $("#buttonAudio").click(function(){
-        toggleMute();
-    });
+  //about--------------------------------------------
 
-    //about--------------------------------------------
+  $("#makeyourpresence").hover(
+    function () {
+      $(this).css("opacity", "0");
+      $("#makeyourpresence_hover").css("opacity", "1");
+    },
+    function () {
+      $(this).css("opacity", "1");
+      $("#makeyourpresence_hover").css("opacity", "0");
+    }
+  );
 
-    $("#makeyourpresence").hover(
-                      function(){ $(this).css("opacity", "0");
-                            $("#makeyourpresence_hover").css("opacity", "1");
-                            },
-                      function(){ $(this).css("opacity", "1");
-                            $("#makeyourpresence_hover").css("opacity", "0");
-                            }
-                     );
+  // ----------------------
+  $(" #feeltheadrenalina").hover(
+    function () {
+      $(this).css("opacity", "0");
+      $("#feeltheadrenalina_hover").css("opacity", "1");
+    },
+    function () {
+      $(this).css("opacity", "1");
+      $("#feeltheadrenalina_hover").css("opacity", "0");
+    }
+  );
 
-        // ----------------------
-        $(" #feeltheadrenalina").hover(
-                      function(){ $(this).css("opacity", "0");
-                            $("#feeltheadrenalina_hover").css("opacity", "1");
-                            },
-                      function(){ $(this).css("opacity", "1");
-                            $("#feeltheadrenalina_hover").css("opacity", "0");
-                            }
-                     );
+  // ----------------------
+  $(" #swimagainst").hover(
+    function () {
+      $(this).css("opacity", "0");
+      $("#swimagainst_hover").css("opacity", "1");
+    },
+    function () {
+      $(this).css("opacity", "1");
+      $("#swimagainst_hover").css("opacity", "0");
+    }
+  );
 
-        // ----------------------
-        $(" #swimagainst").hover(
-                      function(){ $(this).css("opacity", "0");
-                            $("#swimagainst_hover").css("opacity", "1");
-                            },
-                      function(){ $(this).css("opacity", "1");
-                            $("#swimagainst_hover").css("opacity", "0");
-                            }
-                     );
+  // ----------------------
+  $(" #leaveyourmark").hover(
+    function () {
+      $(this).css("opacity", "0");
+      $("#leaveyourmark_hover").css("opacity", "1");
+    },
+    function () {
+      $(this).css("opacity", "1");
+      $("#leaveyourmark_hover").css("opacity", "0");
+    }
+  );
 
-        // ----------------------
-        $(" #leaveyourmark").hover(
-                      function(){ $(this).css("opacity", "0");
-                            $("#leaveyourmark_hover").css("opacity", "1");
-                            },
-                      function(){ $(this).css("opacity", "1");
-                            $("#leaveyourmark_hover").css("opacity", "0");
-                            }
-                     );
+  // ----------------------PAGINA DALLA PRODUZIONE AL TRASPORTO
+  $("#step1").hover(
+    function () {
+      $("#step1-image").addClass("step-image");
+      $("#step1-image").css("display", "none");
+      $("#step1-video").addClass("video-step-responsive-ok");
+      $("#step1-video").css("display", "block");
+      $("#step0-text-box").addClass("step-box");
+      $("#step0-text-box").css("display", "none");
+      $("#step1-text-box").addClass("step-box-ok");
+      $("#step1-text-box").css("display", "block");
+    },
 
+    function () {
+      $("#step1-image").removeClass("step-image");
+      $("#step1-image").css("display", "flex");
+      $("#step1-video").removeClass("video-step-responsive-ok");
+      $("#step1-video").css("display", "none");
+      $("#step0-text-box").removeClass("step-box");
+      $("#step0-text-box").css("display", "block");
+      $("#step1-text-box").removeClass("step-box-ok");
+      $("#step1-text-box").css("display", "none");
+    }
+  );
+  $("#step2").hover(
+    function () {
+      $("#step2-image").addClass("step-image");
+      $("#step2-image").css("display", "none");
+      $("#step2-video").addClass("video-step-responsive-ok");
+      $("#step2-video").css("display", "block");
+      $("#step0-text-box").addClass("step-box");
+      $("#step0-text-box").css("display", "none");
+      $("#step2-text-box").addClass("step-box-ok");
+      $("#step2-text-box").css("display", "block");
+    },
 
-        // ----------------------PAGINA DALLA PRODUZIONE AL TRASPORTO
-               $("#step1").hover(
-                 function() {
-                   $("#step1-image").addClass("step-image");
-                   $("#step1-image").css("display", "none");
-                   $("#step1-video").addClass("video-step-responsive-ok");
-                   $("#step1-video").css("display", "block");
-                   $("#step0-text-box").addClass("step-box");
-                   $("#step0-text-box").css("display", "none");
-                   $("#step1-text-box").addClass("step-box-ok");
-                   $("#step1-text-box").css("display", "block");
-                 },
+    function () {
+      $("#step2-image").removeClass("step-image");
+      $("#step2-image").css("display", "flex");
+      $("#step2-video").removeClass("video-step-responsive-ok");
+      $("#step2-video").css("display", "none");
+      $("#step0-text-box").removeClass("step-box");
+      $("#step0-text-box").css("display", "block");
+      $("#step2-text-box").removeClass("step-box-ok");
+      $("#step2-text-box").css("display", "none");
+    }
+  );
+  $("#step3").hover(
+    function () {
+      $("#step3-image").addClass("step-image");
+      $("#step3-image").css("display", "none");
+      $("#step3-video").addClass("video-step-responsive-ok");
+      $("#step3-video").css("display", "block");
+      $("#step0-text-box").addClass("step-box");
+      $("#step0-text-box").css("display", "none");
+      $("#step3-text-box").addClass("step-box-ok");
+      $("#step3-text-box").css("display", "block");
+    },
 
-                 function() {
-                   $("#step1-image").removeClass("step-image");
-                   $("#step1-image").css("display", "flex");
-                   $("#step1-video").removeClass("video-step-responsive-ok");
-                   $("#step1-video").css("display", "none");
-                   $("#step0-text-box").removeClass("step-box");
-                   $("#step0-text-box").css("display", "block");
-                   $("#step1-text-box").removeClass("step-box-ok");
-                   $("#step1-text-box").css("display", "none");
-                 }
-               );
-               $("#step2").hover(
-                 function() {
-                   $("#step2-image").addClass("step-image");
-                   $("#step2-image").css("display", "none");
-                   $("#step2-video").addClass("video-step-responsive-ok");
-                   $("#step2-video").css("display", "block");
-                   $("#step0-text-box").addClass("step-box");
-                   $("#step0-text-box").css("display", "none");
-                   $("#step2-text-box").addClass("step-box-ok");
-                   $("#step2-text-box").css("display", "block");
-                 },
+    function () {
+      $("#step3-image").removeClass("step-image");
+      $("#step3-image").css("display", "flex");
+      $("#step3-video").removeClass("video-step-responsive-ok");
+      $("#step3-video").css("display", "none");
+      $("#step0-text-box").removeClass("step-box");
+      $("#step0-text-box").css("display", "block");
+      $("#step3-text-box").removeClass("step-box-ok");
+      $("#step3-text-box").css("display", "none");
+    }
+  );
+  $("#step4").hover(
+    function () {
+      $("#step4-image").addClass("step-image");
+      $("#step4-image").css("display", "none");
+      $("#step4-video").addClass("video-step-responsive-ok");
+      $("#step4-video").css("display", "block");
+      $("#step0-text-box").addClass("step-box");
+      $("#step0-text-box").css("display", "none");
+      $("#step4-text-box").addClass("step-box-ok");
+      $("#step4-text-box").css("display", "block");
+    },
 
-                 function() {
-                   $("#step2-image").removeClass("step-image");
-                   $("#step2-image").css("display", "flex");
-                   $("#step2-video").removeClass("video-step-responsive-ok");
-                   $("#step2-video").css("display", "none");
-                   $("#step0-text-box").removeClass("step-box");
-                   $("#step0-text-box").css("display", "block");
-                   $("#step2-text-box").removeClass("step-box-ok");
-                   $("#step2-text-box").css("display", "none");
-                 }
-               );
-               $("#step3").hover(
-                 function() {
-                   $("#step3-image").addClass("step-image");
-                   $("#step3-image").css("display", "none");
-                   $("#step3-video").addClass("video-step-responsive-ok");
-                   $("#step3-video").css("display", "block");
-                   $("#step0-text-box").addClass("step-box");
-                   $("#step0-text-box").css("display", "none");
-                   $("#step3-text-box").addClass("step-box-ok");
-                   $("#step3-text-box").css("display", "block");
-                 },
+    function () {
+      $("#step4-image").removeClass("step-image");
+      $("#step4-image").css("display", "flex");
+      $("#step4-video").removeClass("video-step-responsive-ok");
+      $("#step4-video").css("display", "none");
+      $("#step0-text-box").removeClass("step-box");
+      $("#step0-text-box").css("display", "block");
+      $("#step4-text-box").removeClass("step-box-ok");
+      $("#step4-text-box").css("display", "none");
+    }
+  );
+  $("#step5").hover(
+    function () {
+      $("#step5-image").addClass("step-image");
+      $("#step5-image").css("display", "none");
+      $("#step5-video").addClass("video-step-responsive-ok");
+      $("#step5-video").css("display", "block");
+      $("#step0-text-box").addClass("step-box");
+      $("#step0-text-box").css("display", "none");
+      $("#step5-text-box").addClass("step-box-ok");
+      $("#step5-text-box").css("display", "block");
+    },
 
-                 function() {
-                   $("#step3-image").removeClass("step-image");
-                   $("#step3-image").css("display", "flex");
-                   $("#step3-video").removeClass("video-step-responsive-ok");
-                   $("#step3-video").css("display", "none");
-                   $("#step0-text-box").removeClass("step-box");
-                   $("#step0-text-box").css("display", "block");
-                   $("#step3-text-box").removeClass("step-box-ok");
-                   $("#step3-text-box").css("display", "none");
-                 }
-               );
-               $("#step4").hover(
-                 function() {
-                   $("#step4-image").addClass("step-image");
-                   $("#step4-image").css("display", "none");
-                   $("#step4-video").addClass("video-step-responsive-ok");
-                   $("#step4-video").css("display", "block");
-                   $("#step0-text-box").addClass("step-box");
-                   $("#step0-text-box").css("display", "none");
-                   $("#step4-text-box").addClass("step-box-ok");
-                   $("#step4-text-box").css("display", "block");
-                 },
+    function () {
+      $("#step5-image").removeClass("step-image");
+      $("#step5-image").css("display", "flex");
+      $("#step5-video").removeClass("video-step-responsive-ok");
+      $("#step5-video").css("display", "none");
+      $("#step0-text-box").removeClass("step-box");
+      $("#step0-text-box").css("display", "block");
+      $("#step5-text-box").removeClass("step-box-ok");
+      $("#step5-text-box").css("display", "none");
+    }
+  );
+  $("#step6").hover(
+    function () {
+      $("#step6-image").addClass("step-image");
+      $("#step6-image").css("display", "none");
+      $("#step6-video").addClass("video-step-responsive-ok");
+      $("#step6-video").css("display", "block");
+      $("#step0-text-box").addClass("step-box");
+      $("#step0-text-box").css("display", "none");
+      $("#step6-text-box").addClass("step-box-ok");
+      $("#step6-text-box").css("display", "block");
+    },
 
-                 function() {
-                   $("#step4-image").removeClass("step-image");
-                   $("#step4-image").css("display", "flex");
-                   $("#step4-video").removeClass("video-step-responsive-ok");
-                   $("#step4-video").css("display", "none");
-                   $("#step0-text-box").removeClass("step-box");
-                   $("#step0-text-box").css("display", "block");
-                   $("#step4-text-box").removeClass("step-box-ok");
-                   $("#step4-text-box").css("display", "none");
-                 }
-               );
-               $("#step5").hover(
-                 function() {
-                   $("#step5-image").addClass("step-image");
-                   $("#step5-image").css("display", "none");
-                   $("#step5-video").addClass("video-step-responsive-ok");
-                   $("#step5-video").css("display", "block");
-                   $("#step0-text-box").addClass("step-box");
-                   $("#step0-text-box").css("display", "none");
-                   $("#step5-text-box").addClass("step-box-ok");
-                   $("#step5-text-box").css("display", "block");
-                 },
+    function () {
+      $("#step6-image").removeClass("step-image");
+      $("#step6-image").css("display", "flex");
+      $("#step6-video").removeClass("video-step-responsive-ok");
+      $("#step6-video").css("display", "none");
+      $("#step0-text-box").removeClass("step-box");
+      $("#step0-text-box").css("display", "block");
+      $("#step6-text-box").removeClass("step-box-ok");
+      $("#step6-text-box").css("display", "none");
+    }
+  );
+  $("#step7").hover(
+    function () {
+      $("#step7-image").addClass("step-image");
+      $("#step7-image").css("display", "none");
+      $("#step7-video").addClass("video-step-responsive-ok");
+      $("#step7-video").css("display", "block");
+      $("#step0-text-box").addClass("step-box");
+      $("#step0-text-box").css("display", "none");
+      $("#step7-text-box").addClass("step-box-ok");
+      $("#step7-text-box").css("display", "block");
+    },
 
-                 function() {
-                   $("#step5-image").removeClass("step-image");
-                   $("#step5-image").css("display", "flex");
-                   $("#step5-video").removeClass("video-step-responsive-ok");
-                   $("#step5-video").css("display", "none");
-                   $("#step0-text-box").removeClass("step-box");
-                   $("#step0-text-box").css("display", "block");
-                   $("#step5-text-box").removeClass("step-box-ok");
-                   $("#step5-text-box").css("display", "none");
-                 }
-               );
-               $("#step6").hover(
-                 function() {
-                   $("#step6-image").addClass("step-image");
-                   $("#step6-image").css("display", "none");
-                   $("#step6-video").addClass("video-step-responsive-ok");
-                   $("#step6-video").css("display", "block");
-                   $("#step0-text-box").addClass("step-box");
-                   $("#step0-text-box").css("display", "none");
-                   $("#step6-text-box").addClass("step-box-ok");
-                   $("#step6-text-box").css("display", "block");
-                 },
+    function () {
+      $("#step7-image").removeClass("step-image");
+      $("#step7-image").css("display", "flex");
+      $("#step7-video").removeClass("video-step-responsive-ok");
+      $("#step7-video").css("display", "none");
+      $("#step0-text-box").removeClass("step-box");
+      $("#step0-text-box").css("display", "block");
+      $("#step7-text-box").removeClass("step-box-ok");
+      $("#step7-text-box").css("display", "none");
+    }
+  );
 
-                 function() {
-                   $("#step6-image").removeClass("step-image");
-                   $("#step6-image").css("display", "flex");
-                   $("#step6-video").removeClass("video-step-responsive-ok");
-                   $("#step6-video").css("display", "none");
-                   $("#step0-text-box").removeClass("step-box");
-                   $("#step0-text-box").css("display", "block");
-                   $("#step6-text-box").removeClass("step-box-ok");
-                   $("#step6-text-box").css("display", "none");
-                 }
-               );
-               $("#step7").hover(
-                 function() {
-                   $("#step7-image").addClass("step-image");
-                   $("#step7-image").css("display", "none");
-                   $("#step7-video").addClass("video-step-responsive-ok");
-                   $("#step7-video").css("display", "block");
-                   $("#step0-text-box").addClass("step-box");
-                   $("#step0-text-box").css("display", "none");
-                   $("#step7-text-box").addClass("step-box-ok");
-                   $("#step7-text-box").css("display", "block");
-                 },
-
-                 function() {
-                   $("#step7-image").removeClass("step-image");
-                   $("#step7-image").css("display", "flex");
-                   $("#step7-video").removeClass("video-step-responsive-ok");
-                   $("#step7-video").css("display", "none");
-                   $("#step0-text-box").removeClass("step-box");
-                   $("#step0-text-box").css("display", "block");
-                   $("#step7-text-box").removeClass("step-box-ok");
-                   $("#step7-text-box").css("display", "none");
-                 }
-               );
-
-               // CheckLanguage();
-               // function CheckLanguage(){
-               //   var it = true;
-               //   if (localStorage.getItem('en') == "true"){
-               //      it = false;
-               //   };
-               //   if (localStorage.getItem('it') == "true"){
-               //      it = true;
-               //   }
-               // };
-
-
-
+  // CheckLanguage();
+  // function CheckLanguage(){
+  //   var it = true;
+  //   if (localStorage.getItem('en') == "true"){
+  //      it = false;
+  //   };
+  //   if (localStorage.getItem('it') == "true"){
+  //      it = true;
+  //   }
+  // };
 });
 
 //Audio button//
 function toggleMute() {
-
-    var video=document.getElementById("coverVideo")
-    if(video.muted){video.muted = false;
-                    $('#buttonAudio').attr('src', "assets/images/icon-mutono.png");
-                   }
-    else {	video.muted = true;
-          $('#buttonAudio').attr('src', "assets/images/icon-mutoyes.png");
-         }
-    console.log("ok!");
+  var video = document.getElementById("coverVideo");
+  if (video.muted) {
+    video.muted = false;
+    $("#buttonAudio").attr("src", "assets/images/icon-mutono.png");
+  } else {
+    video.muted = true;
+    $("#buttonAudio").attr("src", "assets/images/icon-mutoyes.png");
+  }
+  console.log("ok!");
 }
 
 //Reviews//
-$(".show-more a").on("click", function() {
-    var $this = $(this);
-    var $content = $this.parent().prev("div.content");
-    var linkText = $this.text().toUpperCase();
+$(".show-more a").on("click", function () {
+  var $this = $(this);
+  var $content = $this.parent().prev("div.content");
+  var linkText = $this.text().toUpperCase();
 
-    if(linkText === "SHOW MORE"){
-        linkText = "show less";
-        $content.switchClass("hideContent", "showContent", 400);
-    }
+  if (linkText === "SHOW MORE") {
+    linkText = "show less";
+    $content.switchClass("hideContent", "showContent", 400);
+  } else {
+    linkText = "show more";
+    $content.switchClass("showContent", "hideContent", 400);
+  }
 
-    else {
-        linkText = "show more";
-        $content.switchClass("showContent", "hideContent", 400);
-    };
-
-    $this.text(linkText);
-
+  $this.text(linkText);
 });
-
 
 //Menu category//
 function showMake() {
-    $("#makebtn").css("display", "inline-block");
-    $("#leavebtn, #swimbtn, #feelbtn").css("display", "none");
-};
+  $("#makebtn").css("display", "inline-block");
+  $("#leavebtn, #swimbtn, #feelbtn").css("display", "none");
+}
 
 function showLeave() {
-    $("#leavebtn").css("display", "inline-block");
-    $("#makebtn, #swimbtn, #feelbtn").css("display", "none");
-};
+  $("#leavebtn").css("display", "inline-block");
+  $("#makebtn, #swimbtn, #feelbtn").css("display", "none");
+}
 
 function showSwim() {
-    $("#swimbtn").css("display", "inline-block");
-    $("#leavebtn, #makebtn, #feelbtn").css("display", "none");
-};
+  $("#swimbtn").css("display", "inline-block");
+  $("#leavebtn, #makebtn, #feelbtn").css("display", "none");
+}
 
 function showFeel() {
-    $("#feelbtn").css("display", "inline-block");
-    $("#leavebtn, #swimbtn, #makebtn").css("display", "none");
-};
+  $("#feelbtn").css("display", "inline-block");
+  $("#leavebtn, #swimbtn, #makebtn").css("display", "none");
+}
 
 //menu
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
-    $(".overlay-content").css("opacity", "1");
-          $('#menuButton').hide();
-          $('#exitButton').show();
+  $(".overlay-content").css("opacity", "1");
+  $("#menuButton").hide();
+  $("#exitButton").show();
 }
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
   $(".overlay-content").css("opacity", "0");
-        $('#menuButton').show();
-        $('#exitButton').hide();
+  $("#menuButton").show();
+  $("#exitButton").hide();
 }
 
 //LOADER
 
 var loader = document.getElementById("loader");
 
-window.setTimeout(function(){
-    loader.style.height="500px";
-    loader.style.width="500px";
-    loader.style.visibility ="hidden";
+window.setTimeout(function () {
+  loader.style.height = "500px";
+  loader.style.width = "500px";
+  loader.style.visibility = "hidden";
 }, 2700);
 
 //hover modal coltivazioni----------------------------
@@ -540,12 +570,12 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
@@ -553,15 +583,19 @@ function showSlides(n) {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
   // var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
+  if (slides[slideIndex - 1]) slides[slideIndex - 1].style.display = "block";
   // dots[slideIndex-1].className += " active";
   // captionText.innerHTML = dots[slideIndex-1].alt;
 }
