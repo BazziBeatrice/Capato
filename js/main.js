@@ -124,6 +124,21 @@ $(document).ready(function () {
     }
   );
 
+  $("#PNRR").hover(
+    function () {
+      $("#CategoryContainer").addClass("CategoryImgFadeIn");
+      $("#CategoryContainer").css(
+        "background-image",
+        "url('assets/images/pnrr/pannellisolari.jpg')"
+      );
+    },
+
+    function () {
+      $("#CategoryContainer").removeClass("CategoryImgFadeIn");
+      $("#CategoryContainer").css("background-image", "none");
+    }
+  );
+
   //about--------------------------------------------//
   $("#makeyourpresence").hover(
     function () {

@@ -267,7 +267,8 @@
   .categoryBt-border {
     text-align: center;
     vertical-align: middle;
-    width: 320px;
+    width: 100%;
+    max-width: 350px;
   }
 
   .categoryDescr {
@@ -588,14 +589,19 @@
     .container-cicloproduzione {
       padding: 0%;
       display: flex;
-      height: 40vh;
+      height: auto;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(8, 5vw);
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
       grid-gap: 1rem;
+    }
+
+    .gallery figure {
+      grid-column: span 1 !important;
+      grid-row: span 1 !important;
     }
 
     .margin-top50 {
@@ -870,7 +876,8 @@
     .categoryBt-border {
       text-align: center;
       vertical-align: middle;
-      width: 320px;
+      width: 100%;
+      max-width: 350px;
     }
 
     .categoryDiv {
@@ -1867,3 +1874,4 @@
       font-size: 40px;
     }
   }
+}
