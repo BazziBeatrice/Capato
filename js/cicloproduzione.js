@@ -1,23 +1,60 @@
-
 $(document).ready(function() {
+    
+    function activateStep(element) {
+        var stepId = $(element).attr('id');
+        if (!stepId) return;
 
-      if ($(window).width() < 768) {
-        document.getElementById("step1-video").src = "../assets/images/produzione/baulaturaterreno.mp4";
-        document.getElementById("step1-video").load();
-        document.getElementById("step2-video").src = "../assets/images/produzione/trapianto-mobile.mp4";
-        document.getElementById("step2-video").load();
-        document.getElementById("step3-video").src = "../assets/images/produzione/sarchiatura.mp4";
-        document.getElementById("step3-video").load();
-        document.getElementById("step4-video").src = "../assets/images/produzione/raccolta.mp4";
-        document.getElementById("step4-video").load();
-        document.getElementById("step5-video").src = "../assets/images/produzione/lavaggio.mp4";
-        document.getElementById("step5-video").load();
-        document.getElementById("step6-video").src = "../assets/images/produzione/stoccaggio.mp4";
-        document.getElementById("step6-video").load();
-        document.getElementById("step7-video").src = "../assets/images/produzione/trasporto2.mp4";
-        document.getElementById("step7-video").load();
-        document.getElementById("step6-video").src = "../assets/images/produzione/stoccaggio.mp4";
-        document.getElementById("step6-video").load();
-      }
+        // 1. Gestione Box (Allargamento)
+        $('.box').removeClass('active');
+        $(element).addClass('active');
 
-  });
+        // 2. Gestione Testi
+        $('.step-text-box').hide(); 
+        $('#' + stepId + '-text-box').fadeIn(300);
+
+        // 3. Gestione Video
+        $('video').each(function() {
+            this.pause();
+            $(this).css('opacity', '0');
+        });
+
+        var video = $(element).find('video')[0];
+        if (video) {
+            $(video).css('opacity', '1');
+            video.currentTime = 0;
+            video.play().catch(function(e) { console.log("Autoplay prevent", e); });
+        }
+    }
+
+    function resetToDefault() {
+        $('.box').removeClass('active');
+        $('.step-text-box').hide();
+        $('#step0-text-box').show();
+        $('video').each(function() {
+            this.pause();
+            $(this).css('opacity', '0');
+        });
+    }
+
+    // EVENTI
+    $('.box').on('click', function(e) {
+        // Su mobile attiva lo step al click/tap
+        if ($(window).width() < 992) {
+            activateStep(this);
+        }
+    });
+
+    $('.box').on('mouseenter', function() {
+        // Su desktop attiva all'hover
+        if ($(window).width() >= 992) {
+            activateStep(this);
+        }
+    });
+
+    $('.container-cicloproduzione').on('mouseleave', function() {
+        // Reset solo su desktop quando esci dal contenitore
+        if ($(window).width() >= 992) {
+            resetToDefault();
+        }
+    });
+});

@@ -21,11 +21,11 @@ $(window).scroll(function () {
     $(".full-img").css("visibility", "hidden");
   }
 
-  if (scroll < 1200) {
-    $("#main-footer-index").hide();
-  } else {
-    $("#main-footer-index").show();
-  }
+  // if (scroll < 1200) {
+  //   $("#main-footer-index").hide();
+  // } else {
+  //   $("#main-footer-index").show();
+  // }
 });
 
 $(".carousel").carousel({
