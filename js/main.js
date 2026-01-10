@@ -516,8 +516,6 @@ function closeNav() {
 var loader = document.getElementById("loader");
 
 window.setTimeout(function () {
-  loader.style.height = "500px";
-  loader.style.width = "500px";
   loader.style.visibility = "hidden";
 }, 2700);
 

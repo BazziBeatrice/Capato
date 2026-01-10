@@ -334,9 +334,11 @@ footer {
 .carousel-inner a:hover {
   color: #FFFFFF;
 }
+
 .top4 {
   margin-top: 2rem;
 }
+
 .freccia {
   width: 15px;
   display: block;
@@ -345,9 +347,11 @@ footer {
   padding-left: 0px;
   padding-right: 0px;
 }
+
 .hidden-arrow-desktop {
   display: none;
 }
+
 .textabove {
   position: absolute;
   padding-left: 15px;
@@ -357,15 +361,18 @@ footer {
   right: 15px;
   left: 15px;
 }
+
 .coltivation-card-text {
   font-family: "Cormorant Garamond", serif;
   text-align: left;
 }
+
 .coltivation-card-description {
   font-size: 16px;
   line-height: 26px;
   color: black;
 }
+
 .img-colt:hover {
   opacity: 0.7;
 }
@@ -1147,6 +1154,7 @@ a.containerabout:hover {
   border: 1.5px solid #F39200;
   height: 125px;
 }
+
 #makeyourpresence_hover,
 #feeltheadrenalina_hover,
 #swimagainst_hover,
@@ -1425,22 +1433,26 @@ ul {
 .box:hover>img {
   width: 100%;
   height: 100%;
-  max-height: 800px; /* /* opzione per far vedere l'immagine tutta intera e non tagliata: */
+  max-height: 800px;
+  /* /* opzione per far vedere l'immagine tutta intera e non tagliata: */
   object-fit: scale-down;
 }
 
 .video-step-responsive {
-  display: block !important; /* Deve essere presente nel DOM */
+  display: block !important;
+  /* Deve essere presente nel DOM */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0; /* Lo rendiamo invisibile invece di rimuoverlo */
+  opacity: 0;
+  /* Lo rendiamo invisibile invece di rimuoverlo */
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
+
 .img-azienda {
   width: 100%;
 }
@@ -1453,8 +1465,10 @@ ul {
   margin: 0 auto;
   text-align: center;
 }
+
 #step0-text-box {
-  display: block; /* Visibile di default */
+  display: block;
+  /* Visibile di default */
 }
 
 /* CONTAINER PRINCIPALE */
@@ -1481,13 +1495,17 @@ ul {
 }
 
 /* IMMAGINI E VIDEO */
-.box img, .box video {
+.box img,
+.box video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Garantisce il riempimento totale (effetto zoom) */
+  object-fit: cover;
+  /* Garantisce il riempimento totale (effetto zoom) */
   display: block;
-  pointer-events: none; /* Impedisce che l'immagine blocchi il click del box */
+  pointer-events: none;
+  /* Impedisce che l'immagine blocchi il click del box */
 }
+
 .box video {
   position: absolute;
   top: 0;
@@ -1497,38 +1515,46 @@ ul {
 }
 
 /* Stato Attivo / Hover */
-.box:hover, .box.active {
+.box:hover,
+.box.active {
   flex: 5 !important;
 }
+
 /* .box.active .video-step-responsive, 
 .box:hover .video-step-responsive {
   opacity: 1;
 } */
 /* Mostra video e nasconde immagine quando attivo */
-.box:hover video, .box.active video {
+.box:hover video,
+.box.active video {
   opacity: 1;
 }
 
-.box:hover img, .box.active img {
+.box:hover img,
+.box.active img {
   opacity: 0;
 }
+
 /* Forza la pulizia dell'area testi su mobile */
 [id$="-text-box"] {
-    width: 100%;
-    position: relative !important; /* Impedisce sovrapposizioni */
-    /* display: none;  */
+  width: 100%;
+  position: relative !important;
+  /* Impedisce sovrapposizioni */
+  /* display: none;  */
 }
+
 /* Rimuovi margini negativi se presenti che spingono il testo sopra l'immagine */
-.title-description-produzione, 
+.title-description-produzione,
 .text-description-produzione {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 
 /* TESTI SOTTO LE IMMAGINI */
 .title-description-produzione {
-  margin-top: 20px; /* Spazio controllato dall'immagine */
+  margin-top: 20px;
+  /* Spazio controllato dall'immagine */
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
   font-size: 32px;
@@ -1546,7 +1572,8 @@ ul {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px; /* Spazio finale prima del footer */
+  margin-bottom: 50px;
+  /* Spazio finale prima del footer */
 }
 
 /*menu---------------------------------------------------------------------------*/
@@ -1936,16 +1963,14 @@ input[type=submit]:hover {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  /* Non più 4000px */
-  height: 100vh;
+  width: 100vw !important;
+  height: 100vh !important;
   background: #000;
   z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
   pointer-events: none;
-  /* Impedisce di interagire con esso dopo il caricamento */
 }
 
 #loader img {
@@ -2452,4 +2477,3 @@ a:not([href]):not([tabindex]) {
   background-color: #a1c7a4;
   /* Verde aziendale al passaggio del mouse */
 }
-

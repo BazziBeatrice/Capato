@@ -14,6 +14,14 @@
    ========================================================================== */
 @media (max-width: 576px) {
 
+  html,
+  body {
+    overflow-x: hidden !important;
+    position: relative;
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+
   /* Da CART PHONE & HOMEPAGE PHONE */
   .cartcontent {
     padding-left: 30px;
@@ -304,12 +312,14 @@
     padding: 0%;
     display: flex;
     height: 30vh;
+    overflow-x: auto;
+    width: 100vw !important;
   }
 
   .box {
-    Transition: .5s;
-    min-width: 100px;
     flex: 1;
+    min-width: 15vw;
+    transition: .5s;
   }
 
   .box.active {
@@ -543,1319 +553,1311 @@
     list-style: none;
     font-size: 15px;
   }
-}
 
-/* ==========================================================================
+  /* ==========================================================================
    3. MOBILE DEVICES (max-width 767px) - Specifiche Cart
    ========================================================================== */
-@media (max-width: 768px) {
-  .flag-icon {
-    width: 8%;
+  @media (max-width: 768px) {
+    .flag-icon {
+      width: 8%;
+    }
+
+    .illustration-numbers {
+      position: absolute;
+      left: 5%;
+      top: 25%;
+      z-index: 1;
+      width: 40%;
+    }
+
+    .illustration-numbers2 {
+      position: absolute;
+      z-index: 1;
+      left: 124%;
+      top: -130px;
+      height: 30vh;
+    }
+
+    .container,
+    .container-cicloproduzione {
+      padding: 0%;
+      display: flex;
+      height: 40vh;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 5vw);
+      grid-gap: 1rem;
+    }
+
+    .margin-top50 {
+      margin-top: -360px;
+    }
+
+    .modal-content {
+      width: 90%;
+    }
+
+    closemodal {
+      left: 87%;
+    }
+
+    .telephonenumber,
+    .telephonenumber:hover,
+    .telephonenumber:active {
+      color: black;
+    }
+
+    #CategoryContainer {
+      margin-top: -120px;
+    }
+
+    .box {
+      flex: 1;
+      min-width: 100px;
+      transition: .5s;
+    }
+
+    .box.active {
+      min-width: 300px;
+      flex: 5 !important;
+    }
+
+    .whiteBack {
+      margin-top: -2px;
+      background-color: #FFFFFF;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .video-step-responsive {
+      width: 100%;
+      height: 350px;
+    }
+
+    .cartelement {
+      padding-bottom: 70px;
+    }
+
+    .bar-menu-right {
+      margin-top: 0.5rem;
+      font-size: 18px;
+    }
+
+    .credits-website {
+      text-align: left;
+    }
+
+    #main-content {
+      margin-bottom: 460px;
+      position: relative;
+      z-index: 1;
+      background: black;
+      /* Ensure it covers the fixed footer */
+    }
+
+    .overlay-content {
+      position: relative;
+      top: 10%;
+      width: 100%;
+      text-align: center;
+      margin-top: 100px;
+      margin-left: 30px;
+    }
+
+    .menu-text {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 500;
+      font-size: 27px;
+      line-height: 43px;
+      text-align: left;
+      transition: 0.1s;
+    }
+
+    .overlay a {
+      padding: 3px;
+    }
+
+    li::before {
+      width: 25px;
+      left: -15px;
+      background: #72BF9A;
+      height: 1px;
+      position: absolute;
+      bottom: 20px;
+    }
+
+    .about {
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .price {
+      font-size: medium;
+      padding-left: 0px;
+    }
+
+    .quantity-label {
+      margin-left: 7px;
+    }
+
+    .Qty {
+      font-size: medium !important;
+    }
+
+    a.purchasebtn,
+    a.purchasebtn:hover {
+      margin: 20px 0 84% 0;
+    }
+
+    .bento-grid {
+      display: flex;
+      flex-direction: column;
+      /* Incolonna i box */
+      gap: 1rem;
+    }
+
+    .bento-item {
+      grid-column: span 6 !important;
+      /* Forza larghezza piena */
+      padding: 30px;
+      border-radius: 25px;
+      /* Angoli leggermente più piccoli su mobile */
+    }
+
+    /* Il box immagine si adatta al contenuto */
+    .bento-image-box {
+      order: 2;
+      /* Lo mette al centro tra i due box dati se vuoi, o lascialo scorrere */
+      padding: 40px;
+      height: auto;
+    }
+
+    .eu-logo {
+      max-width: 70%;
+      /* Evita che il logo sia troppo gigante su mobile */
+    }
+
+    .bento-icon {
+      max-width: 60px;
+      /* Dimensione fissa per le icone su mobile */
+    }
+
+    /* .step-text-box { display: none; width: 100%; padding: 0 15px; } */
+    /* #step0-text-box { display: block; } */
   }
 
-  .illustration-numbers {
-    position: absolute;
-    left: 5%;
-    top: 25%;
-    z-index: 1;
-    width: 40%;
-  }
-
-  .illustration-numbers2 {
-    position: absolute;
-    z-index: 1;
-    left: 124%;
-    top: -130px;
-    height: 30vh;
-  }
-
-  .container,
-  .container-cicloproduzione {
-    padding: 0%;
-    display: flex;
-    height: 40vh;
-  }
-
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 1rem;
-  }
-
-  .margin-top50 {
-    margin-top: -360px;
-  }
-
-  .modal-content {
-    width: 90%;
-  }
-
-  closemodal {
-    left: 87%;
-  }
-
-  .telephonenumber,
-  .telephonenumber:hover,
-  .telephonenumber:active {
-    color: black;
-  }
-
-  #CategoryContainer {
-    margin-top: -120px;
-  }
-
-  .box {
-    flex: 1;
-    min-width: 100px;
-    transition: .5s;
-  }
-
-  .box.active {
-    min-width: 300px;
-    flex: 5 !important;
-  }
-
-  .whiteBack {
-    margin-top: -2px;
-    background-color: #FFFFFF;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-
-  .video-step-responsive {
-    width: 100%;
-    height: 350px;
-  }
-
-  .cartelement {
-    padding-bottom: 70px;
-  }
-
-  .bar-menu-right {
-    margin-top: 0.5rem;
-    font-size: 18px;
-  }
-
-  .credits-website {
-    text-align: left;
-  }
-
-  #main-content {
-    margin-bottom: 460px;
-    z-index: 2;
-  }
-
-  .overlay-content {
-    position: relative;
-    top: 10%;
-    width: 100%;
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 30px;
-  }
-
-  .menu-text {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 500;
-    font-size: 27px;
-    line-height: 43px;
-    text-align: left;
-    transition: 0.1s;
-  }
-
-  .overlay a {
-    padding: 3px;
-  }
-
-  li::before {
-    width: 25px;
-    left: -15px;
-    background: #72BF9A;
-    height: 1px;
-    position: absolute;
-    bottom: 20px;
-  }
-
-  .about {
-    font-size: 13px;
-    font-weight: 500;
-    margin-bottom: 1rem;
-  }
-
-  .price {
-    font-size: medium;
-    padding-left: 0px;
-  }
-
-  .quantity-label {
-    margin-left: 7px;
-  }
-
-  .Qty {
-    font-size: medium !important;
-  }
-
-  a.purchasebtn,
-  a.purchasebtn:hover {
-    margin: 20px 0 84% 0;
-  }
-
-  .bento-grid {
-    display: flex;
-    flex-direction: column;
-    /* Incolonna i box */
-    gap: 1rem;
-  }
-
-  .bento-item {
-    grid-column: span 6 !important;
-    /* Forza larghezza piena */
-    padding: 30px;
-    border-radius: 25px;
-    /* Angoli leggermente più piccoli su mobile */
-  }
-
-  /* Il box immagine si adatta al contenuto */
-  .bento-image-box {
-    order: 2;
-    /* Lo mette al centro tra i due box dati se vuoi, o lascialo scorrere */
-    padding: 40px;
-    height: auto;
-  }
-
-  .eu-logo {
-    max-width: 70%;
-    /* Evita che il logo sia troppo gigante su mobile */
-  }
-
-  .bento-icon {
-    max-width: 60px;
-    /* Dimensione fissa per le icone su mobile */
-  }
-
-  /* .step-text-box { display: none; width: 100%; padding: 0 15px; } */
-  /* #step0-text-box { display: block; } */
-}
-
-/* ==========================================================================
+  /* ==========================================================================
    4. TABLET (768px - 1024px)
    ========================================================================== */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .illustration-numbers {
-    position: absolute;
-    left: 1%;
-    top: 10%;
-    z-index: 1;
-    width: 100%;
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .illustration-numbers {
+      position: absolute;
+      left: 1%;
+      top: 10%;
+      z-index: 1;
+      width: 100%;
+    }
+
+    .illustration-numbers2 {
+      position: absolute;
+      z-index: 1;
+      left: 484%;
+      top: -245px;
+    }
+
+    .telephonenumber,
+    .telephonenumber:hover,
+    .telephonenumber:active {
+      color: black;
+    }
+
+    .image-tablet-100 {
+      width: 100%;
+      height: auto;
+    }
+
+    .presentationDescrTitle {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 700;
+      font-size: 28px;
+      margin-top: 0rem;
+    }
+
+    .presentationDescrTitle2 {
+      font-size: 24px;
+      line-height: 2.2rem;
+    }
+
+    .presentationDescr2 {
+      font-size: 14px;
+      line-height: 1.7rem;
+    }
+
+    .cartcontent {
+      padding: 25px 20px 0 20px;
+    }
+
+    a.closebtn {
+      padding-left: 40px;
+    }
+
+    #main-content {
+      margin-bottom: 360px;
+    }
+
+    .credits-website {
+      text-align: left;
+    }
+
+    .margin-hundred,
+    .margin-fifty {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    #section-contacts {
+      height: 75vh;
+    }
+
+    #set-jetters-logo {
+      width: 100px;
+    }
+
+    .cover {
+      padding-top: 25%;
+    }
+
+    #main-title {
+      font-size: 80px;
+      line-height: 6rem;
+    }
+
+    #main-subtitle {
+      font-size: 45px;
+    }
+
+    #CategoryContainer {
+      padding-top: 130px;
+      padding-bottom: 150px;
+      height: auto;
+    }
+
+    .categoryBt {
+      font-size: 35px;
+      font-weight: 400;
+      width: 100%;
+      height: 170px;
+      line-height: 100px;
+      padding: 30px 50px;
+      color: #F39200;
+      border: 5px solid #F39200;
+    }
+
+    .zero-padding-phone {
+      padding: 0;
+    }
+
+    .categoryBt-border {
+      text-align: center;
+      vertical-align: middle;
+      width: 320px;
+    }
+
+    .categoryDiv {
+      margin-top: 14rem;
+      width: 100%;
+      position: relative;
+      color: #fff;
+    }
+
+    .categoryDiv-ipad {
+      margin-top: 1rem;
+      margin-left: 11rem;
+    }
+
+    .number {
+      margin-left: -30%;
+      margin-top: 100%;
+    }
+
+    .carousel-indicators {
+      bottom: -10%;
+    }
+
+    .categoryDescr {
+      display: none;
+      width: 100%;
+      margin-top: 0rem;
+    }
+
+    .margin-top-cards2,
+    .margincards,
+    .margin-top-cards4 {
+      margin-top: 10%;
+    }
+
+    .margin-top-cards3 {
+      margin-top: 0%;
+      margin-bottom: 10%;
+    }
+
+    .box {
+      max-height: 400px;
+    }
+
+    .title-description-produzione {
+      margin-top: -80%;
+    }
+
+    .text-description-produzione {
+      margin-top: -72%;
+    }
+
+    .menu-text {
+      font-size: 50px;
+    }
+
+    .overlay-content {
+      top: 25%;
+    }
+
+    #subscribe {
+      margin-left: 0rem;
+      margin-top: 0.5rem;
+    }
+
+    .whiteBack {
+      margin-top: -1px;
+    }
+
+    .margin-botton-audio {
+      margin-top: 58%;
+      padding-right: 0%;
+    }
+
+    .category-title {
+      font-size: 45px;
+      line-height: 3.5rem;
+    }
+
+    .category-text {
+      font-size: 16px;
+    }
+
+    .category-choose a {
+      font-size: 14px;
+    }
+
+    .closemodal {
+      left: 76%;
+    }
+
+    .hideContent {
+      height: 17.2em;
+    }
+
+    .freccia {
+      margin-top: 120px;
+    }
+
+    .about-margin {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .fixed {
+      position: relative;
+    }
+
+    .textabout {
+      margin-top: 0rem;
+      font-size: 26px;
+      line-height: 40px;
+      font-weight: 300;
+    }
+
+    .carousel-margin-about {
+      margin-left: 50px;
+      margin-right: 0px;
+      margin-top: 50px;
+    }
+
+    .centeredtextabout {
+      position: absolute;
+      top: 60%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+    }
+
+    .centeredtextabout2 {
+      position: absolute;
+      top: 80%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+    }
+
+    .centeredtextabout3 {
+      position: absolute;
+      top: 80%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+    }
+
+    ul {
+      list-style: none;
+      font-size: 20px;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    #image-about {
+      height: 375px;
+      opacity: 1;
+      padding-bottom: 10%;
+    }
+
+    .descriptionabout {
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 300;
+    }
   }
 
-  .illustration-numbers2 {
-    position: absolute;
-    z-index: 1;
-    left: 484%;
-    top: -245px;
-  }
-
-  .telephonenumber,
-  .telephonenumber:hover,
-  .telephonenumber:active {
-    color: black;
-  }
-
-  .image-tablet-100 {
-    width: 100%;
-    height: auto;
-  }
-
-  .presentationDescrTitle {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 700;
-    font-size: 28px;
-    margin-top: 0rem;
-  }
-
-  .presentationDescrTitle2 {
-    font-size: 24px;
-    line-height: 2.2rem;
-  }
-
-  .presentationDescr2 {
-    font-size: 14px;
-    line-height: 1.7rem;
-  }
-
-  .cartcontent {
-    padding: 25px 20px 0 20px;
-  }
-
-  a.closebtn {
-    padding-left: 40px;
-  }
-
-  #main-content {
-    margin-bottom: 360px;
-  }
-
-  .credits-website {
-    text-align: left;
-  }
-
-  .margin-hundred,
-  .margin-fifty {
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-
-  #section-contacts {
-    height: 75vh;
-  }
-
-  #set-jetters-logo {
-    width: 100px;
-  }
-
-  .cover {
-    padding-top: 25%;
-  }
-
-  #main-title {
-    font-size: 80px;
-    line-height: 6rem;
-  }
-
-  #main-subtitle {
-    font-size: 45px;
-  }
-
-  #CategoryContainer {
-    padding-top: 130px;
-    padding-bottom: 150px;
-    height: auto;
-  }
-
-  .categoryBt {
-    font-size: 35px;
-    font-weight: 400;
-    width: 100%;
-    height: 170px;
-    line-height: 100px;
-    padding: 30px 50px;
-    color: #F39200;
-    border: 5px solid #F39200;
-  }
-
-  .zero-padding-phone {
-    padding: 0;
-  }
-
-  .categoryBt-border {
-    text-align: center;
-    vertical-align: middle;
-    width: 320px;
-  }
-
-  .categoryDiv {
-    margin-top: 14rem;
-    width: 100%;
-    position: relative;
-    color: #fff;
-  }
-
-  .categoryDiv-ipad {
-    margin-top: 1rem;
-    margin-left: 11rem;
-  }
-
-  .number {
-    margin-left: -30%;
-    margin-top: 100%;
-  }
-
-  .carousel-indicators {
-    bottom: -10%;
-  }
-
-  .categoryDescr {
-    display: none;
-    width: 100%;
-    margin-top: 0rem;
-  }
-
-  .margin-top-cards2,
-  .margincards,
-  .margin-top-cards4 {
-    margin-top: 10%;
-  }
-
-  .margin-top-cards3 {
-    margin-top: 0%;
-    margin-bottom: 10%;
-  }
-
-  .box {
-    max-height: 400px;
-  }
-
-  .title-description-produzione {
-    margin-top: -80%;
-  }
-
-  .text-description-produzione {
-    margin-top: -72%;
-  }
-
-  .menu-text {
-    font-size: 50px;
-  }
-
-  .overlay-content {
-    top: 25%;
-  }
-
-  #subscribe {
-    margin-left: 0rem;
-    margin-top: 0.5rem;
-  }
-
-  .whiteBack {
-    margin-top: -1px;
-  }
-
-  .margin-botton-audio {
-    margin-top: 58%;
-    padding-right: 0%;
-  }
-
-  .category-title {
-    font-size: 45px;
-    line-height: 3.5rem;
-  }
-
-  .category-text {
-    font-size: 16px;
-  }
-
-  .category-choose a {
-    font-size: 14px;
-  }
-
-  .closemodal {
-    left: 76%;
-  }
-
-  .hideContent {
-    height: 17.2em;
-  }
-
-  .freccia {
-    margin-top: 120px;
-  }
-
-  .about-margin {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .fixed {
-    position: relative;
-  }
-
-  .textabout {
-    margin-top: 0rem;
-    font-size: 26px;
-    line-height: 40px;
-    font-weight: 300;
-  }
-
-  .carousel-margin-about {
-    margin-left: 50px;
-    margin-right: 0px;
-    margin-top: 50px;
-  }
-
-  .centeredtextabout {
-    position: absolute;
-    top: 60%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-  }
-
-  .centeredtextabout2 {
-    position: absolute;
-    top: 80%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-  }
-
-  .centeredtextabout3 {
-    position: absolute;
-    top: 80%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-  }
-
-  ul {
-    list-style: none;
-    font-size: 20px;
-    padding-left: 0;
-    margin: 0;
-  }
-
-  #image-about {
-    height: 375px;
-    opacity: 1;
-    padding-bottom: 10%;
-  }
-
-  .descriptionabout {
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 300;
-  }
-}
-
-/* ==========================================================================
+  /* ==========================================================================
    5. IPAD / TABLET SPECIFIC (768px - 992px)
    ========================================================================== */
-@media (min-width: 768px) and (max-width: 992px) {
-  .newsletter {
-    margin-top: 1rem;
+  @media (min-width: 768px) and (max-width: 992px) {
+    .newsletter {
+      margin-top: 1rem;
+    }
+
+    .margin-botton-audio {
+      margin-top: 38%;
+    }
+
+    .marginbottom-review {
+      margin-bottom: 2rem;
+    }
+
+    .carousel-margin-about {
+      margin: 50px 0 0 0;
+    }
+
+    .centeredtextabout2 {
+      left: 25%;
+    }
+
+    .centeredtextabout3 {
+      left: 30%;
+    }
   }
 
-  .margin-botton-audio {
-    margin-top: 38%;
-  }
-
-  .marginbottom-review {
-    margin-bottom: 2rem;
-  }
-
-  .carousel-margin-about {
-    margin: 50px 0 0 0;
-  }
-
-  .centeredtextabout2 {
-    left: 25%;
-  }
-
-  .centeredtextabout3 {
-    left: 30%;
-  }
-}
-
-/* ==========================================================================
+  /* ==========================================================================
    ECCEZIONE DESKTOP
    ========================================================================== */
 
-/* --- Gestione Visibilità Desktop (Hover) --- */
-@media (min-width: 992px) {
+  /* --- Gestione Visibilità Desktop (Hover) --- */
+  @media (min-width: 992px) {
 
-  .azienda-carousel .carousel-control-prev,
-  .azienda-carousel .carousel-control-next {
-    opacity: 0;
-    /* Nascoste di base */
-    transition: opacity 0.3s ease;
+    .azienda-carousel .carousel-control-prev,
+    .azienda-carousel .carousel-control-next {
+      opacity: 0;
+      /* Nascoste di base */
+      transition: opacity 0.3s ease;
+    }
+
+    /* Mostra le frecce solo quando il mouse entra nel carosello */
+    .azienda-carousel:hover .carousel-control-prev,
+    .azienda-carousel:hover .carousel-control-next {
+      opacity: 1;
+    }
   }
 
-  /* Mostra le frecce solo quando il mouse entra nel carosello */
-  .azienda-carousel:hover .carousel-control-prev,
-  .azienda-carousel:hover .carousel-control-next {
-    opacity: 1;
-  }
-}
+  /* --- Gestione Visibilità Mobile (Sempre presenti) --- */
+  @media (max-width: 991px) {
 
-/* --- Gestione Visibilità Mobile (Sempre presenti) --- */
-@media (max-width: 991px) {
+    .azienda-carousel .carousel-control-prev,
+    .azienda-carousel .carousel-control-next {
+      opacity: 1;
+      width: 10%;
+      /* Riduce l'area cliccabile laterale per non intralciare lo swipe */
+    }
 
-  .azienda-carousel .carousel-control-prev,
-  .azienda-carousel .carousel-control-next {
-    opacity: 1;
-    width: 10%;
-    /* Riduce l'area cliccabile laterale per non intralciare lo swipe */
-  }
+    .azienda-carousel .carousel-control-prev-icon,
+    .azienda-carousel .carousel-control-next-icon {
+      width: 30px;
+      /* Leggermente più piccole su mobile */
+      height: 30px;
+    }
 
-  .azienda-carousel .carousel-control-prev-icon,
-  .azienda-carousel .carousel-control-next-icon {
-    width: 30px;
-    /* Leggermente più piccole su mobile */
-    height: 30px;
-  }
+    .title-description-produzione,
+    .text-description-produzione {
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+      position: relative !important;
+      top: 0 !important;
+    }
 
-  .title-description-produzione,
-  .text-description-produzione {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
-    position: relative !important;
-    top: 0 !important;
-  }
-
-  .step-text-box {
-    margin-top: 20px !important;
-    position: relative !important;
-    top: 0 !important;
-  }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .carousel-slide-bg {
-    min-height: 50vh;
-    padding: 1rem;
-    border-radius: 4px;
+    .step-text-box {
+      margin-top: 20px !important;
+      position: relative !important;
+      top: 0 !important;
+    }
   }
 
-  .carousel-text-box {
-    max-width: 100%;
-    margin-bottom: 10%;
+  /* Responsive */
+  @media (max-width: 768px) {
+    .carousel-slide-bg {
+      min-height: 50vh;
+      padding: 1rem;
+      border-radius: 4px;
+    }
+
+    .carousel-text-box {
+      max-width: 100%;
+      margin-bottom: 10%;
+    }
+
+    .azienda-carousel {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+
+    .azienda-carousel .carousel-inner {
+      height: 500px;
+      /* Regola l'altezza desiderata */
+    }
+
+    .azienda-carousel .carousel-item {
+      height: 100%;
+    }
   }
 
-  .azienda-carousel {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-
-  .azienda-carousel .carousel-inner {
-    height: 500px;
-    /* Regola l'altezza desiderata */
-  }
-
-  .azienda-carousel .carousel-item {
-    height: 100%;
-  }
-}
-
-/* ==========================================================================
+  /* ==========================================================================
    6. LANDSCAPE MOBILE (iPhone & Similar)
    ========================================================================== */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  #coverVideo {
-    max-width: 100%;
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+    #coverVideo {
+      max-width: 100%;
+    }
+
+    .dropdownTxt {
+      font-size: 16px;
+    }
+
+    .cover {
+      padding-top: 5rem;
+    }
+
+    .container,
+    .container-cicloproduzione {
+      width: 100%;
+      height: 60vh;
+      max-width: 1000px;
+      display: flex;
+    }
+
+    .padding50 {
+      padding-bottom: 120%;
+    }
+
+    .categoryBt-border {
+      margin-top: 60px;
+      height: 140px;
+    }
+
+    .margin-botton-audio,
+    #CategoryContainer,
+    .overlay-content,
+    .title-description-produzione,
+    .text-description-produzione,
+    .margincards {
+      margin-top: 0;
+    }
+
+    #CategoryContainer {
+      padding-top: 0rem;
+      height: 190vh;
+    }
+
+    .margin-hundred {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .categoryBt-text {
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    .map {
+      height: 90%;
+    }
+
+    #section-contacts {
+      height: 120vh;
+    }
+
+    #main-content {
+      margin-bottom: 390px;
+    }
+
+    .menu-text {
+      font-size: 28px;
+      line-height: 2.4rem;
+    }
+
+    .margin-botton-categories {
+      margin-top: 6%;
+    }
+
+    .sticky {
+      top: 0rem;
+    }
+
+    .categoryDescr {
+      width: 350px;
+      height: 140px;
+    }
+
+    .margin-top-cards2,
+    .margin-top-cards4 {
+      margin-top: 10%;
+    }
+
+    .margin-top-cards3 {
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+
+    #PhotoGallery {
+      height: 160vh;
+    }
+
+    #coverpage-2 {
+      height: 200vh;
+    }
+
+    .whiteBack {
+      margin-top: -1px;
+    }
+
+    .text-contact-title {
+      font-size: 50px;
+      line-height: 4rem;
+    }
+
+    .cover-2 {
+      padding-top: 4rem;
+    }
+
+    .contact-info-margin {
+      margin-top: -35%;
+    }
+
+    .menu-text-switch {
+      font-size: 18px;
+      line-height: 2rem;
+    }
   }
 
-  .dropdownTxt {
-    font-size: 16px;
+  /* Caso generico landscape mobile */
+  @media only screen and (max-width: 576px) and (orientation: landscape) {
+    .dropdownTxt {
+      font-size: 16px;
+    }
+
+    .categoryBt-border {
+      margin-top: 60px;
+    }
+
+    .cover {
+      padding-top: 4rem;
+    }
   }
 
-  .cover {
-    padding-top: 5rem;
-  }
-
-  .container,
-  .container-cicloproduzione {
-    width: 100%;
-    height: 60vh;
-    max-width: 1000px;
-    display: flex;
-  }
-
-  .padding50 {
-    padding-bottom: 120%;
-  }
-
-  .categoryBt-border {
-    margin-top: 60px;
-    height: 140px;
-  }
-
-  .margin-botton-audio,
-  #CategoryContainer,
-  .overlay-content,
-  .title-description-produzione,
-  .text-description-produzione,
-  .margincards {
-    margin-top: 0;
-  }
-
-  #CategoryContainer {
-    padding-top: 0rem;
-    height: 190vh;
-  }
-
-  .margin-hundred {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .categoryBt-text {
-    font-size: 25px;
-    line-height: 30px;
-  }
-
-  .map {
-    height: 90%;
-  }
-
-  #section-contacts {
-    height: 120vh;
-  }
-
-  #main-content {
-    margin-bottom: 390px;
-  }
-
-  .menu-text {
-    font-size: 28px;
-    line-height: 2.4rem;
-  }
-
-  .margin-botton-categories {
-    margin-top: 6%;
-  }
-
-  .sticky {
-    top: 0rem;
-  }
-
-  .categoryDescr {
-    width: 350px;
-    height: 140px;
-  }
-
-  .margin-top-cards2,
-  .margin-top-cards4 {
-    margin-top: 10%;
-  }
-
-  .margin-top-cards3 {
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
-
-  #PhotoGallery {
-    height: 160vh;
-  }
-
-  #coverpage-2 {
-    height: 200vh;
-  }
-
-  .whiteBack {
-    margin-top: -1px;
-  }
-
-  .text-contact-title {
-    font-size: 50px;
-    line-height: 4rem;
-  }
-
-  .cover-2 {
-    padding-top: 4rem;
-  }
-
-  .contact-info-margin {
-    margin-top: -35%;
-  }
-
-  .menu-text-switch {
-    font-size: 18px;
-    line-height: 2rem;
-  }
-}
-
-/* Caso generico landscape mobile */
-@media only screen and (max-width: 576px) and (orientation: landscape) {
-  .dropdownTxt {
-    font-size: 16px;
-  }
-
-  .categoryBt-border {
-    margin-top: 60px;
-  }
-
-  .cover {
-    padding-top: 4rem;
-  }
-}
-
-/* ==========================================================================
+  /* ==========================================================================
    7. IPAD PRO & PORTRAIT HIGH-RES
    ========================================================================== */
-@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-  #CategoryContainer {
-    padding-top: 20rem;
+  @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    #CategoryContainer {
+      padding-top: 20rem;
+    }
+
+    .whiteBack {
+      margin-top: -1px;
+    }
+
+    .presentationDescrTitle {
+      font-size: 24px;
+      line-height: 38px;
+    }
+
+    .presentationDescr {
+      font-size: 16px;
+      line-height: 1.7rem;
+    }
+
+    .cover {
+      padding-top: 30rem;
+    }
+
+    .margin-botton-audio {
+      margin-top: 50%;
+    }
+
+    #SWIM {
+      margin-top: 60px;
+      margin-left: 250px;
+    }
+
+    .margin-botton-categories {
+      margin-top: 45%;
+    }
+
+    #section-contacts {
+      height: 60vh;
+    }
+
+    .number60 {
+      font-size: 8rem;
+    }
+
+    .number45 {
+      font-size: 3.8rem;
+    }
+
+    .margincards {
+      margin-bottom: 0px;
+    }
+
+    .illustration-numbers2 {
+      position: absolute;
+      z-index: 1;
+      left: 90%;
+      top: -220px;
+    }
+
+    .illustration-numbers {
+      position: absolute;
+      left: -2%;
+      top: 5%;
+      z-index: 1;
+      width: 100%;
+    }
+
+    .number {
+      margin-left: -30%;
+      margin-top: 0%;
+    }
+
+    .margin-top-cards2,
+    .margin-top-cards4 {
+      margin-top: 10%;
+    }
+
+    .margin-top-cards3 {
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+
+    .title-description-produzione,
+    .text-description-produzione {
+      margin-top: 20px !important;
+      position: relative !important;
+      display: block;
+    }
+
+    /* .step-text-box { display: none; width: 100%; padding: 0 15px; } */
+    /* #step0-text-box { display: block; } */
   }
 
-  .whiteBack {
-    margin-top: -1px;
-  }
-
-  .presentationDescrTitle {
-    font-size: 24px;
-    line-height: 38px;
-  }
-
-  .presentationDescr {
-    font-size: 16px;
-    line-height: 1.7rem;
-  }
-
-  .cover {
-    padding-top: 30rem;
-  }
-
-  .margin-botton-audio {
-    margin-top: 50%;
-  }
-
-  #SWIM {
-    margin-top: 60px;
-    margin-left: 250px;
-  }
-
-  .margin-botton-categories {
-    margin-top: 45%;
-  }
-
-  #section-contacts {
-    height: 60vh;
-  }
-
-  .number60 {
-    font-size: 8rem;
-  }
-
-  .number45 {
-    font-size: 3.8rem;
-  }
-
-  .margincards {
-    margin-bottom: 0px;
-  }
-
-  .illustration-numbers2 {
-    position: absolute;
-    z-index: 1;
-    left: 90%;
-    top: -220px;
-  }
-
-  .illustration-numbers {
-    position: absolute;
-    left: -2%;
-    top: 5%;
-    z-index: 1;
-    width: 100%;
-  }
-
-  .number {
-    margin-left: -30%;
-    margin-top: 0%;
-  }
-
-  .margin-top-cards2,
-  .margin-top-cards4 {
-    margin-top: 10%;
-  }
-
-  .margin-top-cards3 {
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
-
-  .title-description-produzione,
-  .text-description-produzione {
-    margin-top: 20px !important;
-    position: relative !important;
-    display: block;
-  }
-
-  /* .step-text-box { display: none; width: 100%; padding: 0 15px; } */
-  /* #step0-text-box { display: block; } */
-}
-
-/* ==========================================================================
+  /* ==========================================================================
    8. LAPTOP / DESKTOP (1200px - 1400px)
    ========================================================================== */
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .margin-botton-audio {
-    margin-top: 20%;
-    padding-right: 0%;
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    .margin-botton-audio {
+      margin-top: 20%;
+      padding-right: 0%;
+    }
+
+    p.price {
+      float: left;
+      display: block;
+      text-align: right;
+      padding-right: 0px;
+      margin-bottom: 0px;
+      font-weight: 500;
+    }
+
+    .serietitle {
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    h5 {
+      font-size: 17px;
+    }
+
+    .hideContent {
+      height: 17.2em;
+    }
   }
 
-  p.price {
-    float: left;
-    display: block;
-    text-align: right;
-    padding-right: 0px;
-    margin-bottom: 0px;
-    font-weight: 500;
-  }
-
-  .serietitle {
-    display: block;
-    margin-bottom: 7px;
-  }
-
-  h5 {
-    font-size: 17px;
-  }
-
-  .hideContent {
-    height: 17.2em;
-  }
-}
-
-/* ==========================================================================
+  /* ==========================================================================
    9. iMAC & HIGH RES (1920px - 1940px)
    ========================================================================== */
-@media (min-width: 1920px) and (max-width: 1940px) {
-  .illustration-numbers {
-    position: absolute;
-    left: -20%;
-    z-index: 1;
-    top: -30%;
+  @media (min-width: 1920px) and (max-width: 1940px) {
+    .illustration-numbers {
+      position: absolute;
+      left: -20%;
+      z-index: 1;
+      top: -30%;
+    }
+
+    .illustration-numbers2 {
+      position: absolute;
+      z-index: 1;
+      left: 76%;
+    }
+
+    .flag-icon {
+      width: 2%;
+    }
+
+    .box {
+      max-height: 750px;
+    }
+
+    .box:hover {
+      flex: 1 1 36%;
+    }
   }
 
-  .illustration-numbers2 {
-    position: absolute;
-    z-index: 1;
-    left: 76%;
-  }
-
-  .flag-icon {
-    width: 2%;
-  }
-
-  .box {
-    max-height: 750px;
-  }
-
-  .box:hover {
-    flex: 1 1 36%;
-  }
-}
-
-/* ==========================================================================
+  /* ==========================================================================
    10. MEGA SCREENS (min-width 3500px)
    ========================================================================== */
-@media (min-width: 3500px) {
-
-  /* Cart & Nav */
-  .cartcontent {
-    padding-right: 100px;
-    padding-left: 100px;
+  @media (min-width: 3500px) {
+
+    /* Cart & Nav */
+    .cartcontent {
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+
+    .sidenav .closebtn {
+      font-size: 140px;
+      padding-left: 100px;
+    }
+
+    a.closebtn+h3 {
+      margin-top: 100px;
+      font-size: 90px;
+      margin-bottom: 40px;
+    }
+
+    div.crop-img-div>img {
+      max-width: 90%;
+    }
+
+    .h5-cart {
+      font-size: 65px;
+    }
+
+    .sidenav a.cartelement-x {
+      font-size: 120px;
+    }
+
+    .dropbtn,
+    .dropbtn-cart,
+    .dropdown-content,
+    .dropdown-content-cart {
+      width: 105px;
+      font-size: 50px;
+      border: 4px solid;
+    }
+
+    .dropbtn,
+    .dropbtn-cart {
+      height: 85px;
+    }
+
+    /* Removed problematic loader overrides */
+
+    .margin-fifty {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .margin-hundred {
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+
+    .nav-bar {
+      padding-top: 55px;
+      height: 200px;
+    }
+
+    #set-jetters-logo {
+      width: 250px;
+    }
+
+    #icon-behindscene,
+    #icon-backpack {
+      height: 80px;
+      margin-left: 3rem;
+    }
+
+    .bar-menu {
+      margin-top: 0.5rem;
+      font-size: 40px;
+      font-weight: 500;
+    }
+
+    #main-title {
+      font-size: 200px;
+      font-weight: 800;
+      line-height: 15rem;
+    }
+
+    #main-subtitle {
+      font-size: 100px;
+      font-weight: 800;
+      color: #F39200;
+    }
+
+    .cover {
+      padding-top: 47rem;
+    }
+
+    #CategoryContainer {
+      margin-top: 0px;
+      padding-top: 600px;
+    }
+
+    .section-title {
+      font-size: 80px;
+      font-weight: 600;
+      margin-bottom: 150px;
+    }
+
+    .categoryBt {
+      font-size: 70px;
+      font-weight: 500;
+      width: 700px;
+      padding: 30px 50px;
+      line-height: 100px;
+      color: #F39200;
+      border: 5px solid #F39200;
+    }
+
+    .dropdownTxt {
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 70px;
+      visibility: visible;
+      opacity: 1;
+      color: #F39200;
+    }
+
+    .categoryDescr {
+      width: 700px;
+      padding: 30px 50px;
+      color: #F39200;
+      border: 5px solid #F39200;
+      border-top: none;
+      transform: scaleY(1);
+    }
+
+    div:hover~div.categoryDescr {
+      border: 5px solid white;
+      border-top: none;
+    }
+
+    .principles {
+      padding-top: 300px;
+      color: #000000;
+    }
+
+    .icon-principle {
+      height: 200px;
+      width: auto;
+    }
+
+    .principle-text {
+      margin-top: 10rem;
+      font-size: 50px;
+      line-height: 70px;
+    }
+
+    .mostLoved {
+      margin-top: 30rem;
+      padding-bottom: 300px;
+    }
+
+    .activitiycard {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    .textabove {
+      width: 84%;
+      padding: 0 0 50px 80px;
+      bottom: 0;
+      right: 15px;
+      left: 15px;
+    }
+
+    .textabove p {
+      font-size: 38px;
+    }
+
+    .textabove h5 {
+      font-size: 49px;
+      padding-bottom: 10px;
+    }
+
+    footer {
+      padding: 150px 0;
+    }
+
+    #footer h6 {
+      font-size: 40px;
+    }
+
+    #footer p {
+      font-size: 35px;
+    }
+
+    .newsletter {
+      padding-left: 200px;
+    }
+
+    #icon-fb,
+    #icon-ig,
+    #icon-twitter {
+      height: 70px;
+      margin: 30px 3rem 0 0;
+      width: auto;
+    }
+
+    #enter-email,
+    #subscribe {
+      font-size: 35px;
+    }
+
+    #enter-email {
+      border: 4px solid white;
+      border-radius: 0;
+      padding: 30px;
+      height: 100px;
+      width: 600px;
+    }
+
+    #subscribe {
+      font-weight: 500;
+      border: 4px solid white;
+      border-radius: 0;
+      padding: 15px;
+      margin: 0.2rem 0 0 2rem;
+      height: 100px;
+    }
+
+    /* Category & Tour Mega */
+    .category-text {
+      margin-top: 18rem;
+      font-size: 60px;
+    }
+
+    .category-cards {
+      margin-top: 21rem;
+    }
+
+    .category-title {
+      font-size: 150px;
+      line-height: 11rem;
+      margin-bottom: 80px;
+    }
+
+    .category-choose {
+      margin-top: 6rem;
+    }
+
+    .category-choose p {
+      margin-bottom: 3rem;
+    }
+
+    .category-change-btn {
+      font-size: 50px;
+      font-weight: 500;
+      margin-bottom: 2.5rem;
+      padding: 10px 0;
+      border: 4px solid #F39200;
+    }
+
+    .margincards {
+      margin-bottom: 100px;
+    }
+
+    .sticky {
+      position: sticky;
+      top: 300px;
+    }
+
+    .category-all {
+      margin-bottom: 250px;
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+
+    .tour-cards {
+      margin-top: 18rem;
+    }
+
+    .text-description,
+    .text-description h6,
+    .text-container p,
+    .text-container a,
+    .tag-title,
+    .menucategory,
+    .menucategory:hover,
+    .currentcategory {
+      font-size: 40px;
+    }
+
+    .text-description,
+    .text-description h6 {
+      line-height: 60px;
+      margin-top: 3rem;
+    }
+
+    .btn-detail {
+      margin-top: 50px;
+    }
+
+    #tot-price,
+    .text-container h5 {
+      font-size: 50px;
+    }
+
+    #tot-price {
+      font-weight: 600;
+    }
+
+    .menucategory,
+    .currentcategory {
+      border: solid 4px #F39200;
+      padding: 5px 15px;
+    }
+
+    .menucategory {
+      width: 20%;
+    }
+
+    .menucategory:hover {
+      background-color: #F39200;
+    }
+
+    .bordertop-film {
+      border-top: 12px solid #F39200;
+    }
+
+    .bordertop {
+      border-top: 12px solid #FFFFFF;
+    }
+
+    .margincards-singletour {
+      margin-bottom: 50px;
+    }
+
+    div.text-container {
+      border: solid 4px white;
+      padding: 50px;
+    }
+
+    .orangep {
+      margin-bottom: 50px;
+    }
+
+    .hideContent {
+      overflow: hidden;
+      height: 43.7em;
+    }
+
+    .marginbottom-review {
+      margin-bottom: 10rem;
+    }
+
+    .freccia {
+      width: 50px;
+      display: block;
+      margin: 450px auto 0 auto;
+    }
+
+    /* About Mega */
+    .category-text-about {
+      margin-top: 30rem;
+    }
+
+    .category-title-about {
+      font-size: 150px;
+      line-height: 12rem;
+    }
+
+    .category-subtitle-about {
+      font-size: 80px;
+    }
+
+    .about-top-distance {
+      margin-top: 150px;
+    }
+
+    .textabout-margin-subtitle {
+      margin-top: 100px;
+    }
+
+    .about-top-distance-section {
+      margin-top: 100px;
+    }
+
+    .about-distance-protocol {
+      margin-right: 150px;
+    }
+
+    .carousel-margin-about {
+      margin-top: 100px;
+    }
+
+    .descriptionabout {
+      font-size: 30px;
+      line-height: 3rem;
+    }
+
+    .margin-bottom-sources {
+      margin-bottom: 25rem;
+    }
+
+    .rect-caption-about {
+      padding: 5px 10px;
+      border: 6px solid #F39200;
+      width: 70%;
+      height: 100%;
+    }
+
+    .arrowabout {
+      font-size: 45px;
+    }
+
+    .about-rect-slideshow {
+      padding-top: 40px;
+    }
+
+    ul {
+      font-size: 40px;
+    }
   }
-
-  .sidenav .closebtn {
-    font-size: 140px;
-    padding-left: 100px;
-  }
-
-  a.closebtn+h3 {
-    margin-top: 100px;
-    font-size: 90px;
-    margin-bottom: 40px;
-  }
-
-  div.crop-img-div>img {
-    max-width: 90%;
-  }
-
-  .h5-cart {
-    font-size: 65px;
-  }
-
-  .sidenav a.cartelement-x {
-    font-size: 120px;
-  }
-
-  .dropbtn,
-  .dropbtn-cart,
-  .dropdown-content,
-  .dropdown-content-cart {
-    width: 105px;
-    font-size: 50px;
-    border: 4px solid;
-  }
-
-  .dropbtn,
-  .dropbtn-cart {
-    height: 85px;
-  }
-
-  /* Homepage Mega */
-  #loader {
-    width: 3840px;
-    height: 2700px;
-    background: #000;
-    position: fixed;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-  }
-
-  .margin-fifty {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-
-  .margin-hundred {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-
-  .nav-bar {
-    padding-top: 55px;
-    height: 200px;
-  }
-
-  #set-jetters-logo {
-    width: 250px;
-  }
-
-  #icon-behindscene,
-  #icon-backpack {
-    height: 80px;
-    margin-left: 3rem;
-  }
-
-  .bar-menu {
-    margin-top: 0.5rem;
-    font-size: 40px;
-    font-weight: 500;
-  }
-
-  #main-title {
-    font-size: 200px;
-    font-weight: 800;
-    line-height: 15rem;
-  }
-
-  #main-subtitle {
-    font-size: 100px;
-    font-weight: 800;
-    color: #F39200;
-  }
-
-  .cover {
-    padding-top: 47rem;
-  }
-
-  #CategoryContainer {
-    margin-top: 0px;
-    padding-top: 600px;
-  }
-
-  .section-title {
-    font-size: 80px;
-    font-weight: 600;
-    margin-bottom: 150px;
-  }
-
-  .categoryBt {
-    font-size: 70px;
-    font-weight: 500;
-    width: 700px;
-    padding: 30px 50px;
-    line-height: 100px;
-    color: #F39200;
-    border: 5px solid #F39200;
-  }
-
-  .dropdownTxt {
-    font-size: 50px;
-    font-weight: 500;
-    line-height: 70px;
-    visibility: visible;
-    opacity: 1;
-    color: #F39200;
-  }
-
-  .categoryDescr {
-    width: 700px;
-    padding: 30px 50px;
-    color: #F39200;
-    border: 5px solid #F39200;
-    border-top: none;
-    transform: scaleY(1);
-  }
-
-  div:hover~div.categoryDescr {
-    border: 5px solid white;
-    border-top: none;
-  }
-
-  .principles {
-    padding-top: 300px;
-    color: #000000;
-  }
-
-  .icon-principle {
-    height: 200px;
-    width: auto;
-  }
-
-  .principle-text {
-    margin-top: 10rem;
-    font-size: 50px;
-    line-height: 70px;
-  }
-
-  .mostLoved {
-    margin-top: 30rem;
-    padding-bottom: 300px;
-  }
-
-  .activitiycard {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .textabove {
-    width: 84%;
-    padding: 0 0 50px 80px;
-    bottom: 0;
-    right: 15px;
-    left: 15px;
-  }
-
-  .textabove p {
-    font-size: 38px;
-  }
-
-  .textabove h5 {
-    font-size: 49px;
-    padding-bottom: 10px;
-  }
-
-  footer {
-    padding: 150px 0;
-  }
-
-  #footer h6 {
-    font-size: 40px;
-  }
-
-  #footer p {
-    font-size: 35px;
-  }
-
-  .newsletter {
-    padding-left: 200px;
-  }
-
-  #icon-fb,
-  #icon-ig,
-  #icon-twitter {
-    height: 70px;
-    margin: 30px 3rem 0 0;
-    width: auto;
-  }
-
-  #enter-email,
-  #subscribe {
-    font-size: 35px;
-  }
-
-  #enter-email {
-    border: 4px solid white;
-    border-radius: 0;
-    padding: 30px;
-    height: 100px;
-    width: 600px;
-  }
-
-  #subscribe {
-    font-weight: 500;
-    border: 4px solid white;
-    border-radius: 0;
-    padding: 15px;
-    margin: 0.2rem 0 0 2rem;
-    height: 100px;
-  }
-
-  /* Category & Tour Mega */
-  .category-text {
-    margin-top: 18rem;
-    font-size: 60px;
-  }
-
-  .category-cards {
-    margin-top: 21rem;
-  }
-
-  .category-title {
-    font-size: 150px;
-    line-height: 11rem;
-    margin-bottom: 80px;
-  }
-
-  .category-choose {
-    margin-top: 6rem;
-  }
-
-  .category-choose p {
-    margin-bottom: 3rem;
-  }
-
-  .category-change-btn {
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: 2.5rem;
-    padding: 10px 0;
-    border: 4px solid #F39200;
-  }
-
-  .margincards {
-    margin-bottom: 100px;
-  }
-
-  .sticky {
-    position: sticky;
-    top: 300px;
-  }
-
-  .category-all {
-    margin-bottom: 250px;
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-
-  .tour-cards {
-    margin-top: 18rem;
-  }
-
-  .text-description,
-  .text-description h6,
-  .text-container p,
-  .text-container a,
-  .tag-title,
-  .menucategory,
-  .menucategory:hover,
-  .currentcategory {
-    font-size: 40px;
-  }
-
-  .text-description,
-  .text-description h6 {
-    line-height: 60px;
-    margin-top: 3rem;
-  }
-
-  .btn-detail {
-    margin-top: 50px;
-  }
-
-  #tot-price,
-  .text-container h5 {
-    font-size: 50px;
-  }
-
-  #tot-price {
-    font-weight: 600;
-  }
-
-  .menucategory,
-  .currentcategory {
-    border: solid 4px #F39200;
-    padding: 5px 15px;
-  }
-
-  .menucategory {
-    width: 20%;
-  }
-
-  .menucategory:hover {
-    background-color: #F39200;
-  }
-
-  .bordertop-film {
-    border-top: 12px solid #F39200;
-  }
-
-  .bordertop {
-    border-top: 12px solid #FFFFFF;
-  }
-
-  .margincards-singletour {
-    margin-bottom: 50px;
-  }
-
-  div.text-container {
-    border: solid 4px white;
-    padding: 50px;
-  }
-
-  .orangep {
-    margin-bottom: 50px;
-  }
-
-  .hideContent {
-    overflow: hidden;
-    height: 43.7em;
-  }
-
-  .marginbottom-review {
-    margin-bottom: 10rem;
-  }
-
-  .freccia {
-    width: 50px;
-    display: block;
-    margin: 450px auto 0 auto;
-  }
-
-  /* About Mega */
-  .category-text-about {
-    margin-top: 30rem;
-  }
-
-  .category-title-about {
-    font-size: 150px;
-    line-height: 12rem;
-  }
-
-  .category-subtitle-about {
-    font-size: 80px;
-  }
-
-  .about-top-distance {
-    margin-top: 150px;
-  }
-
-  .textabout-margin-subtitle {
-    margin-top: 100px;
-  }
-
-  .about-top-distance-section {
-    margin-top: 100px;
-  }
-
-  .about-distance-protocol {
-    margin-right: 150px;
-  }
-
-  .carousel-margin-about {
-    margin-top: 100px;
-  }
-
-  .descriptionabout {
-    font-size: 30px;
-    line-height: 3rem;
-  }
-
-  .margin-bottom-sources {
-    margin-bottom: 25rem;
-  }
-
-  .rect-caption-about {
-    padding: 5px 10px;
-    border: 6px solid #F39200;
-    width: 70%;
-    height: 100%;
-  }
-
-  .arrowabout {
-    font-size: 45px;
-  }
-
-  .about-rect-slideshow {
-    padding-top: 40px;
-  }
-
-  ul {
-    font-size: 40px;
-  }
-}
