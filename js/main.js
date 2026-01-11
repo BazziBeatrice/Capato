@@ -14,8 +14,17 @@ $(window).scroll(function () {
   } else {
     $(".nav-bar-transition-colt").css("background", "black");
   }
+// coltivazioni pagina
+var blurThreshold = $(window).width() < 768 ? 0 : 400;
+if (scroll < blurThreshold) {
+  $(".full-img").css("filter", "blur(0px)");
+} else {
+  $(".full-img").css("filter", "blur(10px)");
+}
 
-  if (scroll < 400) {
+  // coltivazioni pagina
+  var scrollThreshold = $(window).width() < 768 ? 3100 : 2300;
+  if (scroll < scrollThreshold) {
     $(".full-img").css("visibility", "visible");
   } else {
     $(".full-img").css("visibility", "hidden");

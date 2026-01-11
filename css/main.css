@@ -499,7 +499,7 @@ p.orangep {
 #coverpage {
   height: 100vh;
   z-index: 100;
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
 }
 
@@ -526,7 +526,7 @@ p.orangep {
 }
 
 .margin-botton-categories {
-  margin-top: 20%;
+  margin-top: 15%;
   padding-right: 0%;
 }
 
@@ -744,9 +744,10 @@ div:hover a.categoryLinks {
 }
 
 .categoryBt-border {
+  width: 350px;
+  height: 170px;
   text-align: center;
   vertical-align: middle;
-  width: 100%;
   max-width: 350px;
   height: 170px;
   margin-bottom: 0rem;
@@ -775,6 +776,13 @@ div:hover a.categoryLinks {
   padding-left: 3rem;
   padding-right: 3rem;
 }
+
+     .whiteBack-nopadding {
+      margin-top: -2px;
+      background-color: #FFFFFF;
+      padding-left: 0;
+      padding-right: 0;
+    }
 
 #DescriptionAzienda {
   padding-top: 160px;
@@ -828,7 +836,6 @@ div:hover a.categoryLinks {
 /*———CATEGORY CATALOGUE————————————————————————————————————————————————————————————————————————————————*/
 /*Cover images*/
 .full-img {
-  opacity: 0.9;
   position: fixed;
   right: 0;
   width: 100%;
@@ -917,6 +924,8 @@ div:hover a.categoryLinks {
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 63%, rgba(0, 0, 0, 0.542454481792717) 73%, rgba(0, 0, 0, 0.48363095238095233) 77%, rgba(0, 0, 0, 0.458420868347339) 79%, rgba(0, 0, 0, 0.3715861344537815) 86%, rgba(0, 0, 0, 0.04945728291316531) 100%);
 }
+
+
 
 /*———SINGLE TOUR PAGE————————————————————————————————————————————————————————————————————————————————*/
 /*menu category*/
