@@ -777,12 +777,12 @@ div:hover a.categoryLinks {
   padding-right: 3rem;
 }
 
-     .whiteBack-nopadding {
-      margin-top: -2px;
-      background-color: #FFFFFF;
-      padding-left: 0;
-      padding-right: 0;
-    }
+.whiteBack-nopadding {
+  margin-top: -2px;
+  background-color: #FFFFFF;
+  padding-left: 0;
+  padding-right: 0;
+}
 
 #DescriptionAzienda {
   padding-top: 160px;

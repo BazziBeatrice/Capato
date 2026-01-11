@@ -14,13 +14,13 @@ $(window).scroll(function () {
   } else {
     $(".nav-bar-transition-colt").css("background", "black");
   }
-// coltivazioni pagina
-var blurThreshold = $(window).width() < 768 ? 0 : 400;
-if (scroll < blurThreshold) {
-  $(".full-img").css("filter", "blur(0px)");
-} else {
-  $(".full-img").css("filter", "blur(10px)");
-}
+  // coltivazioni pagina
+  var blurThreshold = $(window).width() < 768 ? 0 : 400;
+  if (scroll < blurThreshold) {
+    $(".full-img").css("filter", "blur(0px)");
+  } else {
+    $(".full-img").css("filter", "blur(10px)");
+  }
 
   // coltivazioni pagina
   var scrollThreshold = $(window).width() < 768 ? 3100 : 2300;
@@ -58,6 +58,14 @@ $(document).ready(function () {
   // document.body.className == "it";
   // $("#switch-it").css("display","none");
   localStorage.setItem("language", "it");
+
+  // Check for language URL parameter
+  const urlParams = new URLSearchParams(window.location.search);
+  const langParam = urlParams.get('lang');
+  if (langParam === 'en' || langParam === 'it') {
+    localStorage.setItem("language", langParam);
+  }
+
   CheckLanguage();
   CheckLanguage2();
 
