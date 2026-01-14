@@ -1,18 +1,3 @@
-@charset "UTF-8";
-
-/* CSS Document */
-@font-face {
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "proxima-nova", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 /*general*/
@@ -61,7 +46,7 @@ div a {
   padding-top: 10px;
   width: 100%;
   height: 60px;
-  z-index: 2;
+  z-index: 200;
 }
 
 .nav-bar-color {
@@ -170,6 +155,10 @@ a.purchasebtn:hover {
 
 .margin-top50 {
   margin-top: -50px;
+}
+
+.margin-top-30 {
+  margin-top: 30px;
 }
 
 #margintop-par {
@@ -499,7 +488,7 @@ p.orangep {
 #coverpage {
   height: 100vh;
   z-index: 100;
-  /* position: relative; */
+  position: relative;
   overflow: hidden;
 }
 
@@ -1288,9 +1277,20 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: animatedBackground 20s linear infinite normal;
+  animation: animatedBackground 20s linear infinite normal;
 }
 
 @-webkit-keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 -500px;
+  }
+}
+
+@keyframes animatedBackground {
   0% {
     background-position: 0 0;
   }
@@ -1403,6 +1403,7 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: animatedBackground 20s linear infinite normal;
+  animation: animatedBackground 20s linear infinite normal;
 }
 
 .css-text-mask3 {
@@ -1417,6 +1418,7 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: animatedBackground 20s linear infinite normal;
+  animation: animatedBackground 20s linear infinite normal;
 }
 
 .text-contact-title {
@@ -1600,7 +1602,7 @@ ul {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 100 !important;
+  z-index: 300 !important;
   top: 0;
   left: 0;
   border-radius: 0px 300px 0px 0px;
@@ -2127,7 +2129,7 @@ iframe {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 10000;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -2140,17 +2142,37 @@ iframe {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: transparent;
+  /* Changed to transparent to fit image */
   margin: auto;
   padding: 0;
-  width: 60%;
-  max-width: 1000px;
-  max-height: 600px;
+  width: auto;
+  /* Fit content */
+  max-width: 90%;
+  /* Max width relative to screen */
+  display: flex;
+  /* Help centering */
+  justify-content: center;
 }
 
 /* Hide the slides by default */
 .mySlides {
   display: none;
+  width: 100%;
+  /* Ensure slide takes full width of content */
+  text-align: center;
+  /* Center content */
+}
+
+.mySlides img {
+  height: 80vh !important;
+  /* Fixed height relative to viewport */
+  object-fit: contain !important;
+  /* Ensure image fits */
+  width: auto !important;
+  max-width: 100% !important;
+  margin: 0 auto;
+  display: block;
 }
 
 /* Next & previous buttons */
@@ -2215,6 +2237,8 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
 .closemodal {
@@ -2327,6 +2351,18 @@ a:not([href]):not([tabindex]) {
   grid-column: span 4;
   background-color: rgb(201 235 173 / 50%);
 }
+
+
+.box-data-4 {
+  grid-column: span 3;
+  background-color: rgb(237 236 231 / 50%);
+}
+
+.box-data-5 {
+  grid-column: span 3;
+  background-color: rgb(201 235 173 / 50%);
+}
+
 
 .bento-image-box {
   grid-column: span 2;

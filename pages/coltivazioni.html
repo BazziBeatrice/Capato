@@ -98,9 +98,9 @@
 				<!-- <a class="menu-text-switch" id="switch-en" href="#" onclick="document.body.className='en'">Switch to English &#127468;&#127463;</a>
 					<a class="menu-text-switch" id="switch-it" href="#" onclick="document.body.className='it'">Traduci in Italiano &#127470;&#127481;</a> -->
 
-				<a class="menu-text-switch" id="switch-en" href="#" onclick="CheckLanguage()" lang="it">Switch to
+				<a class="menu-text-switch" id="switch-en" href="#" lang="it">Switch to
 					English <img src="../assets/images/flag-eng.png" id="flaggb" class="flag-icon" alt="Flag GB"></a>
-				<a class="menu-text-switch" id="switch-it" href="#" onclick="CheckLanguage2()" lang="en">Traduci in
+				<a class="menu-text-switch" id="switch-it" href="#" lang="en">Traduci in
 					Italiano <img src="../assets/images/flag-ita.png" id="flagit" class="flag-icon" alt="Flag IT"></a>
 			</li>
 		</ul>
@@ -113,15 +113,13 @@
 				<div class="row">
 
 					<div class="bar-menu col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 cartbtn">
-						<a class="textbar" href="../index.html" onclick="openNav()">CAPATO</a>
+						<a class="textbar" href="../index.html">CAPATO</a>
 					</div>
 
 					<div
 						class="bar-menu-right offset-xl-8 offset-lg-8 offset-md-3 offset-sm-5 offset-3 col-xl-2 col-lg-2 col-md-7 col-sm-5 col-7 cartbtn">
-						<a id="menuButton" class="textbar" href="#" onclick="openNav()"
-							style="padding-right: 0px;">MENU</a>
-						<a id="exitButton" class="textbar" href="#" onclick="closeNav()"
-							style="padding-right: 0px;">EXIT</a>
+						<a id="menuButton" class="textbar padding-right-0" href="#">MENU</a>
+						<a id="exitButton" class="textbar padding-right-0" href="#">EXIT</a>
 					</div>
 
 				</div>
@@ -194,8 +192,8 @@
 								<div>
 									<!-- <img class="img-fluid img-colt" id="img-colt" src="../assets/images/coltivazioni/lattugatrocadero.jpg" alt="Image not supported"> -->
 									<img src="../assets/images/coltivazioni/lattugatrocadero.jpg"
-										alt="Lattuga Trocadero" id="img-colt" class="img-fluid img-colt"
-										onclick="openModal();currentSlide(1)" class="hover-shadow">
+										alt="Lattuga Trocadero" id="img-colt" class="img-fluid img-colt" data-slide="1"
+										class="hover-shadow">
 								</div>
 							</div>
 
@@ -217,8 +215,7 @@
 								<div class="image-coltivation-card">
 									<!-- <img class="img-fluid img-colt" id="img-colt1" src="../assets/images/coltivazioni/lattugagentile.jpg" alt="Image not supported"> -->
 									<img src="../assets/images/coltivazioni/lattugagentile.jpg" alt="Lattuga Gentile"
-										class="img-fluid img-colt" id="img-colt1" onclick="openModal();currentSlide(2)"
-										class="hover-shadow">
+										class="img-fluid img-colt" id="img-colt1" data-slide="2" class="hover-shadow">
 								</div>
 							</div>
 
@@ -246,7 +243,7 @@
 									<!-- <img class="img-fluid img-colt" id="img-colt2" src="../assets/images/coltivazioni/cavolocappuccio-cuoredibue.jpg" alt="Image not supported"> -->
 									<img src="../assets/images/coltivazioni/cavolocappuccio-cuoredibue.jpg"
 										alt="Cavolo Cappuccio Cuore di Bue" class="img-fluid img-colt" id="img-colt2"
-										onclick="openModal();currentSlide(3)" class="hover-shadow">
+										data-slide="3" class="hover-shadow">
 								</div>
 							</div>
 
@@ -269,7 +266,7 @@
 									<!-- <img class="img-fluid img-colt" id="img-colt3" src="../assets/images/coltivazioni/cavolocappuccio-tondo.jpg" alt="Image not supported"> -->
 									<img src="../assets/images/coltivazioni/cavolocappuccio-tondo.jpg"
 										alt="Cavolo Cappuccio Tondo" class="img-fluid img-colt" id="img-colt3"
-										onclick="openModal();currentSlide(4)" class="hover-shadow">
+										data-slide="4" class="hover-shadow">
 								</div>
 							</div>
 
@@ -296,8 +293,7 @@
 								<div>
 									<!-- <img class="img-fluid img-colt" id="img-colt4" src="../assets/images/coltivazioni/bietoladacosta.jpg" alt="Image not supported"> -->
 									<img src="../assets/images/coltivazioni/bietoladacosta.jpg" alt="Bietola da Costa"
-										class="img-fluid img-colt" id="img-colt4" onclick="openModal();currentSlide(5)"
-										class="hover-shadow">
+										class="img-fluid img-colt" id="img-colt4" data-slide="5" class="hover-shadow">
 								</div>
 							</div>
 
@@ -319,8 +315,7 @@
 								<div class="image-coltivation-card">
 									<!-- <img class="img-fluid img-colt" id="img-colt5" src="../assets/images/coltivazioni/sedanoverde.jpg" alt="Image not supported"> -->
 									<img src="../assets/images/coltivazioni/sedanoverde.jpg" alt="Sedano Verde"
-										class="img-fluid img-colt" id="img-colt5" onclick="openModal();currentSlide(6)"
-										class="hover-shadow">
+										class="img-fluid img-colt" id="img-colt5" data-slide="6" class="hover-shadow">
 								</div>
 							</div>
 
@@ -342,8 +337,7 @@
 								<div class="image-coltivation-card">
 									<!-- <img class="img-fluid img-colt" id="img-colt6" src="../assets/images/coltivazioni/cicoria.jpg" alt="Image not supported"> -->
 									<img src="../assets/images/coltivazioni/cicoria.jpg" alt="Cicoria"
-										class="img-fluid img-colt" id="img-colt6" onclick="openModal();currentSlide(7)"
-										class="hover-shadow">
+										class="img-fluid img-colt" id="img-colt6" data-slide="7" class="hover-shadow">
 								</div>
 							</div>
 

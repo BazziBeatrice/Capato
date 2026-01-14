@@ -34,6 +34,12 @@
 
   .number-mid {
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .number-small {
+    font-size: 2rem;
+    line-height: 1;
   }
 
   .icon-down-home {
@@ -368,7 +374,7 @@
   }
 
   .bento-icon {
-    max-width: 60px;
+    max-width: 100px;
     /* Dimensione fissa per le icone su mobile */
   }
 
@@ -598,10 +604,13 @@
       grid-template-rows: auto;
       grid-gap: 1rem;
       width: 100%;
-      max-width: calc(100% - 48px); /* account for .whiteBack padding-left/right */
-      margin: 0 auto; /* center gallery */
+      max-width: calc(100% - 48px);
+      /* account for .whiteBack padding-left/right */
+      margin: 0 auto;
+      /* center gallery */
       box-sizing: border-box;
-      overflow: hidden; /* prevent horizontal overflow */
+      overflow: hidden;
+      /* prevent horizontal overflow */
     }
 
     /* Ensure images don't overflow their grid cells on small screens */
@@ -657,7 +666,7 @@
       padding-right: 24px;
     }
 
-     .whiteBack-nopadding {
+    .whiteBack-nopadding {
       margin-top: -2px;
       background-color: #FFFFFF;
       padding-left: 0;

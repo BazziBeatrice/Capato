@@ -57,12 +57,49 @@
 	<link rel="shortcut icon" href="assets/images/favicons/favicon32.png">
 	<!-- Fontawsome -->
 
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "AgriculturalBusiness",
+			"name": "Azienda Agricola Capato",
+			"image": "https://societaagricolacapato.it/assets/images/og-image.png",
+			"@id": "https://societaagricolacapato.it",
+			"url": "https://societaagricolacapato.it",
+			"telephone": "+393465358629",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Via Rovigo 298",
+				"addressLocality": "Lusia",
+				"addressRegion": "RO",
+				"postalCode": "45020",
+				"addressCountry": "IT"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": 45.0812517,
+				"longitude": 11.6576313
+			},
+			"openingHoursSpecification": {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday",
+				"opens": "08:00",
+				"closes": "18:00"
+				"https://www.facebook.com/AziendaAgricolaCapato",
+				"https://www.instagram.com/aziendaagricolacapato"
+			]
+		}
+	</script>
 </head>
 
 <body class="it" id="languagesw">
 	<!--Loader-->
 	<div id="loader">
-		<img src="assets/video/loader-salad.gif" alt="loader-gif" />
 	</div>
 	<!--Menu-->
 	<div id="myNav" class="overlay">
@@ -102,10 +139,10 @@
 				<!-- <a class="menu-text-switch" id="switch-en" href="#" onclick="document.body.className='en'">Switch to English &#127468;&#127463;</a>
 					<a class="menu-text-switch" id="switch-it" href="#" onclick="document.body.className='it'">Traduci in Italiano &#127470;&#127481;</a> -->
 
-				<a class="menu-text-switch" id="switch-en" href="#" onclick="CheckLanguage()" lang="it">Switch to
 					English <img src="assets/images/flag-eng.png" id="flaggb" class="flag-icon" alt="Flag GB"></a>
 				<a class="menu-text-switch" id="switch-it" href="#" onclick="CheckLanguage2()" lang="en">Traduci in
-					Italiano <img src="assets/images/flag-ita.png" id="flagit" class="flag-icon" alt="Flag IT"></a>
+				<a class="menu-text-switch" id="switch-en" href="#" lang="it">Switch to
+					Italiano <img src="assets/images/flag-ita.png" id="flagit" class="flag-icon" alt="Italian Flag"></a>
 			</li>
 		</ul>
 	</div>
@@ -116,15 +153,14 @@
 				<div class="row">
 
 					<div class="bar-menu col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 cartbtn">
-						<a class="textbar textbar-left" href="index.html" onclick="openNav()">CAPATO</a>
+						<a class="textbar textbar-left" href="index.html">CAPATO</a>
 					</div>
 
 					<div
 						class="bar-menu-right offset-xl-8 offset-lg-8 offset-md-3 offset-sm-5 offset-3 col-xl-2 col-lg-2 col-md-7 col-sm-5 col-7 cartbtn">
-						<a id="menuButton" class="textbar" href="#" onclick="openNav()"
-							style="padding-right: 0px;">MENU</a>
-						<a id="exitButton" class="textbar" href="#" onclick="closeNav()"
 							style="padding-right: 0px;">EXIT</a>
+						<a id="menuButton" class="textbar padding-right-0" href="#">MENU</a>
+						<a id="exitButton" class="textbar padding-right-0" href="#">EXIT</a>
 					</div>
 
 				</div>
@@ -147,10 +183,10 @@
 
 				<!--Main title and subtitle-->
 				<div class="row">
-					<p id="main-title-h1" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" lang="it">
-						Azienda<br>Agricola Capato</p>
-					<p id="main-title-h1" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" lang="en">
-						CAPATO'S<br>FARM</p>
+					<h1 id="main-title-h1" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" lang="it">
+						Azienda<br>Agricola Capato</h1>
+					<h1 id="main-title-h1" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" lang="en">
+						CAPATO'S<br>FARM</h1>
 				</div>
 			</article>
 
@@ -161,7 +197,7 @@
 					<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 buttonAudio">
 						<a href="javascript:void(0)">
 							<img src="assets/images/icon-mutoyes.png" id="buttonAudio" class="icon-muto-yes"
-								alt="Icon Audio">
+								alt="Mute/Unmute Audio">
 						</a>
 					</div>
 
@@ -261,8 +297,8 @@
 					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 						<iframe class="map"
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.2239410870147!2d11.6576313155285!3d45.08125176693511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477efc2a2a68800b%3A0xfa9c17e8a50bd571!2sVia%20Rovigo%2C%20298%2C%2045020%20Lusia%20RO!5e0!3m2!1sit!2sit!4v1591174008951!5m2!1sit!2sit"
-							width="600" height="450" frameborder="0" allowfullscreen="" aria-hidden="false"
-							tabindex="0"></iframe>
+							width="600" height="450" allowfullscreen="" aria-hidden="false" tabindex="0"
+							title="Mappa Azienda Agricola Capato"></iframe>
 					</div>
 				</div>
 				<!--Section title-->
@@ -298,7 +334,7 @@
 
 						<p class="about"> <strong>CAPATO ANGELINO MARIO BRUNO E FIGLI SOCIETA' AGRIGOLA S.S.</strong>
 							<br>
-							Mail: <a href="societaagricolacapato@gmail.com" target="_blank"
+							Mail: <a href="mailto:societaagricolacapato@gmail.com" target="_blank"
 								id="info-email">societaagricolacapato@gmail.com</a>
 							<br>Marco Capato: +39 3465358629
 							<br> Sede Operativa: Via Rovigo, 298 - 45020 Lusia (RO)

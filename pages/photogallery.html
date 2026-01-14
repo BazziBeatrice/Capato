@@ -3,17 +3,14 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Galleria Foto - Società Agricola Capato</title>
-
-	<link rel="canonical" href="https://societaagricolacapato.it/pages/photogallery.html">
-	<link rel="alternate" hreflang="it" href="https://societaagricolacapato.it/pages/photogallery.html">
-	<link rel="alternate" hreflang="en" href="https://societaagricolacapato.it/pages/photogallery.html?lang=en">
+	<title>Galleria Foto</title>
 
 	<!-- metatags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="title" content="Azienda Agricola Capato">
 	<meta name="description"
 		content="Azienda Agricola Capato. Naturalmente tutto l'anno. Azienda Agricola di Lusia, in provincia di Rovigo.">
+	<meta name="keywords" content="azienda agricola capato, capato, agricoltura, insalata, lusia, azienda, agricola">
 
 	<!-- Open Graph / Facebook metatags -->
 	<meta property="og:type" content="website">
@@ -21,7 +18,7 @@
 	<meta property="og:title" content="Azienda Agricola Capato">
 	<meta property="og:description"
 		content="Naturalmente tutto l'anno. Azienda agricola di Lusia, in provincia di Rovigo.">
-	<meta property="og:image" content="https://societaagricolacapato.it/assets/images/og-image.png">
+	<meta property="og:image" content="https://ibb.co/3v4KTHP">
 
 	<!-- Twitter metatags -->
 	<meta property="twitter:card" content="summary_large_image">
@@ -29,7 +26,7 @@
 	<meta property="twitter:title" content="Azienda Agricola Capato">
 	<meta property="twitter:description"
 		content="Naturalmente tutto l'anno. Azienda agricola di Lusia, in provincia di Rovigo.">
-	<meta property="twitter:image" content="https://societaagricolacapato.it/assets/images/og-image.png">
+	<meta property="twitter:image" content="https://ibb.co/3v4KTHP">
 
 	<!-- link to Bootstrap css -->
 	<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -106,9 +103,9 @@
 				<!-- <a class="menu-text-switch" id="switch-en" href="#" onclick="document.body.className='en'">Switch to English &#127468;&#127463;</a>
 					<a class="menu-text-switch" id="switch-it" href="#" onclick="document.body.className='it'">Traduci in Italiano &#127470;&#127481;</a> -->
 
-				<a class="menu-text-switch" id="switch-en" href="#" onclick="CheckLanguage()" lang="it">Switch to
+				<a class="menu-text-switch" id="switch-en" href="#" lang="it">Switch to
 					English <img src="../assets/images/flag-eng.png" id="flaggb" class="flag-icon" alt="Flag GB"></a>
-				<a class="menu-text-switch" id="switch-it" href="#" onclick="CheckLanguage2()" lang="en">Traduci in
+				<a class="menu-text-switch" id="switch-it" href="#" lang="en">Traduci in
 					Italiano <img src="../assets/images/flag-ita.png" id="flagit" class="flag-icon" alt="Flag IT"></a>
 			</li>
 		</ul>
@@ -121,15 +118,13 @@
 				<div class="row">
 
 					<div class="bar-menu col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 cartbtn">
-						<a class="textbar-black" href="../index.html" onclick="openNav()">CAPATO</a>
+						<a class="textbar-black" href="../index.html">CAPATO</a>
 					</div>
 
 					<div
 						class="bar-menu-right offset-xl-8 offset-lg-8 offset-md-3 offset-sm-5 offset-3 col-xl-2 col-lg-2 col-md-7 col-sm-5 col-7 cartbtn">
-						<a id="menuButton" class="textbar-black" href="#" onclick="openNav()"
-							style="padding-right: 0px;">MENU</a>
-						<a id="exitButton" class="textbar-black" href="#" onclick="closeNav()"
-							style="padding-right: 0px;">EXIT</a>
+						<a id="menuButton" class="textbar-black" href="#" style="padding-right: 0px;">MENU</a>
+						<a id="exitButton" class="textbar-black" href="#" style="padding-right: 0px;">EXIT</a>
 					</div>
 
 				</div>
@@ -174,81 +169,80 @@
 				<div class="container">
 					<div class="gallery">
 						<figure class="gallery__item gallery__item--1">
-							<img src="../assets/images/foto/serra7.jpg" alt="Interno serra con coltivazioni"
-								class="gallery__img" onclick="openModal();currentSlide(1)" class="hover-shadow">
+							<img src="../assets/images/foto/serra7.jpg" alt="Gallery image 1"
+								class="gallery__img hover-shadow" data-slide="1">
 						</figure>
 						<figure class="gallery__item gallery__item--2">
-							<img src="../assets/images/foto/serra6.jpg" alt="Dettaglio coltivazione in serra"
-								class="gallery__img" onclick="openModal();currentSlide(2)" class="hover-shadow">
+							<img src="../assets/images/foto/serra6.jpg" alt="Gallery image 2"
+								class="gallery__img hover-shadow" data-slide="2">
 						</figure>
 						<figure class="gallery__item gallery__item--3">
-							<img src="../assets/images/foto/principale.jpg" alt="Sede principale azienda"
-								class="gallery__img" onclick="openModal();currentSlide(3)" class="hover-shadow">
+							<img src="../assets/images/foto/principale.jpg" alt="Gallery image 3"
+								class="gallery__img hover-shadow" data-slide="3">
 						</figure>
 						<figure class="gallery__item gallery__item--4">
-							<img src="../assets/images/foto/trattore.jpg" alt="Trattore al lavoro" class="gallery__img"
-								onclick="openModal();currentSlide(4)" class="hover-shadow">
+							<img src="../assets/images/foto/trattore.jpg" alt="Gallery image 4"
+								class="gallery__img hover-shadow" data-slide="4">
 						</figure>
 						<figure class="gallery__item gallery__item--5">
-							<img src="../assets/images/foto/serra2.jpg" alt="Panoramica serra" class="gallery__img"
-								onclick="openModal();currentSlide(5)" class="hover-shadow">
+							<img src="../assets/images/foto/serra2.jpg" alt="Gallery image 5"
+								class="gallery__img hover-shadow" data-slide="5">
 						</figure>
 						<figure class="gallery__item gallery__item--6">
-							<img src="../assets/images/foto/serra3.jpg" alt="Serra con insalata" class="gallery__img"
-								onclick="openModal();currentSlide(6)" class="hover-shadow">
+							<img src="../assets/images/foto/serra3.jpg" alt="Gallery image 6"
+								class="gallery__img hover-shadow" data-slide="6">
 						</figure>
 						<figure class="gallery__item gallery__item--7">
-							<img src="../assets/images/foto/serra10.jpg" alt="Verdure pronte al raccolto"
-								class="gallery__img" onclick="openModal();currentSlide(7)" class="hover-shadow">
+							<img src="../assets/images/foto/serra10.jpg" alt="Gallery image 7"
+								class="gallery__img hover-shadow" data-slide="7">
 						</figure>
 						<figure class="gallery__item gallery__item--8">
-							<img src="../assets/images/foto/serra11.jpg" alt="Coltivazione intensiva"
-								class="gallery__img" onclick="openModal();currentSlide(8)" class="hover-shadow">
+							<img src="../assets/images/foto/serra11.jpg" alt="Gallery image 8"
+								class="gallery__img hover-shadow" data-slide="8">
 						</figure>
 						<figure class="gallery__item gallery__item--9">
-							<img src="../assets/images/foto/serre.jpg" alt="Esterno serre" class="gallery__img"
-								onclick="openModal();currentSlide(9)" class="hover-shadow">
+							<img src="../assets/images/foto/serre.jpg" alt="Gallery image 9"
+								class="gallery__img hover-shadow" data-slide="9">
 						</figure>
 						<figure class="gallery__item gallery__item--10">
-							<img src="../assets/images/foto/serra8.jpg" alt="Filari di verdure" class="gallery__img"
-								onclick="openModal();currentSlide(10)" class="hover-shadow">
+							<img src="../assets/images/foto/serra8.jpg" alt="Gallery image 10"
+								class="gallery__img hover-shadow" data-slide="10">
 						</figure>
 						<figure class="gallery__item gallery__item--11">
-							<img src="../assets/images/foto/serra9.jpg" alt="Interno serra luminosa"
-								class="gallery__img" onclick="openModal();currentSlide(11)" class="hover-shadow">
+							<img src="../assets/images/foto/serra9.jpg" alt="Gallery image 11"
+								class="gallery__img hover-shadow" data-slide="11">
 						</figure>
 						<figure class="gallery__item gallery__item--12">
-							<img src="../assets/images/foto/serra13.jpg" alt="Piantine giovani" class="gallery__img"
-								onclick="openModal();currentSlide(12)" class="hover-shadow">
+							<img src="../assets/images/foto/serra13.jpg" alt="Gallery image 12"
+								class="gallery__img hover-shadow" data-slide="12">
 						</figure>
 						<figure class="gallery__item gallery__item--13">
-							<img src="../assets/images/foto/azienda4.jpg" alt="Macchinari aziendali"
-								class="gallery__img" onclick="openModal();currentSlide(13)" class="hover-shadow">
+							<img src="../assets/images/foto/azienda4.jpg" alt="Gallery image 13"
+								class="gallery__img hover-shadow" data-slide="13">
 						</figure>
 						<figure class="gallery__item gallery__item--14">
-							<img src="../assets/images/foto/azienda5.jpg" alt="Area stoccaggio" class="gallery__img"
-								onclick="openModal();currentSlide(14)" class="hover-shadow">
+							<img src="../assets/images/foto/azienda5.jpg" alt="Gallery image 14"
+								class="gallery__img hover-shadow" data-slide="14">
 						</figure>
 						<figure class="gallery__item gallery__item--15">
-							<img src="../assets/images/foto/lattugagentile.jpg" alt="Lattuga Gentile Fresca"
-								class="gallery__img" onclick="openModal();currentSlide(15)" class="hover-shadow">
+							<img src="../assets/images/foto/lattugagentile.jpg" alt="Gallery image 15"
+								class="gallery__img hover-shadow" data-slide="15">
 						</figure>
 						<figure class="gallery__item gallery__item--16">
-							<img src="../assets/images/foto/cicoria.jpg" alt="Cicoria Fresca" class="gallery__img"
-								onclick="openModal();currentSlide(16)" class="hover-shadow">
+							<img src="../assets/images/foto/cicoria.jpg" alt="Gallery image 16"
+								class="gallery__img hover-shadow" data-slide="16">
 						</figure>
 						<figure class="gallery__item gallery__item--17">
-							<img src="../assets/images/foto/sedanoverde.jpg" alt="Sedano Verde Fresco"
-								class="gallery__img" onclick="openModal();currentSlide(17)" class="hover-shadow">
+							<img src="../assets/images/foto/sedanoverde.jpg" alt="Gallery image 17"
+								class="gallery__img hover-shadow" data-slide="17">
 						</figure>
 						<figure class="gallery__item gallery__item--18">
-							<img src="../assets/images/foto/cavolocappuccio-tondo.jpg"
-								alt="Cavolo Cappuccio Tondo Fresco" class="gallery__img"
-								onclick="openModal();currentSlide(18)" class="hover-shadow">
+							<img src="../assets/images/foto/cavolocappuccio-tondo.jpg" alt="Gallery image 18"
+								class="gallery__img hover-shadow" data-slide="18">
 						</figure>
 						<figure class="gallery__item gallery__item--19">
-							<img src="../assets/images/foto/cassetta.jpg" alt="Cassetta pronta" class="gallery__img"
-								onclick="openModal();currentSlide(19)" class="hover-shadow">
+							<img src="../assets/images/foto/cassetta.jpg" alt="Gallery image 19"
+								class="gallery__img hover-shadow" data-slide="19">
 						</figure>
 					</div>
 				</div>
@@ -256,101 +250,93 @@
 
 				<!-- The Modal/Lightbox -->
 				<div id="myModal" class="modal">
-					<span class="closemodal cursor" onclick="closeModal()">&times;</span>
+					<span class="closemodal cursor" id="closeModalBtn">&times;</span>
 					<div class="modal-content">
 
 						<div class="mySlides">
 							<div class="numbertext">1 / 19</div>
-							<img src="../assets/images/foto/serra7.jpg" alt="Interno serra con coltivazioni"
-								style="width:100%">
+							<img src="../assets/images/foto/serra7.jpg" alt="Gallery image 1">
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">2 / 19</div>
-							<img src="../assets/images/foto/serra6.jpg" alt="Dettaglio coltivazione in serra"
-								style="width:100%">
+							<img src="../assets/images/foto/serra6.jpg">
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">3 / 19</div>
-							<img src="../assets/images/foto/principale.jpg" alt="Sede principale azienda"
-								style="width:100%">
+							<img src="../assets/images/foto/principale.jpg">
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">4 / 19</div>
-							<img src="../assets/images/foto/trattore.jpg" alt="Trattore al lavoro" style="width:100%">
+							<img src="../assets/images/foto/trattore.jpg">
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">5 / 19</div>
-							<img src="../assets/images/foto/serra2.jpg" alt="Panoramica serra" style="width:100%">
+							<img src="../assets/images/foto/serra2.jpg">
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">6 / 19</div>
-							<img src="../assets/images/foto/serra3.jpg" alt="Serra con insalata" style="width:100%">
+							<img src="../assets/images/foto/serra3.jpg">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">7 / 19</div>
-							<img src="../assets/images/foto/serra10.jpg" alt="Verdure pronte al raccolto"
-								style="width:100%">
+							<img src="../assets/images/foto/serra10.jpg" alt="Gallery image 1">
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">8 / 19</div>
-							<img src="../assets/images/foto/serra11.jpg" alt="Coltivazione intensiva"
-								style="width:100%">
+							<img src="../assets/images/foto/serra11.jpg">
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">9 / 19</div>
-							<img src="../assets/images/foto/serre.jpg" alt="Esterno serre" style="width:100%">
+							<img src="../assets/images/foto/serre.jpg">
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">10 / 19</div>
-							<img src="../assets/images/foto/serra8.jpg" alt="Filari di verdure" style="width:100%">
+							<img src="../assets/images/foto/serra8.jpg">
 						</div>
 
 						<div class="mySlides">
 							<div class="numbertext">11 / 19</div>
-							<img src="../assets/images/foto/serra9.jpg" alt="Interno serra luminosa" style="width:100%">
+							<img src="../assets/images/foto/serra9.jpg">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">12 / 19</div>
-							<img src="../assets/images/foto/serra13.jpg" alt="Piantine giovani" style="width:100%">
+							<img src="../assets/images/foto/serra13.jpg">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">13 / 19</div>
-							<img src="../assets/images/foto/azienda4.jpg" alt="Macchinari aziendali" style="width:100%">
+							<img src="../assets/images/foto/azienda4.jpg">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">14 / 19</div>
-							<img src="../assets/images/foto/azienda5.jpg" alt="Area stoccaggio" style="width:100%">
+							<img src="../assets/images/foto/azienda5.jpg">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">15 / 19</div>
-							<img src="../assets/images/foto/lattugagentile.jpg" alt="Lattuga Gentile Fresca"
-								style="width:100%">
+							<img src="../assets/images/foto/lattugagentile.jpg">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">16 / 19</div>
-							<img src="../assets/images/foto/cicoria.jpg" alt="Cicoria Fresca" style="width:100%">
+							<img src="../assets/images/foto/cicoria.jpg">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">17 / 19</div>
-							<img src="../assets/images/foto/sedanoverde.jpg" alt="Sedano Verde Fresco"
-								style="width:100%">
+							<img src="../assets/images/foto/sedanoverde.jpg">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">18 / 19</div>
-							<img src="../assets/images/foto/cavolocappuccio-tondo.jpg"
-								alt="Cavolo Cappuccio Tondo Fresco" style="width:100%">
+							<img src="../assets/images/foto/cavolocappuccio-tondo.jpg">
 						</div>
 						<div class="mySlides">
 							<div class="numbertext">19 / 19</div>
-							<img src="../assets/images/foto/cassetta.jpg" alt="Cassetta pronta" style="width:100%">
+							<img src="../assets/images/foto/cassetta.jpg">
 						</div>
 
 						<!-- Next/previous controls -->

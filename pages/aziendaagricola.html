@@ -105,9 +105,9 @@
 				<!-- <a class="menu-text-switch" id="switch-en" href="#" onclick="document.body.className='en'">Switch to English &#127468;&#127463;</a>
 					<a class="menu-text-switch" id="switch-it" href="#" onclick="document.body.className='it'">Traduci in Italiano &#127470;&#127481;</a> -->
 
-				<a class="menu-text-switch" id="switch-en" href="#" onclick="CheckLanguage()" lang="it">Switch to
+				<a class="menu-text-switch" id="switch-en" href="#" lang="it">Switch to
 					English <img src="../assets/images/flag-eng.png" id="flaggb" class="flag-icon" alt="Flag GB"></a>
-				<a class="menu-text-switch" id="switch-it" href="#" onclick="CheckLanguage2()" lang="en">Traduci in
+				<a class="menu-text-switch" id="switch-it" href="#" lang="en">Traduci in
 					Italiano <img src="../assets/images/flag-ita.png" id="flagit" class="flag-icon" alt="Flag IT"></a>
 			</li>
 		</ul>
@@ -120,7 +120,7 @@
 				<div class="row">
 
 					<div class="bar-menu col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 cartbtn">
-						<a class="textbar-black" href="../index.html" onclick="openNav()">CAPATO</a>
+						<a class="textbar-black" href="../index.html">CAPATO</a>
 					</div>
 
 					<div
@@ -234,8 +234,8 @@
 						</div>
 
 						<!--Slides-->
-						<div style="padding-left: 0px; padding-right: 0px;"
-							class="carousel-margin-phone carousel-inner col-xl-10 col-lg-10 col-md-10" role="listbox">
+						<div class="carousel-margin-phone carousel-inner col-xl-10 col-lg-10 col-md-10 no-padding-x"
+							role="listbox">
 
 							<!--First slide-->
 							<div class="carousel-item active">
@@ -368,8 +368,10 @@
 				</div>
 			</article>
 		</section>
-		<!--numbers-->
-		<section class="whiteBack container-fluid padding50" id="numbersSection">
+
+
+		<!--Prova bento box-->
+		<section class="whiteBack container-fluid" id="numbersSection">
 			<!--Principles-->
 			<article class="principles2">
 				<!--Categories buttons-->
@@ -390,28 +392,29 @@
 							that need a mild microclimate during the winter months made possible by heated greenhouses.
 						</p>
 					</div>
+					<div class="bento-container col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12">
+						<div class="bento-grid">
 
-					<!-- </div> -->
-					<!-- <div class="padding-phone offset-xl-2 offset-lg-2 offset-md-0 offset-sm-0 offset-0 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> -->
-					<!-- <div class="padding-phone"> -->
-					<div
-						class="offset-xl-2 offset-lg-2 offset-md-0 offset-sm-0 offset-0 col-xl-2 col-lg-2 col-md-3 col-sm-12 col-12">
-						<h1 id="odometer" class="odometer number60">0</h1>
-						<img class="img-fluid illustration-numbers" src="../assets/images/serre-05.png"
-							alt="Illustrazione serre">
-					</div>
-					<div
-						class="offset-xl-0 offset-lg-0 offset-md-0 offset-sm-5 offset-5 col-xl-1 col-lg-1 col-md-1 col-sm-3 col-3">
-						<h1 class="number">/</h1>
-					</div>
-					<div class="col-xl-1 col-lg-1 col-md-2 col-sm-4 col-4">
-						<h1 id="odometer2" class="odometer number45">0</h1>
-					</div>
-					<div
-						class="offset-xl-8 offset-lg-8 offset-md-0 offset-sm-0 offset-0 col-xl-1 col-lg-1 col-md-2 col-sm-5 col-5">
-						<img class="img-fluid illustration-numbers2" src="../assets/images/serre-07.png"
-							alt="Illustrazione serre grande">
-						<!-- </div> -->
+							<div class="bento-item box-data-4">
+								<img src="../assets/images/serre-05.png" alt="Icona terreno" class="bento-icon">
+								<div class="bento-text">
+									<span id="odometer" class="odometer number-mid">60</span>
+									<span class="number-small">ettari</span><br>
+									<span class="number-dida">di terreno</span>
+								</div>
+							</div>
+
+							<div class="bento-item box-data-5">
+								<img src="../assets/images/pnrr/serre-02.png" alt="Icona copertura serre"
+									class="bento-icon">
+								<div class="bento-text">
+									<span id="odometer2" class="odometer number-mid">45</span>
+									<span class="number-small">ettari</span><br>
+									<span class="number-dida">di terreno coperto da serre</span>
+								</div>
+							</div>
+
+						</div>
 					</div>
 
 				</div>

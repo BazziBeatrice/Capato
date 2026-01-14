@@ -51,47 +51,52 @@ $(document).ready(function () {
     document.getElementById("coverVideo").play();
   }
 
-  // var langIT;
-  // var langEN;
-  // var languages = document.body.className;
-  // languages == "it";
-  // document.body.className == "it";
-  // $("#switch-it").css("display","none");
-  localStorage.setItem("language", "it");
+  // Check for stored language or default to 'it'
+  var storedLang = localStorage.getItem("language");
+  if (!storedLang) {
+    storedLang = "it";
+    localStorage.setItem("language", storedLang);
+  }
 
-  // Check for language URL parameter
+  // Check for language URL parameter (overrides storage)
   const urlParams = new URLSearchParams(window.location.search);
   const langParam = urlParams.get('lang');
   if (langParam === 'en' || langParam === 'it') {
-    localStorage.setItem("language", langParam);
+    storedLang = langParam;
+    localStorage.setItem("language", storedLang);
   }
 
-  CheckLanguage();
-  CheckLanguage2();
+  // Apply language
+  document.body.className = storedLang;
+  updateLanguageToggles(storedLang);
 
-  //Language//
-  $("#switch-en").on("click", function () {
-    $("#switch-it").css("display", "block");
-    $("#switch-en").css("display", "none");
+  //Language Toggle Handlers//
+  $("#switch-en").on("click", function (e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    setLanguage("en");
     closeNav();
-    localStorage.setItem("language", "en");
-    CheckLanguage();
   });
 
-  $("#switch-it").on("click", function () {
+  $("#switch-it").on("click", function (e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    setLanguage("it");
     closeNav();
-    $("#switch-en").css("display", "block");
-    $("#switch-it").css("display", "none");
-    localStorage.setItem("language", "it");
-    CheckLanguage2();
   });
 
-  function CheckLanguage() {
-    document.body.className = localStorage.getItem("language");
+  function setLanguage(lang) {
+    localStorage.setItem("language", lang);
+    document.body.className = lang;
+    updateLanguageToggles(lang);
   }
 
-  function CheckLanguage2() {
-    document.body.className = localStorage.getItem("language");
+  function updateLanguageToggles(lang) {
+    if (lang === "en") {
+      $("#switch-en").css("display", "none");
+      $("#switch-it").css("display", "block");
+    } else {
+      $("#switch-en").css("display", "block");
+      $("#switch-it").css("display", "none");
+    }
   }
 
   //this function makes the category image appear on hover
@@ -476,6 +481,39 @@ $(document).ready(function () {
   //      it = true;
   //   }
   // };
+
+  // Event Listeners for Menu
+  $("#menuButton, .textbar-left").on("click", function (e) {
+    e.preventDefault();
+    openNav();
+  });
+
+  $("#exitButton").on("click", function (e) {
+    e.preventDefault();
+    closeNav();
+  });
+
+  // Event Listeners for Gallery
+  $(".gallery__img, .img-colt").on("click", function () {
+    var slideIndex = $(this).data("slide");
+    if (slideIndex) {
+      openModal();
+      currentSlide(slideIndex);
+    }
+  });
+
+  // Event Listeners for Slideshow Controls
+  $(".prev").on("click", function () {
+    plusSlides(-1);
+  });
+
+  $(".next").on("click", function () {
+    plusSlides(1);
+  });
+
+  $("#closeModalBtn").on("click", function () {
+    closeModal();
+  });
 });
 
 //Audio button//
@@ -588,11 +626,13 @@ window.setTimeout(function () {
 // Open the Modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
+  document.body.style.overflow = "hidden";
 }
 
 // Close the Modal
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
+  document.body.style.overflow = "auto";
 }
 
 var slideIndex = 1;
