@@ -2460,15 +2460,15 @@ a:not([href]):not([tabindex]) {
   justify-content: center;
   padding: 2rem;
   margin-top: 5rem;
-  border-radius: 4px;
+  border-radius: 12px;
 }
 
 .carousel-text-box {
-  max-width: 40%;
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(24px);
+  max-width: 100%;
+  background:#a1c7a457;
+  backdrop-filter: blur(30px);
   padding: 1rem 1.2rem;
-  border-radius: 4px;
+  border-radius: 12px;
   text-align: center;
 }
 

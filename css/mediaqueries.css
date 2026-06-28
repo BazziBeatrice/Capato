@@ -1157,7 +1157,7 @@
     .carousel-slide-bg {
       min-height: 50vh;
       padding: 1rem;
-      border-radius: 4px;
+      border-radius: 12px;
     }
 
     .carousel-text-box {

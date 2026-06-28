@@ -2,15 +2,22 @@ $(document).ready(function() {
 
   $('main').hide().fadeIn(1000);
 
-// Inizializza il carosello
+  // Inizializza il carosello
   var $aziendaCarousel = $('#aziendaCarousel').carousel({
-    interval: false // Fermo, si muove solo al click
+    interval: 5000,
+    ride: 'carousel',
+    pause: 'hover'
   });
 
   // Gestione click sulle miniature (Thumbnails)
-  $('.carousel-thumbnails button').on('click', function() {
-    var slideTo = $(this).attr('data-slide-to');
-    $aziendaCarousel.carousel(parseInt(slideTo));
+  $('.carousel-thumbnails button').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    var slideTo = parseInt($(this).attr('data-slide-to'), 10);
+    if (!isNaN(slideTo)) {
+      $aziendaCarousel.carousel(slideTo);
+    }
   });
 
   // Sincronizza miniature quando il carosello gira (con frecce o swipe)
