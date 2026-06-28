@@ -484,6 +484,18 @@ $(document).ready(function () {
 
   // Event Listeners for Menu
   $("#menuButton, .textbar-left").on("click", function (e) {
+    var $t = $(this);
+    // If clicked element is the site logo link (`.textbar-left`) and we're on the homepage,
+    // prevent default and do nothing (don't open the menu nor reload the page).
+    if ($t.is('.textbar-left')) {
+      var path = window.location.pathname.split('/').pop();
+      if (path === '' || path === 'index.html' || path === 'index.htm') {
+        e.preventDefault();
+        return;
+      }
+    }
+
+    // For the menu button and other cases, open the nav as before.
     e.preventDefault();
     openNav();
   });
