@@ -20,5 +20,34 @@ $(document).ready(function() {
     $('.carousel-thumbnails button').eq(index).addClass('active');
   });
 
+  function animateBentoNumbers() {
+    $('.bento-item .odometer').each(function() {
+      var $this = $(this);
+      var target = $this.data('target');
+      if (target && !$this.data('animated')) {
+        $this.text('0');
+        setTimeout(function() {
+          $this.html(target);
+          $this.data('animated', true);
+        }, 120);
+      }
+    });
+  }
+
+  var bentoSection = document.querySelector('#numbersSection');
+  if (bentoSection && window.IntersectionObserver) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          animateBentoNumbers();
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.2 });
+    observer.observe(bentoSection);
+  } else {
+    animateBentoNumbers();
+  }
+
 });
 

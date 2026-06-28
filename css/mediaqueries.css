@@ -912,13 +912,14 @@
     .categoryDiv {
       margin-top: 14rem;
       width: 100%;
+      max-width: 350px;
       position: relative;
       color: #fff;
     }
 
     .categoryDiv-ipad {
       margin-top: 1rem;
-      margin-left: 11rem;
+      margin-left: 0;
     }
 
     .number {
