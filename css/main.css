@@ -2422,7 +2422,8 @@ a:not([href]):not([tabindex]) {
 }
 
 .bento-icon {
-  max-width: 30%;
+  /* 30% -> 39%: icona +30% su desktop */
+  max-width: 39%;
   margin-right: 10%;
 }
 

@@ -769,6 +769,15 @@
       /* Angoli leggermente più piccoli su mobile */
     }
 
+    /* Su mobile l'icona va sopra al testo, non affiancata */
+    .box-data-1,
+    .box-data-2,
+    .box-data-4,
+    .box-data-5 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
     /* Il box immagine si adatta al contenuto */
     .bento-image-box {
       order: 2;
@@ -785,6 +794,9 @@
     .bento-icon {
       max-width: 35%;
       /* Dimensione fissa per le icone su mobile */
+      /* Impilata sopra al testo: niente spazio a destra, spazio sotto */
+      margin-right: 0;
+      margin-bottom: 1rem;
     }
 
     /* .step-text-box { display: none; width: 100%; padding: 0 15px; } */
