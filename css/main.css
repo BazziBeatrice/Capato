@@ -559,6 +559,10 @@ p.orangep {
   font-size: 140px;
   line-height: 8rem;
   text-align: center;
+  /* L'interlinea e' piu' stretta del font: con background-clip:text i
+     discendenti (g, p, q) uscivano dal box e restavano senza immagine,
+     sembrando tagliati. Il padding estende l'area dipinta. */
+  padding-bottom: 0.22em;
 }
 
 

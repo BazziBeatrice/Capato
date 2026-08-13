@@ -229,14 +229,16 @@
   }
 
   #main-title {
-    font-size: 50px;
-    line-height: 4rem;
+    /* 50px -> 60px: +20% su mobile */
+    font-size: 60px;
+    line-height: 110%;
   }
 
 
   #main-title-h1 {
-    font-size: 4rem;
-    line-height: 4.5rem;
+    /* 4rem -> 4.8rem: +20% su mobile */
+    font-size: 4.8rem;
+    line-height: 110%;
   }
 
   #main-subtitle {
