@@ -2426,8 +2426,11 @@ a:not([href]):not([tabindex]) {
 }
 
 .bento-icon {
-  /* 30% -> 39%: icona +30% su desktop */
-  max-width: 39%;
+  /* 30% -> 39%: icona +30% su desktop.
+     width esplicita perche' l'SVG e' 100x100 di suo e max-width da solo
+     puo' solo rimpicciolire, non ingrandire. */
+  width: 41.5%;
+  max-width: 41.5%;
   margin-right: 10%;
 }
 
