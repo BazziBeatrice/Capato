@@ -2307,6 +2307,11 @@ figure {
 }
 
 .buttonAudio {
+  position: absolute;
+  bottom: 3rem;
+  left: 40px;
+  width: auto;
+  max-width: none;
   z-index: 10 !important;
   pointer-events: all;
 }
